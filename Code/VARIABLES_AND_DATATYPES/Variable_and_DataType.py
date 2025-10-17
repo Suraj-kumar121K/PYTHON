@@ -18,6 +18,8 @@ Primarily these are the following data types in Python:
 a= 71 # identifies a as class <int>
 b=88.44 # identifies b as class <float>
 name= "Suraj" # identifies name as class <str>
+d = False # d is a boolean variable
+e = None # e is a null value
 
 --> RULES FOR CHOOSING AN IDENTIFIER
 • A variable name can contain alphabets, digits, and underscores.
