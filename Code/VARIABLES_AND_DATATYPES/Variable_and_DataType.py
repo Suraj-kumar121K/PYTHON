@@ -5,3 +5,24 @@ b = 1.73        # identifiers = class/function/variable name
 Name = "suraj"  # keywords = reserved words in python
 print(a + b);
 print(Name); 
+
+--> DATA TYPES
+Primarily these are the following data types in Python:
+1. Integers
+2. Floating point numbers
+3. Strings
+4. Booleans
+5. None
+
+--> Python is a fantastic language that automatically identifies the type of data for us.
+a= 71 # identifies a as class <int>
+b=88.44 # identifies b as class <float>
+name= "Suraj" # identifies name as class <str>
+
+--> RULES FOR CHOOSING AN IDENTIFIER
+• A variable name can contain alphabets, digits, and underscores.
+• A variable name can only start with an alphabet and underscores.
+• A variable name can’t start with a digit.
+• No while space is allowed to be used inside a variable name.
+    
+--> Examples of a few variable names are: Suraj, one8, seven, _seven etc.
