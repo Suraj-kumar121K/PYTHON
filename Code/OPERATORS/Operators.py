@@ -142,7 +142,6 @@ print(a >> 1)  # 2
 
 a = 10
 b = 5
-
 # Arithmetic
 print("Addition:", a + b)
 print("Subtraction:", a - b)
@@ -173,3 +172,140 @@ print('P' in text, 'x' not in text)
 y = a
 z = 10
 print(a is y, a is z)
+
+--> 🧩 Operator Problems in Python (With Solutions)
+
+--> ✔️1. Add two numbers using arithmetic operators
+a = 10
+b = 5
+print("Sum =", a + b)
+
+--> ✔️2. Find the remainder when a number is divided by another
+a = 17
+b = 4
+print("Remainder =", a % b)
+
+--> ✔️3. Calculate area of a rectangle using * operator
+length = 6
+width = 3
+area = length * width
+print("Area =", area)
+
+
+--> ✔️4. Swap two numbers using assignment operators
+a = 5
+b = 7
+a, b = b, a
+print("a =", a, "b =", b)
+
+
+Output: a = 7 b = 5
+
+--> ✔️5. Increase a number by 10 using += operator
+x = 25
+x += 10
+print("After += 10 →", x)
+
+--> ✔️6. Check which number is greater
+a = 15
+b = 12
+print("a is greater:", a > b)
+
+--> ✔️7. Check if two numbers are equal
+a = 50
+b = 50
+print("Equal?", a == b)
+
+
+Output: Equal? True
+
+--> ✔️8. Find maximum of three numbers using logical operators
+
+a, b, c = 20, 45, 30
+if a > b and a > c:
+    print("Max =", a)
+elif b > a and b > c:
+    print("Max =", b)
+else:
+    print("Max =", c)
+
+--> ✔️9. Check if a number is between 10 and 50
+x = 25
+print(10 < x < 50)
+
+--> ✔️10. Check if a number is even using modulus operator
+n = 8
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+--> ✔️11. Check if both conditions are true (using and)
+a = 10
+b = 20
+print(a > 5 and b < 25)
+
+--> ✔️12. Check if any condition is true (using or)
+a = 3
+b = 8
+print(a > 5 or b > 5)
+
+--> ✔️13. Reverse a boolean value (using not)
+x = True
+print(not x)
+
+--> ✔️14. Check membership of a letter
+name = "Python"
+print('y' in name)
+print('z' not in name)
+
+--> ✔️15. Compare identity of two variables
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+print(a is b)   # True (same object)
+print(a is c)   # False (different object)
+
+--> ✔️16. Check if a number is positive, negative, or zero
+num = -5
+if num > 0:
+    print("Positive")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative")
+
+--> ✔️17. Use bitwise AND, OR, XOR
+a = 5   # 0101
+b = 3   # 0011
+print("AND:", a & b)
+print("OR:", a | b)
+print("XOR:", a ^ b)
+
+--> ✔️ 18. Multiply a number by 2 using left shift
+a = 5
+print("5 << 1 =", a << 1)
+
+--> ✔️ 19. Divide a number by 2 using right shift
+a = 10
+print("10 >> 1 =", a >> 1)
+
+--> ✔️ 20. Use all operators in one example
+a = 10
+b = 4
+
+print("Add:", a + b)
+print("Sub:", a - b)
+print("Mul:", a * b)
+print("Div:", a / b)
+print("Mod:", a % b)
+print("Exp:", a ** b)
+print("Floor:", a // b)
+
+a += 2
+print("After += 2:", a)
+
+print("Comparison:", a > b)
+print("Logical:", a > 5 and b < 10)
+print("Membership:", 'a' in 'apple')
+print("Identity:", a is b)
