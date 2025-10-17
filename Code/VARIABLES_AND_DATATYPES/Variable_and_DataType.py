@@ -21,6 +21,16 @@ name= "Suraj" # identifies name as class <str>
 d = False # d is a boolean variable
 e = None # e is a null value
 
+--> Checking Data Type
+You can check the data type of any variable using:
+
+--> Syntax
+   type(variable_name)
+
+--> Example:
+    x = 10
+    print(type(x))   # Output: <class 'int'>
+
 --> RULES FOR CHOOSING AN IDENTIFIER
 • A variable name can contain alphabets, digits, and underscores.
 • A variable name can only start with an alphabet and underscores.
