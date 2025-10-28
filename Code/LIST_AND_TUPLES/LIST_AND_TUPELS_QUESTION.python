@@ -1,0 +1,207 @@
+🧩 SECTION 1 – Basic List Questions (1–40)
+
+1.What is a list in Python?
+
+How do you create an empty list?
+
+Write code to create a list with five numbers.
+
+How do you access the first element of a list?
+
+How do you access the last element of a list?
+
+How can you change the second item in a list?
+
+Add an item to the end of a list.
+
+Insert an item at index 2.
+
+Remove an item by value from a list.
+
+Remove an item by index from a list.
+
+How do you clear a list?
+
+What does len(list) do?
+
+Write code to print all elements of a list using a loop.
+
+What is the output of [1,2,3] + [4,5]?
+
+What does ["hi"] * 3 return?
+
+How to check if "apple" exists in a list?
+
+Create a list with mixed data types.
+
+Create a nested list and access an inner element.
+
+How to find the index of an element in a list?
+
+How to count occurrences of an element in a list?
+
+Sort a list of numbers in ascending order.
+
+Reverse the order of elements in a list.
+
+Copy a list into another list.
+
+What is the difference between list.copy() and list[:]?
+
+Find the largest number in a list.
+
+Find the smallest number in a list.
+
+Calculate the sum of all numbers in a list.
+
+Write a program to print only even numbers from a list.
+
+Write a program to print only odd numbers from a list.
+
+How to remove duplicates from a list?
+
+Convert a string "hello" into a list of characters.
+
+Convert a list of characters into a string.
+
+Write a Python program to find the average of list elements.
+
+How do you check if a list is empty?
+
+What happens if you try to access an index that doesn’t exist?
+
+What is list slicing? Give an example.
+
+Write code to extract the middle element(s) from a list.
+
+Write a program to multiply all items in a list.
+
+Write a program to count the number of strings with the same first and last character.
+
+Write a Python program to clone or copy a list.
+
+🧮 SECTION 2 – Tuple Basics (41–60)
+
+41.What is a tuple in Python?
+
+42.How do you create an empty tuple?
+
+43.Create a tuple with three numbers.
+
+44.How do you access the first element of a tuple?
+
+45.Can you modify a tuple after it’s created? Why or why not?
+
+46.Create a tuple with mixed data types.
+
+47.Create a single-element tuple.
+
+48.Write code to concatenate two tuples.
+
+49.Repeat a tuple three times.
+
+50.Find the length of a tuple.
+
+51.Check if an element exists in a tuple.
+
+52.Count how many times a value appears in a tuple.
+
+53.Find the index of an element in a tuple.
+
+54.Convert a tuple into a list.
+
+55.Convert a list into a tuple.
+
+56.Unpack a tuple into multiple variables.
+
+57.Create a nested tuple and access an inner element.
+
+58.Write code to check if two tuples are equal.
+
+59.What happens if you delete one element from a tuple?
+
+60.Delete the entire tuple and try to access it — what happens?
+
+⚙️ SECTION 3 – List & Tuple Intermediate (61–80)
+
+Write a program to get the second largest number in a list.
+
+Write a program to get unique elements from a list.
+
+Write a Python program to flatten a nested list.
+
+Write a Python program to find common items in two lists.
+
+Find the difference between two lists.
+
+Merge two lists without using + or extend().
+
+Write a list comprehension to create a list of squares from 1 to 10.
+
+Write a list comprehension to filter even numbers from 1–20.
+
+Write a program to find the intersection of two tuples.
+
+Write a Python program to convert a list of tuples into a dictionary.
+
+Sort a list of tuples based on the second element.
+
+Write a Python program to find the maximum and minimum values in a tuple.
+
+Write a Python program to check if all elements of a list are the same.
+
+Write a Python program to count positive and negative numbers in a list.
+
+Write a Python program to find the sum of elements in a tuple.
+
+Convert a tuple of strings into a single string.
+
+Write a program to find duplicate elements in a list.
+
+Write a program to remove all occurrences of a given element from a list.
+
+Write a program to slice a tuple from index 2 to 5.
+
+Write a Python program to find the length of each word in a list of words.
+
+💡 SECTION 4 – Advanced List & Tuple Questions (81–100)
+
+Create a matrix using a nested list and print it in row-column format.
+
+Write a program to transpose a matrix using list comprehension.
+
+Write a Python program to remove empty tuples from a list.
+
+Write a Python program to find elements that appear more than once in a list.
+
+Write a Python program to check if two lists are circularly identical.
+
+Write a Python program to split a list into two halves.
+
+Write a Python program to check if a tuple contains only numbers.
+
+Write a program to convert a list of tuples into a list of lists.
+
+Write a Python program to convert a list of lists into a list of tuples.
+
+Write a Python program to find the frequency of each element in a list using collections.Counter.
+
+Write a Python program to zip two lists into a dictionary.
+
+Write a Python program to sort a list of tuples by the length of each tuple.
+
+Write a Python program to unpack a nested tuple.
+
+Write a Python program to find the index of the maximum element in a list.
+
+Write a Python program to multiply all numbers in a tuple.
+
+Write a Python program to check if a tuple is a palindrome.
+
+Write a Python program to remove duplicates from a tuple.
+
+Write a Python program to reverse a tuple.
+
+Write a Python program to find the element-wise sum of two tuples.
+
+Write a Python program that takes a list of tuples and sorts them based on the first element of each tuple.
