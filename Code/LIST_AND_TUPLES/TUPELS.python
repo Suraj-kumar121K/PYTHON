@@ -1,0 +1,69 @@
+🧾 What is a Tuple?
+A tuple is like a list, but immutable (cannot be changed).
+
+✅ Creating Tuples
+empty_tuple = ()
+numbers = (1, 2, 3)
+fruits = ("apple", "banana", "cherry")
+mixed = (1, "hello", 3.5, True)
+nested = ((1, 2), (3, 4))
+
+# Single element tuple → must have comma
+single = ("apple",)
+
+🧮 Accessing Tuple Elements
+empty_tuple = ()
+numbers = (1, 2, 3)
+fruits = ("apple", "banana", "cherry")
+mixed = (1, "hello", 3.5, True)
+nested = ((1, 2), (3, 4))
+
+# Single element tuple → must have comma
+single = ("apple",)
+
+⚙️ Tuple Operations
+| Operation     | Example             | Output             |
+| ------------- | ------------------- | ------------------ |
+| Concatenation | `(1,2)+(3,4)`       | `(1,2,3,4)`        |
+| Repetition    | `("Hi",)*3`         | `('Hi','Hi','Hi')` |
+| Membership    | `'apple' in fruits` | `True`             |
+| Length        | `len(fruits)`       | `4`                |
+
+  🧩 List & Tuple Conversion
+  # List → Tuple
+list1 = [1, 2, 3]
+tuple1 = tuple(list1)
+
+# Tuple → List
+tuple2 = (4, 5, 6)
+list2 = list(tuple2)
+
+🧮 Real-Life Example
+# Coordinates (x, y)
+point = (10.5, 20.3)
+
+# RGB Color
+color = (255, 0, 128)
+
+# Student Info
+student = ("Suraj", 21, "Computer Science")
+
+🧠 Tuple Functions
+numbers = (5, 1, 9, 3)
+print(len(numbers))
+print(max(numbers))
+print(min(numbers))
+print(sum(numbers))
+
+📦 Tuple Methods
+| Method     | Description       | Example            |
+| ---------- | ----------------- | ------------------ |
+| `count(x)` | Count occurrences | `t.count(2)`       |
+| `index(x)` | Find index        | `t.index('apple')` |
+
+  🧮 Tuple Unpacking
+  student = ("Suraj", 21, "B.Tech")
+(name, age, course) = student
+print(name)
+print(age)
+print(course)
