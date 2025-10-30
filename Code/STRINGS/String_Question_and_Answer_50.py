@@ -98,7 +98,8 @@ print(name.strip())
 name = "I Love Mom"
 print(name.replace("Mom", "Dad"))
 
-#                                           String Methods
+-->      String Methods
+
 # 13. title()
 s = "Kumar"
 print(s.title())
@@ -135,3 +136,5 @@ print("-".join(lst))
 # 21. swapcase()
 s = "Python"
 print(s.swapcase())  
+
+-->  String Program Questions
