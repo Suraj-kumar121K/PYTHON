@@ -98,7 +98,7 @@ print(name.strip())
 name = "I Love Mom"
 print(name.replace("Mom", "Dad"))
 
--->      String Methods
+                                                                                   -->      String Methods
 
 # 13. title()
 s = "Kumar"
@@ -137,4 +137,12 @@ print("-".join(lst))
 s = "Python"
 print(s.swapcase())  
 
--->  String Program Questions
+                                                                                        -->  String Program Questions
+
+# 23. Reverse a string
+name = "suraj"
+print(name[::-1])
+
+# 24. Check if a string is palindrome
+s = "Manan"
+print(s == s[::-1])
