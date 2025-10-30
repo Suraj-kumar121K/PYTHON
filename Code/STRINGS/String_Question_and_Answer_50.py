@@ -63,12 +63,12 @@ print(s + " " + name)
 s = "Suraj"
 print(s * 2)
 
-# 8. How to check if a substring exists?
+# 9. How to check if a substring exists?
 name = "Suraj Kumar"
 print("Suraj" in name)
 print("Java" not in name)
 
-# 9. How to convert a string to uppercase/lowercase?
+# 10. How to convert a string to uppercase/lowercase?
 s = "Suraj Kumar"
 print(s.upper())
 print(s.lower())
