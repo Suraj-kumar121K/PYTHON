@@ -17,6 +17,8 @@
    print(msg)
 
 2. Double Quotes
+   text = "It's a great day"
+   print(text)
 
 3. Triple Quotes
   --> Multi-line text
