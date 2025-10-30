@@ -89,3 +89,28 @@ print("Name\tAge")
 s = "Suraj Kumar"
 print(s.upper())
 print(s.lower())
+
+# 11. How to remove whitespace?
+name = "Mohan Kumar"
+print(name.strip())
+
+# 12. How to replace part of a string?
+name = "I Love Mom"
+print(name.replace("Mom", "Dad"))
+
+#                                           String Methods
+# 13. title()
+s = "Kumar"
+print(s.title())
+
+# 14. capitalize()
+s = "i Am Suraj"
+print(s.capitalize())
+
+# 15. count()
+s = "manan"
+print(s.count("a"))
+
+# 16. index()
+s = "We are Going"
+print(s.index("Going"))
