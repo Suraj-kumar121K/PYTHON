@@ -27,3 +27,48 @@
    Welcome to Python programming!
    Let's learn strings."""
    print(msg)
+
+# 4. How to access characters from a string?
+s = "Suraj"
+print(s[0])
+print(s[-1])
+
+# 5. How do you find the length of a string
+name = 'Suraj1'
+print(len(name))
+
+# 6. How to slice a string?
+```
+You can slice a string using the slice operator — [:].
+Syntax:
+    string[start:end:step]
+start → index to begin (inclusive)
+end → index to stop (exclusive)
+step → interval or skip value (optional)
+
+Value-->             S   U   R   A   J   
+Index-->             0   1   2   3   4   
+Negative Indexes--> -5  -4  -3  -2  -1
+```
+str = "Suraj"
+print(str[:-4])
+print(str[-1])
+
+# 7. How to concatenate two strings?
+s = "Suraj"
+name = "Kumar"
+print(s + " " + name)
+
+# 8. How to repeat a string?
+s = "Suraj"
+print(s * 2)
+
+# 8. How to check if a substring exists?
+name = "Suraj Kumar"
+print("Suraj" in name)
+print("Java" not in name)
+
+# 9. How to convert a string to uppercase/lowercase?
+s = "Suraj Kumar"
+print(s.upper())
+print(s.lower())
