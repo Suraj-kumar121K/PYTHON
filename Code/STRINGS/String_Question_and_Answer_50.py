@@ -114,3 +114,24 @@ print(s.count("a"))
 # 16. index()
 s = "We are Going"
 print(s.index("Going"))
+
+# 17. find()
+s = "hello world"
+print(s.find("world")) 
+
+# 18. startswith() and endswith()
+s = "python"
+print(s.startswith("py")) 
+print(s.endswith("on"))   
+
+# 19. split()
+s = "apple,banana,cherry"
+print(s.split(","))  
+
+# 20. join()
+lst = ['apple', 'banana', 'cherry']
+print("-".join(lst))  
+
+# 21. swapcase()
+s = "Python"
+print(s.swapcase())  
