@@ -68,7 +68,24 @@ name = "Suraj Kumar"
 print("Suraj" in name)
 print("Java" not in name)
 
-# 10. How to convert a string to uppercase/lowercase?
+# 10. Give examples of commonly used escape sequences.
+      | Code  |    Meaning   |         Example          |        Output        |
+      | ----- | ------------ | ------------------------ | -------------------- |
+      | `\'`  | Single quote | `'It\'s fine'`           | `It's fine`          |
+      | `\"`  | Double quote | `"He said \"Yes\""`      | `He said "Yes"`      |
+      | `\\`  | Backslash    | `"C:\\folder\\file.txt"` | `C:\folder\file.txt` |
+      | `\n`  | New line     | `"Hello\nWorld"`         |                      |
+      | `\t`  | Tab space    | `"Name\tAge"`            | `Name    Age`        |
+--> Code
+# Escape Sequence Examples
+print('It\'s a good day')
+print("He said \"Hello!\"")
+print("C:\\Users\\Admin\\Desktop")
+print("Hello\nWorld")
+print("Name\tAge")
+
+
+# 11. How to convert a string to uppercase/lowercase?
 s = "Suraj Kumar"
 print(s.upper())
 print(s.lower())
