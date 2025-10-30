@@ -11,3 +11,17 @@
    | **Double Quotes** | `"Hello"`                      | Also for single-line strings         | You can include single quotes easily: `"It's a nice day"`     |
    | **Triple Quotes** | `'''Hello'''` or `"""Hello"""` | For multi-line strings or docstrings | Allows both single and double quotes inside without escaping  |
 
+1. Single Quotes
+   name = 'Suraj'
+   msg = 'He said "Python is fun"'
+   print(msg)
+
+2. Double Quotes
+
+3. Triple Quotes
+  --> Multi-line text
+  --> Docstrings (documentation inside functions or classes)
+   msg = """Hello Suraj,
+   Welcome to Python programming!
+   Let's learn strings."""
+   print(msg)
