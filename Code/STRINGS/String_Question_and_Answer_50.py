@@ -231,3 +231,39 @@ print(s[start:end])
 s = "ABC"
 ascii_values = [ord(ch) for ch in s]
 print(ascii_values)
+
+# 40. Convert ASCII values to string
+ascii_values = [65, 66, 67]
+s = ''.join(chr(i) for i in ascii_values)
+print(s)
+
+# 41. Remove all digits from string
+s = "Pyt123hon45"
+result = "".join(ch for ch in s if not ch.isdigit())
+print(result)
+
+# 42. Sort characters in a string
+s = "python"
+print("".join(sorted(s)))
+
+# 43. Find common characters between two strings
+s1 = "python"
+s2 = "typhoon"
+common = set(s1) & set(s2)
+print("Common characters:", "".join(common))
+
+# 44. Check if string contains only whitespace
+s = "   "
+print(s.isspace())
+
+# 45. Replace vowels with '*'
+s = "education"
+vowels = "aeiouAEIOU"
+for v in vowels:
+    s = s.replace(v, '*')
+print(s)
+
+# 46. Count specific character occurrences
+s = "banana"
+ch = "a"
+print(f"'{ch}' occurs {s.count(ch)} times")
