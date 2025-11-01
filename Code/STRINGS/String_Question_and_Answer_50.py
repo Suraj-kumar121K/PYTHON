@@ -146,3 +146,88 @@ print(name[::-1])
 # 24. Check if a string is palindrome
 s = "Manan"
 print(s == s[::-1])
+
+# 25. Count vowels in a string
+s = "suraj"
+vowels = "aeiouAEIOU"
+count = sum(1 for ch in s if ch in vowels)
+print("Number of vowels", count)
+
+# 26. Find frequency of each character
+s = 'manan'
+freq = {}
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+print(freq)
+    
+
+# 27. Remove duplicates from string
+s = "manan"
+result = "".join(sorted(set(s), key=s.index))
+print("without duplicates:", result)
+
+# 28. Check if two strings are anagrams
+s1 = "listen"
+s2 = "silent"
+
+if sorted(s1) == sorted(s2):
+    print("Anagrams")
+else:
+    print("Not Anagrams")    
+
+# 29. Print even index characters
+s = "suraj"
+print("Even index characters", s[::2])
+
+# 30. Print odd index characters
+s = "Kumar"
+print("Odd index characters:", s[1::2])
+
+# 31. Convert string to list without split()
+s = "hello"
+lst = list(s)
+print(lst)
+
+# 32. Find the longest word in a sentence
+sentence = "Python is a powerful programming language"
+words = sentence.split()
+longest = max(words, key=len)
+print("Longest word:", longest)
+
+# 33. Check if string contains only digits
+s = "12345"
+print(s.isdigit())
+
+# 34. Count uppercase and lowercase letters
+s = "Hello World"
+upper = sum(1 for ch in s if ch.isupper())
+lower = sum(1 for ch in s if ch.islower())
+print("Uppercase:", upper)
+print("Lowercase:", lower)
+
+# 35. Replace spaces with hyphens
+s = "Python is fun"
+print(s.replace(" ", "-"))
+
+# 36. Remove punctuation from a string
+import string
+s = "Hello, world!!!"
+clean = "".join(ch for ch in s if ch not in string.punctuation)
+print(clean)
+
+# 37. Find the first non-repeating character
+s = "aabbccdeeff"
+for ch in s:
+    if s.count(ch) == 1:
+        print("First non-repeating:", ch)
+    break
+
+# 38. Print substring from given start and end index
+s = "programming"
+start, end = 3, 8
+print(s[start:end])
+
+# 39. Convert string to ASCII values
+s = "ABC"
+ascii_values = [ord(ch) for ch in s]
+print(ascii_values)
