@@ -52,7 +52,6 @@ print(area)
 --> 9️⃣ Convert temperature (C → F)
 """Formula
 𝐹 = ( 𝐶 × 9/5) + 32
-
 where
 --> C = Temperature in Celsius
 --> F = Temperature in Fahrenheit"""
