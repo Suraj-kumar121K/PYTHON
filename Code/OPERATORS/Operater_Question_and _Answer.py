@@ -199,3 +199,87 @@ else:
 --> 40 Password check
 password = "Sur7aj@"
 print(len(password) >= 6 and any(ch.isdigit() for ch in password))
+
+--> ⚡Bitwise Operators (31–40)
+--> 41 Bitwise AND
+a = 3
+b = 5
+print(a & b)
+
+--> 42 Bitwise OR
+print(3 | 7)
+
+--> 43 Bitwise XOR
+print(5 ^ 3)   
+
+--> 44 Bitwise NOT
+print(~5)      
+
+--> 45 Left shift
+print(5 << 1)
+
+--> 46 Right shift
+print(5 >> 1)  
+
+--> 47 Swap numbers using XOR
+a, b = 5, 10
+a = a ^ b
+b = a ^ b
+a = a ^ b
+print(a, b)
+
+--> 48 Count set bits in integer
+n = 13
+print(bin(n).count("1"))
+
+--> 49 Check if power of 2
+n = 8
+print(n & (n - 1) == 0)
+
+--> 50 Check even/odd using bitwise
+n = 6
+print("Even" if n & 1 == 0 else "Odd")
+
+
+--> 🔥Assignment & Membership Operators (41–50)
+--> 51 Compound assignment
+x = 10
+x += 5
+print(x)
+
+--> 52️ Check membership in list
+print(3 in [1,2,3,4])
+
+--> 53 Not in
+print('a' not in 'Python')
+
+--> 54 Check substring presence
+s = "Hello Python"
+print("Python" in s)
+
+--> 55 Count vowels using membership
+s = "education"
+vowels = "aeiou"
+count = sum(ch in vowels for ch in s)
+print(count)
+
+--> 56 Conditional assignment
+age = 20
+msg = "Adult" if age >= 18 else "Minor"
+print(msg)
+
+--> 57 Check character category
+ch = '5'
+print("Digit" if ch.isdigit() else "Letter")
+
+--> 58 Assign multiple values
+a, b, c = 1, 2, 3
+print(a + b + c)
+
+--> 59 Membership in dictionary keys
+d = {'a': 1, 'b': 2}
+print('a' in d)
+
+--> 60 Membership in set
+nums = {1, 2, 3, 4}
+print(3 in nums)
