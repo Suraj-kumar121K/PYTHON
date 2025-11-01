@@ -59,3 +59,52 @@ print(A | B)
 print(A & B)  
 print(A - B) 
 print(A ^ B)  
+
+--> What is Dictionaries
+    A dictionary is an unordered collection of key-value pairs.
+        Keys must be unique and immutable.
+        Values can be any data type.
+        Dictionaries are mutable.
+
+--> Creating a dictionary
+    d = {"name": "Suraj", "age": 20}
+    print(d["name"]) 
+
+--> Dictionary Operations
+    Access Elements
+    print(d["age"])       
+    print(d.get("name"))   
+
+--> Add/Update
+   d["city"] = "Delhi"   
+   d["age"] = 21         
+
+--> Remove
+   d.pop("city")         
+   d.popitem()            
+   del d["age"]           
+   d.clear()             
+
+--> Keys, Values, Items
+    print(d.keys())   
+    print(d.values())  
+    print(d.items())   
+
+--> Dictionary Methods
+|   Method  |         Description       |
+| --------- | ------------------------- |
+| get()     | Access value safely       |
+| keys()    | Returns all keys          |
+| values()  | Returns all values        |
+| items()   | Returns key-value pairs   |
+| update()  | Merge dictionaries        |
+| pop()     | Remove specific key       |
+| popitem() | Remove last inserted item |
+| clear()   | Clear dictionary          |
+
+--> Example
+student = {"name": "Ankit", "marks": 85, "age": 18}
+student["city"] = "Mumbai"
+student["marks"] = 90
+for key, value in student.items():
+    print(key, ":", value)
