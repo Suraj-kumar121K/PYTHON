@@ -64,3 +64,51 @@ print(area)
 a, b = 10, 20
 a, b = b, a
 print(a, b)
+
+--> 🧩Comparison Operators (11–20)
+--> 11 Check if number is greater
+a, b = 20, 5
+print(a > b);
+
+--> 12️ Equal check
+a, b, = 5, 3
+print(a == b);
+
+--> 13️ Not equal
+a, b = 25, 15
+print(a != b)
+
+--> 14️ Check smallest of two numbers
+"""This is a Ternary Operator (also called Conditional Expression) in Python.
+Syntax:
+    <value_if_true> if <condition> else <value_if_false>"""
+a, b = 10, 20
+print(a if a < b else b)
+
+--> 15️ Check if number lies between range
+x = 23
+print(20 < x < 30)
+
+--> 16 Compare strings alphabetically
+a = "apple"
+b = "banana"
+s = a < b
+print(s)
+
+
+--> 17️ Check two variables point to same object
+x = y = [1, 2, 3]
+print(x is y)
+
+--> 18️ Compare list equality (values only)
+a = [1, 2]
+b = [1, 2]
+s = a == b
+print(s)
+
+--> 19️ Compare float precision
+print(round(0.1 + 0.2, 1) == 0.3)
+
+--> 20️ Compare string lengths
+a, b = "python", "java"
+print(len(a) > len(b))
