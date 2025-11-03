@@ -130,14 +130,23 @@ for i in range(1, rows + 1):
       else:
          print(" ", end=" ")   
     print()
-  
-🧩 8. Hollow Pyramid
 
-        *
-      *   *
-    *       *
-  *           *
-* * * * * * * * *
+* * * * * * * * 
+  * * * * * * * 
+    * * * * * * 
+      * * * * * 
+        * * * * 
+          * * * 
+            * * 
+              * 
+            * * 
+          * * * 
+        * * * * 
+      * * * * * 
+    * * * * * * 
+  * * * * * * * 
+* * * * * * * * 
+
 
 🧩 9. Hourglass Pattern
    
@@ -150,6 +159,16 @@ for i in range(1, rows + 1):
     * * * * *
   * * * * * * *
 * * * * * * * * *
+
+--> Code  
+n = 8  
+for i in range(n, 0, -1):
+    print("  " * (n - i), end="")  
+    print("* " * i)
+for i in range(2, n+1):
+    print("  " * (n - i), end="") 
+    print("* " * i)
+
 
 🧩 10. Right Pascal’s Triangle
 
