@@ -82,19 +82,35 @@ for i in range(1, row + 1):
        * * * * *     
          * * *       
            * 
-
+--> CODE 
+   n = int(input("Enter number of rows: "))
+   for i in range(n):
+     print(" " * i, end=" ")
+     print("* ", * (n - i))
+     
 🧩 6. Diamond Pattern
-
-        *                  
-      * * *                 
-    * * * * *               
-  * * * * * * *             
-* * * * * * * * *           
-  * * * * * * *             
-    * * * * *               
-      * * *
-        *
-
+       * 
+      * *
+     * * *
+    * * * *
+   * * * * *
+  * * * * * *
+ * * * * * * *
+  * * * * * *
+   * * * * *
+    * * * *
+     * * *
+      * *
+       *
+--> Code
+n = int(input("Enter number of rows: "))
+for i in range(1, n + 1):       
+    print(" " * (n - i), end=" ")
+    print("* " * i)
+for i in range(n - 1, 0, -1):
+    print(" " * (n - i), end=" ")
+    print("* " * i)   
+  
 🧩 7. Hollow Square
 
 * * * * * * 
@@ -104,6 +120,17 @@ for i in range(1, row + 1):
 *         *
 * * * * * *
 
+--> Code  
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: ")) 
+for i in range(1, rows + 1):
+    for j in range(1, cols + 1):
+      if i == 1 or i == rows or j == 1 or j == cols:
+        print("*", end=" ") 
+      else:
+         print(" ", end=" ")   
+    print()
+  
 🧩 8. Hollow Pyramid
 
         *
