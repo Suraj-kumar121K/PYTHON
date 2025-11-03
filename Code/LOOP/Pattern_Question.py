@@ -15,6 +15,12 @@
 * * * * * *
 * * * * * * 
 * * * * * *
+--> CODE
+rows = 6
+for i in range(1, rows + 1):
+  for j in range(1, rows + 1):
+    print("*", end=" ")
+  print()          
 
 🧩 2. Right Triangle Pattern
 
@@ -33,6 +39,13 @@
 * *
 *
 
+--> CODE
+row = 6
+for i in range(1, row + 1):
+  for j in range(i, row + 1):
+    print("*", end=" ")
+  print()  
+   
 🧩 4. Pyramid Pattern
 
           *         
