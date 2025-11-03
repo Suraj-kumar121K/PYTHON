@@ -1,3 +1,12 @@
+--> 🧮 Step-by-Step Math Logic:
+
+| Step | Meaning            | Explanation                                                                        |
+| ---- | ------------------ | ---------------------------------------------------------------------------------- |
+| 1️⃣  | **Outer loop (i)** | Yeh control karta hai **kitni rows (lines)** print hongi                            |
+| 2️⃣  | **Inner loop (j)** | Yeh decide karta hai **har row me kitne elements** honge                            |
+| 3️⃣  | **What to print**  | Yeh define karta hai ki **output me kya dikhana hai** — `*`, number, alphabet, e c. |
+| 4️⃣  | **print()**        | Har row ke baad **next line** me jane ke liye                                       |
+
 🧩 1. Square Star Pattern
 
 * * * * * *  
