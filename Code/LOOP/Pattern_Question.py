@@ -56,13 +56,24 @@ for i in range(1, row + 1):
    
 🧩 4. Pyramid Pattern
 
-          *         
-        * * *       
-      * * * * *     
-    * * * * * * *     
-  * * * * * * * * * 
-* * * * * * * * * * *
+           * 
+          * *
+         * * *
+        * * * *
+       * * * * *
+      * * * * * *
+     * * * * * * *
+    * * * * * * * *
+   * * * * * * * * *
+  * * * * * * * * * *
+ * * * * * * * * * * *
 
+--> CODE 
+   n = int(input("Enter number of rows: "))
+   for i in range(1, n + 1):
+     print(" " * (n - 1), end=" ")
+     print("* ", * i)
+   
 🧩 5. Inverted Pyramid
    
  * * * * * * * * * * *
