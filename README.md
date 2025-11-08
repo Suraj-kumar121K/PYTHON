@@ -4,7 +4,6 @@ Welcome to the **Python Ultimate Course** repository! 🚀
 This course will cover everything you need to master PYTHON!
 
 ---
-
 ## 🛠️ Important Links & Tools:
 
 Everything is for Free!
