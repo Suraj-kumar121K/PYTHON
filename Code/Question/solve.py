@@ -7,7 +7,7 @@ def add_two_number():
     print("print number: ", adds)   
 # add_two_number() 
 
---> Multiply three numbers. 
+--> 2. Multiply three numbers. 
 def Multiply():
     a = int(input("Enter a number: "))
     b = int(input("Enter a number: "))
@@ -16,7 +16,7 @@ def Multiply():
     print("Multiply three numbers: ", mul)
 # Multiply()    
 
---> Find the square of the sum of two numbers. 
+--> 3. Find the square of the sum of two numbers. 
 def square():
     a = int(input("Enter a Number: "))
     b = int(input("Enter a number: "))
@@ -24,7 +24,7 @@ def square():
     print("square of the Sum: ", squ)
 # square()    
     
---> Check if a number is divisible by 
+--> 4. Check if a number is divisible by 
 def divisible():
     num = int(input("Enter a number: "))
     div = int(input("Enter the divisor: "))
@@ -45,14 +45,14 @@ def largest_Number():
     print("largest: ", largest)
 # largest_Number()
 
---> Count total digits in a number. 
+--> 6. Count total digits in a number. 
 def count():
     nums = int(input("Eneter a number: "))
     digit = len(str(abs(nums)))
     print("Total digits: ", digit)
 # count()    
     
---> Calculate the perimeter of a square. 
+--> 7. Calculate the perimeter of a square. 
 def perimeter_square():
     side = float(input("Enter side length: "))
     perimeter = 0
@@ -60,3 +60,56 @@ def perimeter_square():
         perimeter += side
     print("Perimeter =", perimeter)
 # perimeter_square()
+
+--> 8. Calculate the area of a parallelogram. 
+"""
+      /|
+     / | height (h)
+    /  |
+   /___|
+    base
+Formula
+Area = base x height    
+"""
+def area():
+    b = float(input("Enter base: "))
+    h = float(input("Enter hight: "))
+    parallelogram = b * h
+    print("Area of parallelogram =", parallelogram)
+# area()   
+    
+--> 9. Find the area of a trapezium. 
+"""
+    a (top base)
+     __________
+    /          \
+   /            \
+  /______________\
+  b (bottom base)
+
+    height = h
+formula
+area = 1/2(a + b) x h
+"""
+def area():
+    a = float(input("Enter top base: "))
+    b = float(input("Enter bottom base: "))
+    h = float(input("Enter height: "))
+    trapezium = 1/2 * (a + b) * h
+    print("area of  trapezium =", trapezium)
+# area()
+
+--> 10. Convert minutes to hours and minutes. 
+def convert_minutes():
+    try:
+        total_minutes = int(input("Enter total minutes:  "))
+        
+        if total_minutes < 0:
+            print("Minutes cannot be negative: ")  
+            return
+        hours = total_minutes // 60
+        remainder = total_minutes % 60
+        print(f"{hours} hours {remainder} minutes")
+    except ValueError:
+        print("Invalid input! Please enter integer value only.")
+# convert_minutes()
