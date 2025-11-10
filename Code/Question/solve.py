@@ -133,3 +133,21 @@ def Odd_number():
         total += i
     print("\nSum of even numbers:", total) 
 Odd_number()
+
+--> 13. Check if a number is a perfect square. 
+def square():
+    num = int(input("Enter a Number: "))
+    sqrt_num  = int(num ** 0.5)
+    if sqrt_num  * sqrt_num  == num:
+        print(f"{num} is a perfect square {sqrt_num}")
+    else:
+        print(f"{num} is not a perfect square")
+# square()        
+
+--> 14. Calculates the square of the entered number.
+def square():
+    num = int(input("Enter a Number: "))
+    sqrt_num  = num ** 2
+    print(f"The square of {num} is: {sqrt_num}")
+# square()  
+ 
