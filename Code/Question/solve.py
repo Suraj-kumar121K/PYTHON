@@ -151,3 +151,23 @@ def square():
     print(f"The square of {num} is: {sqrt_num}")
 # square()  
  
+--> 15. Convert kilometers to meters. 
+def kilometers_to_meters():
+    kilometers = float(input("Enter distance in kilometers: "))
+    meters = kilometers * 1000
+    print(f"{kilometers} kilometers is equal to {meters} meters")
+# kilometers_to_meters()
+
+--> 16. Convert meters to centimeters. 
+def meters_to_centimeters():
+    meters = int(input("Enter distance in centimeter: "))
+    centimeters = meters  * 100 
+    print(f"{meters} meters is equal to {centimeters} centimeters")
+# meters_to_centimeters()    
+
+--> 17. Convert centimeters to meters.
+def centimeters_to_meters():
+    centimeters = float(input("Enter distance in Meters: "))
+    meters = centimeters / 100
+    print(f"{centimeters} centimeters is equal to {meters} meters")
+# centimeters_to_meters()
