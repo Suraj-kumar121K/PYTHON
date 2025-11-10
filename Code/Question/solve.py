@@ -171,3 +171,31 @@ def centimeters_to_meters():
     meters = centimeters / 100
     print(f"{centimeters} centimeters is equal to {meters} meters")
 # centimeters_to_meters()
+
+--> 18. Calculate discount percentage. 
+"""
+Discount Percentage
+
+
+                Original Price - Selling Price
+Discount % =  --------------------------------- x 100
+                    Original Price
+"""
+def percentage():
+    Original_Price = int(input("Enter a Original Price: "))
+    Selling_Price = int(input("Enter a Selling Price: "))
+    discount_percent = (Original_Price-Selling_Price) / Original_Price * 100
+    print("Discount % = ", discount_percent)
+# percentage()
+
+--> 19. Final price after discount.
+"""
+Final Price = Original Price-(Original Price x Discount %/100)
+"""
+def discount():
+    original_price = float(input("Enter a original price: "))
+    discount_percent = float(input("Enter a discount percent: "))
+    final_price = original_price - (original_price * discount_percent / 100) 
+    print("Final price = ", final_price)
+discount()  
+  
