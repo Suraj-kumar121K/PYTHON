@@ -113,3 +113,23 @@ def convert_minutes():
     except ValueError:
         print("Invalid input! Please enter integer value only.")
 # convert_minutes()
+
+--> 11. Find the sum of even numbers from 1 to n. 
+def even_number():
+    n = int(input("Enter a even number n: "))
+    total = 0
+    for i in range(2, n+1, 2):
+        print(i, end=" ")  
+        total += i
+    print("\nSum of even numbers:", total) 
+# even_number() 
+    
+--> 12. Find the sum of odd numbers from 1 to n. 
+def Odd_number():
+    n = int(input("Enter a odd number n: "))
+    total = 0
+    for i in range(1, n+1, 2):
+        print(i, end=" ")  
+        total += i
+    print("\nSum of even numbers:", total) 
+Odd_number()
