@@ -226,7 +226,7 @@ Average = Sum of all numbers / n
 def Avg_number(n):
     return 
 
-# 20. Harmonic mean of two numbers. 
+--> 22. Harmonic mean of two numbers. 
 """
 Harmonic Mean = 2(axb) / a+b
 """
@@ -237,7 +237,7 @@ def Harmonic_mean():
     print("Harmonic mean = ", Harmonic)
 # Harmonic_mean()
     
---> 22. Find remainder when a number is divided by 7. 
+--> 23. Find remainder when a number is divided by 7. 
 """
 Remainder = Number %(mod) 7
 """
@@ -247,7 +247,7 @@ def remainder():
     print(f"number is divided by 7 = {divided} ")
 # remainder() 
 
---> 23. Count how many digits are prime digits. 
+--> 24. Count how many digits are prime digits. 
 """
 Count = Number of digits in {2,3,5,7}
 """
@@ -258,4 +258,34 @@ def count():
         if d in "2,3,5,7,11,13,23":
             prime_digits += 1 
     print("Number of prime digits = ", prime_digits)
-count() 
+# count() 
+
+--> 25. Multiply number without multiplication operator.
+Formula
+a x b = Add a to itself b times 
+
+def multiply():
+    a = int(input("Enter a number: "))
+    b = int(input("Enter a number: ")) 
+    sign = 1
+    if a < 0:
+        sign *= -1
+    if b < 0:
+        sign *= -1
+    a, b = abs(a), abs(b)
+    result = 0
+    for _ in range(b):
+        result += a
+    result *= sign  
+    print(f"Multiplication of {a} and {b} is: {result}")
+# multiply()
+    
+--> 26. Print multiplication table. 
+def multiplication_table():
+    n = int(input("Enter a number: "))
+    for i in range(1, 11):
+        result = n * i
+        print(result)
+# multiplication_table()
+
+
