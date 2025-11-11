@@ -300,7 +300,7 @@ def palindrome():
 --> 28. Sum of squares of first n natural numbers.
 """
 Formula
-Sum = n ( n + 1 ) ( 2n + 1) / 6
+Sum = n(n + 1)(2n + 1) / 6
 """
 def natural():
     n = int(input("Enter a natural number: "))  
