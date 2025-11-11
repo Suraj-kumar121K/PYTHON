@@ -327,3 +327,17 @@ def Count_odd_digits():
             Even += 1
     print("Number of odd digits: ",Even)
 # Count_odd_digits() 
+
+--> 31. Find first digit of number. 
+def first_digit():
+    n = input("Enter a number: ")
+    digit = int(n[0])
+    print("first digit = ", digit)
+# first_digit()
+
+--> 32. Find last digit of number. 
+def last_digit():
+    n = input("Enter a number: ")
+    digit = int(n[-1])
+    print("last digit = ", digit)
+last_digit()
