@@ -340,4 +340,8 @@ def last_digit():
     n = input("Enter a number: ")
     digit = int(n[-1])
     print("last digit = ", digit)
-last_digit()
+# last_digit()
+
+--> Intermediate Python Math Questions 
+
+
