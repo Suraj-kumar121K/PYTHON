@@ -199,3 +199,63 @@ def discount():
     print("Final price = ", final_price)
 discount()  
   
+--> 20. Profit or loss calculation.
+"""
+Profit or Loss Calculation
+Profit = Selling Price - Cost Price (if SP > CP)
+Loss = Cost Price - Selling Price (if SP < CP)
+"""
+def profit_loss():
+    cost_price = int(input("Enter a cost price: "))
+    selling_price = int(input("Enter a Selling Price: "))
+    if selling_price > cost_price:
+        profit = selling_price - cost_price
+        print("profit = ", profit)
+    elif selling_price < cost_price:
+        loss = cost_price - selling_price
+        print("Loss = ", loss)
+    else:
+        print("No profit, no loss") 
+# profit_loss()           
+    
+--> 21. Average of n numbers using loop. 
+"""
+Average of n Numbers Using Loop
+Average = Sum of all numbers / n
+"""
+def Avg_number(n):
+    return 
+
+# 20. Harmonic mean of two numbers. 
+"""
+Harmonic Mean = 2(axb) / a+b
+"""
+def Harmonic_mean():
+    a = float(input("Enter a number: "))
+    b = float(input("Enter a number: "))
+    Harmonic = 2 * (a * b)/ (a + b)
+    print("Harmonic mean = ", Harmonic)
+# Harmonic_mean()
+    
+--> 22. Find remainder when a number is divided by 7. 
+"""
+Remainder = Number %(mod) 7
+"""
+def remainder():
+    n = int(input("Enter a prime digits: "))
+    divided = n % 7 == 0
+    print(f"number is divided by 7 = {divided} ")
+# remainder() 
+
+--> 23. Count how many digits are prime digits. 
+"""
+Count = Number of digits in {2,3,5,7}
+"""
+def count():
+    n = input("Enter a Number: ")   # string me lo
+    prime_digits = 0
+    for d in n:
+        if d in "2,3,5,7,11,13,23":
+            prime_digits += 1 
+    print("Number of prime digits = ", prime_digits)
+count() 
