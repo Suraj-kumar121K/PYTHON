@@ -261,8 +261,6 @@ def count():
 # count() 
 
 --> 25. Multiply number without multiplication operator.
-Formula
-a x b = Add a to itself b times 
 
 def multiply():
     a = int(input("Enter a number: "))
@@ -288,4 +286,13 @@ def multiplication_table():
         print(result)
 # multiplication_table()
 
-
+--> 27. Reverse digits & check palindrome. 
+def palindrome():
+    n = input("Enter a number: ")
+    reversed = n[::-1]
+    print("Reversed", reversed)
+    if n == reversed:
+        print("Palindrome: True")
+    else:
+        print("Palindrome: False")    
+palindrome()
