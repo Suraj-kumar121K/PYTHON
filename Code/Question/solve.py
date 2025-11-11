@@ -306,4 +306,24 @@ def natural():
     n = int(input("Enter a natural number: "))  
     squares = n * (n + 1) * (2 * n + 1) // 6
     print("Sum of squares:", squares)
-natural()
+# natural()
+
+--> 29. Count even digits in number. 
+def Count_even_digits():
+    n = input("Enter a number: ")
+    Even = 0
+    for digit in n:
+        if int(digit) % 2 == 0:
+            Even += 1
+    print("Number of even digits: ",Even)
+# Count_even_digits()    
+
+--> 30. Count odd digits in number. 
+def Count_odd_digits():
+    n = input("Enter a number: ")
+    Even = 0
+    for digit in n:
+        if int(digit) % 2 != 0:
+            Even += 1
+    print("Number of odd digits: ",Even)
+# Count_odd_digits() 
