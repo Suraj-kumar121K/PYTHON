@@ -296,3 +296,14 @@ def palindrome():
     else:
         print("Palindrome: False")    
 # palindrome()
+
+--> 28. Sum of squares of first n natural numbers.
+"""
+Formula
+Sum = n ( n + 1 ) ( 2n + 1) / 6
+"""
+def natural():
+    n = int(input("Enter a natural number: "))  
+    squares = n * (n + 1) * (2 * n + 1) // 6
+    print("Sum of squares:", squares)
+natural()
