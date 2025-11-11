@@ -132,7 +132,7 @@ def Odd_number():
         print(i, end=" ")  
         total += i
     print("\nSum of even numbers:", total) 
-Odd_number()
+# Odd_number()
 
 --> 13. Check if a number is a perfect square. 
 def square():
@@ -197,7 +197,7 @@ def discount():
     discount_percent = float(input("Enter a discount percent: "))
     final_price = original_price - (original_price * discount_percent / 100) 
     print("Final price = ", final_price)
-discount()  
+# discount()  
   
 --> 20. Profit or loss calculation.
 """
@@ -295,4 +295,4 @@ def palindrome():
         print("Palindrome: True")
     else:
         print("Palindrome: False")    
-palindrome()
+# palindrome()
