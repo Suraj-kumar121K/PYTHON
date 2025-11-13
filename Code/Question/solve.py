@@ -343,5 +343,22 @@ def last_digit():
 # last_digit()
 
 --> Intermediate Python Math Questions 
-
+--> 31. Sum of cubes of first n natural numbers.
+"""
+Formula for sum of cubes
+1 * 3 + 2 * 3 + 3 * 3 +⋯+ n3 = (2n(n+1)/2) ** 2
+"""
+def cubes():
+    n = int(input("Enter a number: "))
+    sum_Cubes = 0
+    for i in range(1, n+1):
+        sum_Cubes += i ** 3
+    print("sum of cubes: ", sum_Cubes)
+# cubes()         
+ 
+--> Write a Python program to display the cubes of the first n natural numbers.
+def first_cubes():
+    n = int(input("Enter a natural number: "))
+    cubes = pow(n, 3)
+    print("cubes = ", cubes)
 
