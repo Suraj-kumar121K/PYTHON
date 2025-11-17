@@ -343,7 +343,7 @@ def last_digit():
 # last_digit()
 
 --> Intermediate Python Math Questions 
---> 31. Sum of cubes of first n natural numbers.
+--> 33. Sum of cubes of first n natural numbers.
 """
 Formula for sum of cubes
 1 * 3 + 2 * 3 + 3 * 3 +⋯+ n3 = (2n(n+1)/2) ** 2
@@ -356,9 +356,274 @@ def cubes():
     print("sum of cubes: ", sum_Cubes)
 # cubes()         
  
---> Write a Python program to display the cubes of the first n natural numbers.
+--> 34. Write a Python program to display the cubes of the first n natural numbers.
 def first_cubes():
     n = int(input("Enter a natural number: "))
     cubes = pow(n, 3)
     print("cubes = ", cubes)
+
+ 
+--> 35. Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.
+'''
+non_start('Hello', 'There') → 'ellohere'
+non_start('java', 'code') → 'avaode'
+non_start('shotl', 'java') → 'hotlava'''
+
+def non_start(a, b):
+    return a[1:] + b[1:]
+# print(non_start('Hello', 'There'))
+# print(non_start('java', 'code'))
+# print(non_start('shotl', 'java'))
+
+--> 36. Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi".
+make_abba('Hi', 'Bye') → 'HiByeByeHi'
+make_abba('Yo', 'Alice') → 'YoAliceAliceYo'
+make_abba('What', 'Up') → 'WhatUpUpWhat '''
+
+def make_abba(a, b):
+    return a + b + b + a
+# print(make_abba('Hi', 'Bye'))
+# print(make_abba('Yo', 'Alice'))
+# print(make_abba('What', 'Up'))
+
+--> 37. Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
+"""
+extra_end('Hello') → 'lololo'
+extra_end('ab') → 'ababab'
+extra_end('Hi') → 'HiHiHi'
+"""
+def extra_end(str):
+    return str[-2:] * 3
+# print(extra_end('Hello'))
+# print(extra_end('ab'))
+# print(extra_end('Hi'))
+
+--> 38. Given a string, return a version without the first and last char, so "Hello" yields "ell". The string length will be at least 2.
+"""
+without_end('Hello') → 'ell'
+without_end('java') → 'av'
+without_end('coding') → 'odin
+"""
+def without_end(str): 
+    return str[1:-1]
+# print(without_end('Hello'))
+# print(without_end('java'))
+# print(without_end('coding'))
+
+--> 39. Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. The string length will be at least 2.
+"""
+left2('Hello') → 'lloHe'
+left2('java') → 'vaja'
+left2('Hi') → 'Hi'
+'''
+def left2(str):
+    return str[2:] + str[:2]
+# print(left2('Hello'))
+# print(left2('java'))
+# print(left2('Hi'))
+
+
+--> 40. The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>Yay</i>".
+"""
+make_tags('i', 'Yay') → '<i>Yay</i>'
+make_tags('i', 'Hello') → '<i>Hello</i>'
+make_tags('cite', 'Yay') → '<cite>Yay</cite>'
+'''
+def make_tags(tag, word):
+    return "<"+ tag + ">" + word + "</" + tag + ">" 
+# print(make_tags('i', 'Yay'))
+# print(make_tags('i', 'Hello'))
+# print(make_tags('cite', 'Yay'))
+
+
+--> 41. Given a string, return the string made of its 
+first two chars, so the String "Hello" yields "He". 
+If the string is shorter than length 2, 
+return whatever there is, so "X" yields "X", 
+and the empty string "" yields the empty string "".
+"""
+first_two('Hello') → 'He'
+first_two('abcdefg') → 'ab'
+first_two('ab') → 'ab' '''
+def first_two(str):
+  return str[0:2]
+# print(first_two('Hello'))
+# print(first_two('abcdefg'))
+# print(first_two('ab'))
+
+--> 42. Given 2 strings, a and b, return a string of the 
+form short+long+short, with the shorter string on 
+the outside and the longer string on the inside. 
+The strings will not be the same length, but they 
+may be empty (length 0).
+"""
+combo_string('Hello', 'hi') → 'hiHellohi'
+combo_string('hi', 'Hello') → 'hiHellohi'
+combo_string('aaa', 'b') → 'baaab'
+"""
+def combo_string(a, b):
+    if len(a) < len(b):
+        short = a
+        long = b
+    else:
+        short = b
+        long = a    
+    return short + long + short
+# print(combo_string('Hello', 'hi'))
+# print(combo_string('Hello', 'hi'))
+# print(combo_string('aaa', 'b'))s
+
+
+--> 43. Given 2 strings, return their concatenation, 
+except omit the first char of each. The strings 
+will be at least length 1.
+"""
+non_start('Hello', 'There') → 'ellohere'
+non_start('java', 'code') → 'avaode'
+non_start('shotl', 'java') → 'hotlava'
+"""
+def non_start(a, b):
+    return a[1:] + b[1:]
+# print(non_start('Hello', 'There'))
+# print(non_start('java', 'code'))
+# print(non_start('shotl', 'java'))
+
+--> 44. What is 257 + 684?
+def Add(a, b):
+    return a + b
+# print(Add(257, 684))
+
+--> 45. Subtract 938 from 1542.
+def subtract(a, b):
+    return a - b
+# print(subtract(1542, 938))    
+
+--> 46. Multiply 123 x 45.
+def multiply(a, b):
+    return a * b
+# print(multiply(123, 45))
+
+# 48. Divide 144 ÷ 12.
+def divide(a, b):
+    return a / b
+# print(divide(144, 12))
+    
+
+# 49. Find the remainder when 987 is divided by 13.
+def remainder1(a, b):
+    return a % b
+# print(remainder1(987, 13))
+
+# 50. Solve 45% of 360.
+def precentage(a, b):
+    return (a * b) / 100
+print(precentage(45, 360))
+
+# 51. Find the square of 27.
+def square(a):
+    return a * a
+# print(square(27))
+
+# 52. Find the cube of 12.
+def cube(a):
+    return a ** 3
+# print(cube(12))
+
+# 53. If a number x + 35 = 100, find x
+# 10. Calculate 7! (factorial of 7).
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+# print(factorial(7))        
+
+# 54. Convert 0.75 to a fraction.
+def fraction(x):
+    s = str(x)
+    decimals = len(s.split('.')[1])
+    numerator = int(x*(10 ** decimals))
+    denominator = 10 ** decimals
+    
+    def gcd(a, b):
+        while b:
+            a, b = b, a % b
+            return a
+    g = gcd(numerator, denominator)
+    return numerator // g, denominator // g  
+# num , den = fraction(0.75)  
+# print(f"{num}/{den}")
+
+# 55. Find the LCM of 12 and 18.
+def LCM(a, b):
+    # hight number
+    num = max(a, b)
+    # infinite loop
+    while True:
+        # Check Condition
+        if num % a == 0 and num % b == 0:
+            return num
+        num += 1 # num = num + 1
+# print(LCM(12, 18))
+
+# 56. Find the HCF of 56 and 98.
+def HCf(a, b):
+    # lowerst number
+    num = min(a, b)
+    hcf_value = 1
+    # condition check 1 to 98
+    for i in range(1, num + 1):
+        # condition check true ya false
+        if a % i == 0 and b % i == 0:
+            hcf_value = i
+    return hcf_value        
+# print(HCf(56, 98))        
+
+# Section 5: Python Programming Logic (25 Questions)
+# 57. Write Python code to print numbers 1 to 10.
+def print_number():
+    for i in range(1, 11):
+        print(i)
+# print_number()
+
+# 58. Python program to check if a number is even or odd.
+def even_odd_check(n):
+    if n % 2 == 0:
+        return f"{n} is Even"
+    else:
+        return f"{n} is Odd"
+# print(even_odd_check(12))        
+# print(even_odd_check(13))        
+            
+# 59. Program to calculate factorial of a number.
+def factorial(n):
+    # factorial me multiply hota hai
+    fact = 1
+    # 1 se n tak
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+# print(factorial(3))
+
+# 60. Program to find sum of elements in a list.
+def sum_of_elements(numbers):
+    num = 0
+    for n in numbers: # range number jenret karta hai list nahi 
+        num += n
+    return num    
+arr = [1, 2, 3, 4, 5]
+# print(sum(arr))
+
+# 61. Find largest number in a list.
+def largest_numbers(numbers):
+    total = numbers[0]
+    for n in numbers:
+        if n > total:
+            total = n
+    return total    
+arr = [1, 2, 3 ,4, 5, 12]    
+print(largest_numbers(arr))
+    
+    
+
 
