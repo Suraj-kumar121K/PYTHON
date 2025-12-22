@@ -30,4 +30,4 @@ This course is licensed under the [MIT License](LICENSE). You are free to use, m
 
 ## 🌟 About Me
 
-Hi there! I'm **Suraj Kumar5**, also known as **Data With Suraj**. I’m an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
+My name is **Suraj**. I am currently studying **Data Analytics** and learning how to analyze data, work with **Excel, SQL, Python, and visualization tools**. I am passionate about turning data into meaningful insights and continuously improving my analytical skills.
