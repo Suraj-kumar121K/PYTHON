@@ -11,7 +11,6 @@
 # 9. Check if a character is vowel or consonant.
 # 10. Check if a string is empty or not.
 
-
 # 🔵 if-elif-else (Multiple Conditions)
 
 # 11. Grade system (A, B, C, Fail).
