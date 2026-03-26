@@ -135,7 +135,6 @@ elif temp >= 20:
 else:
     print("Cold")"""
 
-
 # 16. Check number is single digit, double digit, or more.
 
 
