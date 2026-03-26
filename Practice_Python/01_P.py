@@ -136,7 +136,13 @@ else:
     print("Cold")"""
 
 # 16. Check number is single digit, double digit, or more.
-
+"""user = int(input("Enter a number "))
+if  -9 <= user <= 9:
+    print("single digit number")
+elif -99 <= user <= 99:
+    print("double digit number")
+else:
+    print("More than two digits")"""
 
 # 17. Check leap year.
 
@@ -190,37 +196,3 @@ else:
 # 38. Check leap year using nested condition.
 
 # 39. Check triangle type (equilateral, isosceles, scalene).
-
-
-
-# 40. Electricity bill calculation.
-# 🔴 Loop + Control Flow (Advanced 🔥)
-
-# 41. Print numbers from 1 to 10 using loop.
-
-
-# 42. Print even numbers from 1 to 20.
-
-
-# 43. Print sum of numbers from 1 to n.
-
-
-# 44. Check prime number using loop.
-
-
-# 45. Reverse a number using loop.
-
-
-# 46. Print multiplication table of a number.
-
-
-# 47. Count digits in a number.
-
-
-# 48. Print factorial of a number.
-
-
-# 49. Print all vowels in a string.
-
-
-# 50. Break loop when number = 5.
