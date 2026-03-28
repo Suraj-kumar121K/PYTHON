@@ -1,6 +1,10 @@
-num_1 = int(input("Enter a first Number "))
-num_2 = int(input("Enter a Second Number "))
-if num_1 > num_2:
-    print("Largest Number")
+    
+marks = int(input("Enter a marks "))
+if marks >= 90:
+    print("A+")
+elif marks >= 75:
+    print("B+")
+elif marks >= 60:
+    print("C")
 else:
-    print("Not Largest Number")
+    print("Fail")
