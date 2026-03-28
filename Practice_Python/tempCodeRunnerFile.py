@@ -1,7 +1,6 @@
-user = int(input("Enter a number "))
-if  -9 <= user <= 9:
-    print("single digit number")
-elif -99 <= user <= 99:
-    print("double digit number")
+num_1 = int(input("Enter a first Number "))
+num_2 = int(input("Enter a Second Number "))
+if num_1 > num_2:
+    print("Largest Number")
 else:
-    print("More than two digits")
+    print("Not Largest Number")
