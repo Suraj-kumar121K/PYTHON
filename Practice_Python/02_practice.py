@@ -151,21 +151,26 @@ Do numbers lo:
     Else → "Negative or Zero"
 """
 
-"""Do numbers lo:
+num1 = int(input("Enter a first number "))
+num2 = int(input("Enter a second number "))
 
-Agar difference > 0 → "Positive Difference"
-Else → "Negative or Zero"""
+difference = num1 - num2
+if difference > 0:
+    print("Positive Difference")
+elif difference < 0:
+    print("Negative Difference")
+else:
+    print("Zero")
+
 
 """
 Ek number lo:
-
 Agar num % 5 == 0 AND num % 2 == 0 → "Divisible by 2 & 5"
 Else → "Not divisible by both"
 """
 
 """
 Ek number lo:
-
 Agar num // 2 > 20 → "Half is greater than 20"
 Else → "Half is small"
 """
