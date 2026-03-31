@@ -35,13 +35,13 @@ income = int(input("Enter a income "))
 credit_score = int(input("Enter a credit score "))
 if age >= 21"""
 
-# age = int(input("Enter age ")) 
-# income = int(input("Enter income ")) 
-# credit_score = int(input("Enter credit score "))
-# if age >= 21 and income >= 45000 and credit_score >=700:
-#     print("Eligible for Loan")
-# else:
-#     print("Not Eligible") 
+"""age = int(input("Enter age ")) 
+income = int(input("Enter income ")) 
+credit_score = int(input("Enter credit score "))
+if age >= 21 and income >= 45000 and credit_score >=700:
+    print("Eligible for Loan")
+else:
+    print("Not Eligible") """
 
 # Leap year
 """year = int(input("Enter a year "))
@@ -138,3 +138,36 @@ def result(marks):
         print("Fail")
 # marks = int(input("Enter marks: "))
 # result(marks)
+def Login_password():
+    correct_username = "admin"
+    correct_password = "1234"
+    correct_otp = 9999
+    security_answer = "blue"
+
+    attempts = 0
+
+    username = input("Enter username ")
+    password = input("Enter Password ")
+
+    if username == correct_username and password == correct_password:
+        otp = int(input("Enter Otp: "))
+        
+        if otp == correct_otp:
+            print("Login Success ✅")
+        else:
+            print("Wrong OTP ❌")
+        
+        sec = input("Answer security question (Your favorite color?): ")
+        
+        if sec == security_answer:
+                print("Login Success via Security Question ✅")
+        else:
+            print("Security Answer Wrong ❌")
+                
+            attempts += 1
+                
+            if attempts >= 1:
+                print("Account Locked 🔒")
+
+    else:
+        print("Invalid Username or Password ❌")

@@ -156,6 +156,7 @@ num2 = int(input("Enter a second number "))
 
 difference = num1 - num2
 if difference > 0:
+    
     print("Positive Difference")
 elif difference < 0:
     print("Negative Difference")

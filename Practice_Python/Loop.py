@@ -27,10 +27,13 @@
     print(i)"""
     
 # Print cubes (1–20)
-for i in range(1, 21):
-    print(i ** 3)
+"""for i in range(1, 21):
+    print(i ** 3)"""
     
 # Print even numbers
+for i in range(0, 11):
+    if i % 2 == 0:
+        print(i)
 
 # Print number and its double
 
