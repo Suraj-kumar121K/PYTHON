@@ -7,4 +7,6 @@ print(text[-1])"""
 
 text = input("Enter string: ")
 # print(text.upper())
-print(text.lower())
+# print(text.lower())
+# print(text[::-1])
+
