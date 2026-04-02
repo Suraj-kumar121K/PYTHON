@@ -134,21 +134,81 @@ print(text.lstrip())"""
 print(text.rstrip())"""
 
 # 35. Replace "Python" with "Java" in "I love Python"
+"""text = "I love Python"
+s = text.replace("Python", "Java")
+print(s)"""
+
 # 36. Replace " " with "-" in "Python Programming"
+"""text = "Python Programming"
+s = text.replace(" ", "-")
+print(s)"""
+
 # 37. Replace "a" with "@" in "Data"
+"""text = "Data"
+ss = text.replace("a", "@")
+print(ss)"""
+
 # 38. Replace "Python" with "C++" in "Python is easy"
+"""text = "Python is easy"
+sk = text.replace("Python", "C++")
+print(sk)"""
+
 # 39. Replace " " with "" in "Hello World"
+"""text = "Hello World"
+sz = text.replace(" ", "")
+print(sz)"""
+
 # 40. Strip both leading and trailing "#" from "##Python##"
+"""text = "##Python##"
+print(text.strip("#"))"""
+
 # 41. Count occurrences of "o" in "Python"
+text = "Python"
+print(text.count("o"))
+
 # 42. Count occurrences of "p" in "Python Programming"
+text = "Python Programming"
+count_1 = text.lower().count("p")
+print(count_1)
+
 # 43. Find index of "o" in "Python"
+text = "Python"
+print(text.index("o"))
+
 # 44. Find index of "Pro" in "Python Programming"
+text = "Python Programming"
+pri = text.index("Pro")
+print(pri)
+
 # 45. Check if "Python" starts with "Py"
+text = "Python"
+py = text.startswith("Py")
+print(py)
+
 # 46. Check if "Programming" ends with "ing"
+text = "Programming"
+px = text.endswith("ing")
+print(px)
+
 # 47. Check if "Data" is in "Data Science"
+text = "Data Science"
+D = "Data" in text
+print(D)
+
 # 48. Check if "AI" is in "Machine Learning"
+text = "Machine Learning"
+A = "AI" in text
+print(A)
+
 # 49. Find last occurrence of "n" in "Python"
+text = "Python"
+L = text.rfind("n")
+print(L)
+
 # 50. Count number of spaces in "Python Programming Language"
+text = "Python Programming Language"
+print(text.count(" "))
+
 # 51. Check if "Python" is alphabetic
 # 52. Check if "Python123" is alphabetic
 # 53. Check if "12345" is digit
