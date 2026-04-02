@@ -1,37 +1,138 @@
 # 1. Print the first character of "Python"
+"""text = "Python"
+print(text[0])"""
+
 # 2. Print the last character of "Python"
+"""text = "Python"
+print(text[-1])"""
+
 # 3. Print the second last character of "Python"
+"""text = "Python"
+print(text[-3])"""
+
 # 4. Print the first three characters of "Programming"
+"""text = "Programming"
+print(text[0:3])"""
+
 # 5. Print the last three characters of "Programming"
+"""text = "Programming"
+print(text[-3:])"""
+
 # 6. Print the string "Python" in reverse
+"""text = "Python"
+print(text[::-1])"""
+
 # 7. Print every second character of "Python"
+"""text = "Python"
+print(text[0:6:2])"""
+
 # 8. Print every third character of "PythonProgramming"
+"""text = "PythonProgramming"
+print(text[0:16:3])"""
+
 # 9. Extract "thon" from "Python"
+"""text = "Python"
+print(text[2:6])"""
+
 # 10. Extract "gram" from "Programming"
+"""text = "Programming"
+print(text[3:7])"""
+
 # 11. Slice "DataScience" from index 4 to 8
+"""text = "DataScience"
+print(text[4:8])"""
+
 # 12. Slice "MachineLearning" from index 0 to 7
+"""text = "MachineLearning"
+print(text[0:7])"""
+
 # 13. Slice "ArtificialIntelligence" last 5 characters
+"""text = "ArtificialIntelligence"
+print(text[-5:])"""
+
 # 14. Slice "DeepLearning" from 2nd to 8th character
+"""text = "DeepLearning"
+print(text[2:8])"""
+
 # 15. Reverse "Artificial" using slicing
+"""text = "Artificial"
+print(text[::-1])"""
+
 # 16. Get every 2nd character of "Analytics"
+"""text = "Analytics"
+print(text[::2])"""
+
 # 17. Slice "Programming" from 3rd last to end
+"""text = "Programming"
+print(text[-3:])"""
+
 # 18. Slice "PythonProgramming" first 6 characters
+"""text = "PythonProgramming"
+print(text[0:6])"""
+
 # 19. Slice "PythonProgramming" last 6 characters
+"""text = "PythonProgramming"
+print(text[-6:])"""
+
 # 20. Slice "PythonProgramming" characters at even indices
+"""text = "PythonProgramming"
+print(text[::2])"""
+
 # 21. Convert "python" to uppercase
+"""text = "python"
+print(text.upper())"""
+
 # 22. Convert "PYTHON" to lowercase
+"""text = "PYTHON"
+print(text.lower())"""
+
 # 23. Capitalize "python programming"
+"""text = "python programming"
+print(text.capitalize())"""
+
 # 24. Make "python programming" title case
+"""text = "python programming"
+print(text.title())"""
+
 # 25. Swap case of "PyTHon ProGRAM"
+"""text = "PyTHon ProGRAM"
+print(text.swapcase())"""
+
 # 26. Check if "PYTHON" is uppercase
+"""text = "PYTHON"
+print(text.isupper())"""
+
 # 27. Check if "python" is lowercase
+"""text = "python"
+print(text.islower())"""
+
 # 28. Convert "python programming" to title case
+"""text = "python programming"
+print(text.title())"""
+
 # 29. Convert "python programming" to capitalize the first letter
+"""text = "python programming"
+print(text.capitalize())"""
 # 30. Check if "Python" is title case
+"""text = "Python"
+print(text.istitle())"""
+
 # 31. Strip whitespaces from "  Python  "
+"""text = "  Python  "
+print(text.strip())"""
+
 # 32. Strip "*" from "***Python***"
+"""text = "***Python***"
+print(text.strip("*"))"""
+
 # 33. Remove leading spaces from "  Python"
+"""text = "  Python"
+print(text.lstrip())"""
+
 # 34. Remove trailing spaces from "Python  "
+"""text = "Python  "
+print(text.rstrip())"""
+
 # 35. Replace "Python" with "Java" in "I love Python"
 # 36. Replace " " with "-" in "Python Programming"
 # 37. Replace "a" with "@" in "Data"
