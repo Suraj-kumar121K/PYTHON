@@ -20,9 +20,21 @@ list[1] = 10
 print(list)"""
 
 # 6. Print the third element of ['a','b','c','d'].
+"""text = ['a','b','c','d']
+print(text[2])"""
+ 
 # 7. Create a list of 4 elements and print the length.
+"""text = [1, 2, 3, 4]
+print(len(text))"""
+
 # 8. Print the type of a list.
+"""text = [1, 2, 3 ,4, 5]
+print(type(text))"""
+
 # 9. Access the middle element of a 5-element list.
+text = [5, 10, 15, 20, 25, 30]
+print(text[len(text)//2])
+
 # 10. Swap the first and last element of a list.
 # 11. Slice the first 3 elements from a list.
 # 12. Slice the last 2 elements from a list.
