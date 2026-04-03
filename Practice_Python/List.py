@@ -1,8 +1,24 @@
 # 1. Create a list of 5 integers.
+"""list = [1, 2, 3, 4, 5]
+print(list)"""
+
 # 2. Create a list of 3 strings.
+"""frutes = ["banana", "mango", "apple"]
+print(frutes)"""
+
 # 3. Access the first element of a list.
+"""list = [1, 2, 3, 4, 5]
+print(list[0])
+"""
 # 4. Access the last element of a list.
+"""p = [12, 13, 14, 15, 16, 17]
+print(p[-1])"""
+
 # 5. Change the second element of a list to 10.
+"""list = [1, 2, 3, 4, 5]
+list[1] = 10
+print(list)"""
+
 # 6. Print the third element of ['a','b','c','d'].
 # 7. Create a list of 4 elements and print the length.
 # 8. Print the type of a list.
