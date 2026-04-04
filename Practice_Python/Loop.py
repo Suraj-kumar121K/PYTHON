@@ -178,8 +178,37 @@ for num in range(1, n + 1):
         print(num, end=" ")"""
 
 # 26. Print all palindrome numbers from 1 to n.
+"""num = int(input("Enter a number "))
+temp = num
+reverse = 0
+while temp > 0:
+    digits = temp % 10
+    reverse = reverse * 10 + digits
+    temp = temp // 10
+if num == reverse:
+    print("palindrome numbers")
+else:
+    print("Not palindrome numbers")"""
+        
 # 27. Print the multiplication table of any number.
+"""num = int(input("Enter a Number "))
+i = 1
+while i <= 10:
+    print(f"{num} X {i} = ", num * i)
+    i += 1
+"""
 # 28. Reverse a number.
+"""num = int(input("Enter a Number: "))
+temp = num
+reverse = 0
+
+while temp > 0:
+    digit = temp % 10
+    reverse = reverse * 10 + digit
+    temp = temp // 10
+
+print("Reverse number is:", reverse)"""
+
 # 29. Print digits of a number one by one.
 # 30. Find the sum of digits of a number.
 
