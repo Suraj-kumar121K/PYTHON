@@ -165,6 +165,18 @@ while num <= n:               # Loop har number ke liye 2 se n tak
 print(f"Prime numbers from 1 to {n}:")"""
 
 # 25. Print all Armstrong numbers from 1 to n.
+"""n = int(input("Enter a Armstrong: "))
+print(f"Armstrong numbers from 1 to {n} / 1 se {n} tak ke Armstrong numbers:")
+for num in range(1, n + 1):
+    sum_digits = 0
+    k = len(str(num))
+    
+    for digit_char in str(num):
+        digit = int(digit_char)
+        sum_digits += digit ** k
+    if sum_digits == num:
+        print(num, end=" ")"""
+
 # 26. Print all palindrome numbers from 1 to n.
 # 27. Print the multiplication table of any number.
 # 28. Reverse a number.
