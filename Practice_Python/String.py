@@ -259,3 +259,93 @@ print(text.count(" "))
 # 98. Slice "PythonProgramming" first 7 characters
 # 99. Slice "PythonProgramming" last 7 characters
 # 100. Reverse "PythonProgramming" using slicing
+
+# 1. Given a string, return a greeting: "Hello <name>!"
+#    Function: hello_name(name)
+
+# 2. Given two strings a and b, return 'abba' form: "Hi", "Bye" → "HiByeByeHi"
+#    Function: make_abba(a, b)
+
+# 3. Given tag and word, return HTML: "i", "Yay" → "<i>Yay</i>"
+#    Function: make_tags(tag, word)
+
+# 4. Given out string length 4 and word, put word in middle: "<<", "Hello" → "<<Hello>>"
+#    Function: make_out_word(out, word)
+
+# 5. Given string, return 3 copies of last 2 chars: "Hello" → "lololo"
+#    Function: extra_end(s)
+
+# 6. Return first 2 chars of a string, if short return all: "Hello" → "He"
+#    Function: first_two(s)
+
+# 7. Given string of even length, return first half: "WooHoo" → "Woo"
+#    Function: first_half(s)
+
+# 8. Given string, return last char + first char: "Python" → "nP"
+#    Function: front_back(s)
+
+# 9. Remove first and last char of string: "Hello" → "ell"
+#    Function: without_end(s)
+
+# 10. Repeat string n times: "Hi", 3 → "HiHiHi"
+#     Function: string_times(s, n)
+
+# 11. Return True if string starts with "hi": "hi there" → True
+#     Function: start_hi(s)
+
+# 12. Return True if first 2 and last 2 chars are same: "edited" → True
+#     Function: front_again(s)
+
+# 13. Count how many times last 2 chars appear in string: "hixxhi" → 1
+#     Function: last2(s)
+
+# 14. Return string without first 2 chars, except "ki": "kitten" → "kitten"
+#     Function: without2(s)
+
+# 15. Return new string with every other char: "Hello" → "Hlo"
+#     Function: string_bits(s)
+
+# 16. Return string with first and last char swapped: "code" → "eodc"
+#     Function: front_back(s)
+
+# 17. Return True if "cat" or "dog" appears: "my dog" → True
+#     Function: cat_dog(s)
+
+# 18. Return string without "x" at start or end: "xHix" → "Hi"
+#     Function: string_x(s)
+
+# 19. Return True if b appears in string between two a: "aba" → True
+#     Function: bob_btw(s)
+
+# 20. Return new string by doubling each char: "Hi" → "HHii"
+#     Function: double_char(s)
+
+# 21. Count number of "hi" in string: "hihi" → 2
+#     Function: count_hi(s)
+
+# 22. Count number of "co_e" pattern: "codecoze" → 2
+#     Function: count_code(s)
+
+# 23. Return True if string contains same number of "cat" and "dog": "catdogcat" → False
+#     Function: cat_dog_equal(s)
+
+# 24. Return True if string has xyx anywhere: "xxyx" → True
+#     Function: xyx_check(s)
+
+# 25. Return string with "not ... bad" replaced by "good": "This is not so bad" → "This is good"
+#     Function: not_bad(s)
+
+# 26. Return string made of chars at positions multiple of 3: "abcdefghi" → "adg"
+#     Function: every_third(s)
+
+# 27. Return string where all "x" replaced by "y": "xoxo" → "yoyo"
+#     Function: replace_x(s)
+
+# 28. Return string made of first 2 chars + last 2 chars: "spring" → "spng"
+#     Function: first_last_2(s)
+
+# 29. Return True if string length >= 2 and first 2 chars equal last 2 chars: "edited" → True
+#     Function: same_first_last2(s)
+
+# 30. Return longest prefix which is also suffix (without overlap): "ababcab" → "ab"
+#     Function: longest_prefix_suffix(s)
