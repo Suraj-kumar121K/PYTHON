@@ -39,25 +39,45 @@ print(text[len(text)//2])"""
 
 
 # 11. Slice the first 3 elements from a list.
+
 # 12. Slice the last 2 elements from a list.
+
 # 13. Slice elements from index 2 to 4.
+
 # 14. Slice every second element of a list.
+
 # 15. Reverse a list using slicing.
+
 # 16. Slice a list from index 1 to end.
+
 # 17. Slice a list from start to index 3.
+
 # 18. Slice only odd-indexed elements.
+
 # 19. Slice only even-indexed elements.
+
 # 20. Slice the last 3 elements using negative indices.
+
 # 21. Add an element to the end of a list using append().
+
 # 22. Add multiple elements to a list using extend().
+
 # 23. Insert an element at index 2 using insert().
+
 # 24. Create a list and add [10,20,30] to it.
+
 # 25. Add a string to a list using append().
+
 # 26. Insert a number at the beginning of a list.
+
 # 27. Append a list as an element to another list.
+
 # 28. Extend a list with another list of strings.
+
 # 29. Use + operator to join two lists.
+
 # 30. Add an empty list to a list.
+
 # 31. Remove an element using remove().
 # 32. Remove the last element using pop().
 # 33. Remove an element at index 1 using pop().
