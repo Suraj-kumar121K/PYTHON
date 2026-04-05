@@ -257,57 +257,61 @@ s = text.isalpha()
 print(s)"""
 
 # 61. Split "Python Programming" by space
-text = "Python Programming"
+"""text = "Python Programming"
 s = text.split()
-print(s)
+print(s)"""
 
 # 62. Split "a,b,c,d" by comma
-text = "a,b,c,d"
+"""text = "a,b,c,d"
 s = text.split(",")
-print(s)
+print(s)"""
 
 # 63. Join ["Python","Java","C++"] with ","
-text = ["Python","Java","C++"]
+"""text = ["Python","Java","C++"]
 te = ",".join(text)
-print(te)
+print(te)"""
 
 # 64. Join ["I","love","Python"] with "-"
-text = ["I","love","Python"]
+"""text = ["I","love","Python"]
 s = "-".join(text)
-print(s)
+print(s)"""
 
 # 65. Split "Python-Programming-Data" by "-"
-text = "Python-Programming-Data"
-print(text.split("-"))
+"""text = "Python-Programming-Data"
+print(text.split("-"))"""
 
 # 66. Join ["2023","04","02"] with "/"
-text = ["2023","04","02"]
+"""text = ["2023","04","02"]
 s = "/".join(text)
-print(s)
+print(s)"""
 
 # 67. Split "AI|ML|DL" by "|"
-text = "AI|ML|DL"
+"""text = "AI|ML|DL"
 s = text.split("|")
 print(s)
-
+"""
 # 68. Join ["Hello","World"] with space
-text = ["Hello","World"]
+"""text = ["Hello","World"]
 s = " ".join(text)
-print(s)
+print(s)"""
 
 # 69. Split "PythonPythonPython" by "Python"
-text = "PythonPythonPython"
+"""text = "PythonPythonPython"
 s = text.split("Python")
-print(s)
+print(s)"""
 
 # 70. Join ["Python"]*5 with ","
-text = ["Python"]*5
+"""text = ["Python"]*5
 s = ",".join(text)
-print(s)
+print(s)"""
 
 # 71. Format "Hello {}" with "World"
+s = "Hello {}"
+d = s.format("World")
+print(d)
 
 # 72. Format "{} + {} = {}" with 2,3,5
+
 
 # 73. Format float 3.14159 to 2 decimals using "%.2f"
 
