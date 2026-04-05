@@ -311,7 +311,9 @@ d = s.format("World")
 print(d)
 
 # 72. Format "{} + {} = {}" with 2,3,5
-
+d = "{} + {} = {}"
+df = d.format(2,3,5)
+print(df)
 
 # 73. Format float 3.14159 to 2 decimals using "%.2f"
 
