@@ -220,52 +220,149 @@ s = text.isalnum()
 print(s)"""
 
 # 53. Check if "12345" is digit
+"""text = '12345'
+print(text.isdigit())"""
+
 # 54. Check if "12a45" is digit
+"""text = '12a45'
+print(text.isdigit())"""
+
 # 55. Check if "Python123" is alphanumeric
+"""text = "Python123"
+print(text.isalnum())"""
+
 # 56. Check if "Python 123" is alphanumeric
+"""text = "Python 123"
+s = text.isalnum()
+print(s)"""
+
 # 57. Check if "   " is space
+"""text = " "
+s = text.isspace()
+print(s)"""
+
 # 58. Check if "Python" is alphanumeric
+"""text = "Python"
+s = text.isalnum()
+print(s)"""
+
 # 59. Check if "123 " is space
+"""text = "123 "
+s = text.isspace()
+print(s)"""
+
 # 60. Check if "DataScience" is alphabetic
+"""text = "DataScience"
+s = text.isalpha()
+print(s)"""
+
 # 61. Split "Python Programming" by space
+text = "Python Programming"
+s = text.split()
+print(s)
+
 # 62. Split "a,b,c,d" by comma
+text = "a,b,c,d"
+s = text.split(",")
+print(s)
+
 # 63. Join ["Python","Java","C++"] with ","
+text = ["Python","Java","C++"]
+te = ",".join(text)
+print(te)
+
 # 64. Join ["I","love","Python"] with "-"
+text = ["I","love","Python"]
+s = "-".join(text)
+print(s)
+
 # 65. Split "Python-Programming-Data" by "-"
+text = "Python-Programming-Data"
+print(text.split("-"))
+
 # 66. Join ["2023","04","02"] with "/"
+text = ["2023","04","02"]
+s = "/".join(text)
+print(s)
+
 # 67. Split "AI|ML|DL" by "|"
+text = "AI|ML|DL"
+s = text.split("|")
+print(s)
+
 # 68. Join ["Hello","World"] with space
+text = ["Hello","World"]
+s = " ".join(text)
+print(s)
+
 # 69. Split "PythonPythonPython" by "Python"
+text = "PythonPythonPython"
+s = text.split("Python")
+print(s)
+
 # 70. Join ["Python"]*5 with ","
+text = ["Python"]*5
+s = ",".join(text)
+print(s)
+
 # 71. Format "Hello {}" with "World"
+
 # 72. Format "{} + {} = {}" with 2,3,5
+
 # 73. Format float 3.14159 to 2 decimals using "%.2f"
+
 # 74. Use f-string to display "Python is fun" using variable
+
 # 75. Format "Name: {}, Age: {}" with "Alice" and 20
+
 # 76. Center "Python" in width 20 with "*" padding
+
 # 77. Left justify "Python" in width 15
+
 # 78. Right justify "Python" in width 15
+
 # 79. Format number 50 to width 5 with zeros → "00050"
+
 # 80. Format "Hello" in 10-character width with right alignment
+
 # 81. Check if "Python" ends with "on"
+
 # 82. Check if "Python" starts with "Py"
+
 # 83. Check if " " is space
+
 # 84. Check if "Python3" is alphanumeric
+
 # 85. Check if "123" is numeric
+
 # 86. Check if "PYTHON" is uppercase
+
 # 87. Check if "python" is lowercase
+
 # 88. Check if "Python Programming" is title case
+
 # 89. Check if "123 " is digit
+
 # 90. Check if "abc123" is alphanumeric
+
 # 91. Count number of vowels in "Python Programming" (no loop → use count())
+
 # 92. Remove all "o" in "Python" using replace()
+
 # 93. Convert "PYTHON" to "python" using method
+
 # 94. Convert "python" to "PYTHON"
+
 # 95. Strip "!" from "!!!Hello!!!"
+
 # 96. Replace " " with "-" in "Hello World Python"
+
 # 97. Check if "123abc" is alphanumeric
+
 # 98. Slice "PythonProgramming" first 7 characters
+
 # 99. Slice "PythonProgramming" last 7 characters
+
 # 100. Reverse "PythonProgramming" using slicing
 
 # 1. Given a string, return a greeting: "Hello <name>!"
