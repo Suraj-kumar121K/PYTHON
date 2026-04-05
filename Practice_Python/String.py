@@ -163,54 +163,62 @@ print(sz)"""
 print(text.strip("#"))"""
 
 # 41. Count occurrences of "o" in "Python"
-text = "Python"
-print(text.count("o"))
+"""text = "Python"
+print(text.count("o"))"""
 
 # 42. Count occurrences of "p" in "Python Programming"
-text = "Python Programming"
+"""text = "Python Programming"
 count_1 = text.lower().count("p")
-print(count_1)
+print(count_1)"""
 
 # 43. Find index of "o" in "Python"
-text = "Python"
-print(text.index("o"))
+"""text = "Python"
+print(text.index("o"))"""
 
 # 44. Find index of "Pro" in "Python Programming"
-text = "Python Programming"
+"""text = "Python Programming"
 pri = text.index("Pro")
-print(pri)
+print(pri)"""
 
 # 45. Check if "Python" starts with "Py"
-text = "Python"
+"""text = "Python"
 py = text.startswith("Py")
-print(py)
+print(py)"""
 
 # 46. Check if "Programming" ends with "ing"
-text = "Programming"
+"""text = "Programming"
 px = text.endswith("ing")
-print(px)
+print(px)"""
 
 # 47. Check if "Data" is in "Data Science"
-text = "Data Science"
+"""text = "Data Science"
 D = "Data" in text
-print(D)
+print(D)"""
 
 # 48. Check if "AI" is in "Machine Learning"
 text = "Machine Learning"
-A = "AI" in text
-print(A)
+"""A = "AI" in text
+print(A)"""
 
 # 49. Find last occurrence of "n" in "Python"
-text = "Python"
+"""text = "Python"
 L = text.rfind("n")
-print(L)
+print(L)"""
 
 # 50. Count number of spaces in "Python Programming Language"
-text = "Python Programming Language"
-print(text.count(" "))
+"""text = "Python Programming Language"
+print(text.count(" "))"""
 
 # 51. Check if "Python" is alphabetic
+"""text = "Python"
+s = text.isalpha()
+print(s)"""
+
 # 52. Check if "Python123" is alphabetic
+"""text = "Python123"
+s = text.isalnum()
+print(s)"""
+
 # 53. Check if "12345" is digit
 # 54. Check if "12a45" is digit
 # 55. Check if "Python123" is alphanumeric

@@ -1,2 +1,3 @@
-text = ['a','b','c','d']
-print(text[3])
+test = "Python"
+s = text.isalpha()
+print(s)
