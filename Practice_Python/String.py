@@ -306,14 +306,14 @@ s = ",".join(text)
 print(s)"""
 
 # 71. Format "Hello {}" with "World"
-s = "Hello {}"
+"""s = "Hello {}"
 d = s.format("World")
-print(d)
+print(d)"""
 
 # 72. Format "{} + {} = {}" with 2,3,5
-d = "{} + {} = {}"
+"""d = "{} + {} = {}"
 df = d.format(2,3,5)
-print(df)
+print(df)"""
 
 # 73. Format float 3.14159 to 2 decimals using "%.2f"
 

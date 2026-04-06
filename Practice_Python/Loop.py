@@ -215,13 +215,21 @@ print("Reverse number is:", reverse)"""
 #  Logical / Mixed Questions
 # 31. Create a number guessing game (1–50).
 # 32. Ask for a password repeatedly until the correct one is entered.
+
 # 33. Take a number as input and check if it is prime.
+
 # 34. Take a number as input and check if it is an Armstrong number.
+
 # 35. Take a number as input and find its factorial.
+
 # 36. Find the sum of all even digits of a number.
+
 # 37. Find the sum of all odd digits of a number.
+
 # 38. Reverse a number using a while loop.
+
 # 39. Print numbers from 1 to n divisible by 4.
+
 # 40. Keep taking numbers as input from the user and calculate their sum until the user enters 0.
 
 # FOR LOOP
@@ -251,8 +259,17 @@ print("Reverse number is:", reverse)"""
     print(f"{i} Square Number {i**3}")"""
     
 # 7. Print numbers divisible by 3 between 1 and 30.
+"""for var in range(3,30,3):
+    print(var)"""
+        
 # 8. Print the first 10 multiples of 5.
+
+
 # 9. Print all characters of a string one by one.
+text = "Suraj"
+for i in text:
+    print(i)
+    
 # 10. Print all vowels in a given string.
 # 11. Print all consonants in a given string.
 # 12. Count the number of characters in a string.
