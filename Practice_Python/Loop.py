@@ -263,19 +263,38 @@ print("Reverse number is:", reverse)"""
     print(var)"""
         
 # 8. Print the first 10 multiples of 5.
-
+"""for i in range(1, 11):
+    print(i*5)"""
 
 # 9. Print all characters of a string one by one.
-text = "Suraj"
+"""text = "Suraj"
 for i in text:
-    print(i)
+    print(i)"""
     
 # 10. Print all vowels in a given string.
+"""str = input("Enter a vowels: ")
+list = 'aeiouAEIOU'
+for var in str:
+    if var in list:
+        print(var)"""
+
 # 11. Print all consonants in a given string.
+"""str = input("Enter a vowels: ")
+list = 'aeiouAEIOU'
+for var in str:
+    if var.isalpha() and var not in list:
+        print(var)"""
+        
 # 12. Count the number of characters in a string.
+
+
 # 13. Print all numbers from 1 to 50 that are divisible by both 2 and 5.
+
 # 14. Print factorial of a number n.
+
+
 # 15. Print the sum of first n natural numbers.
+
 
 # 🔹 Intermediate Level (16–30)
 # 16. Print the multiplication table of a given number.
@@ -309,7 +328,6 @@ for i in text:
 #     123
 #     1234
 # 40. Print the multiplication table for numbers 1 to 10.
-
 # 🔹 Part 1: break Practice (1–20)
 # 1. Print numbers from 1 to 10 but stop at 5.
 # 2. Print numbers 1 to 20 but stop when a number divisible by 7 is found.
@@ -378,3 +396,53 @@ for i in text:
 # 59. Print first 10 characters of a string, skip spaces (continue), stop at punctuation (break).
 # 60. Loop numbers 1–100, skip numbers divisible by 2 (continue), pass numbers divisible by 5 (pass), print others.
 
+#=================================
+# practice logic
+#=================================
+# read a even number
+"""text = "1321432"
+for var in text:
+    if int(var) % 2 != 0:
+        print(var)"""
+        
+# Reverse number
+"""text = 543156
+rev = 0
+while text > 0:
+    digit = text % 10
+    rev = rev*10+digit
+    text = text // 10
+print(rev)"""
+
+# acces largest number
+"""text = 6451237195610
+largest = 0
+while text > 0:
+    last_digit = text % 10
+    if last_digit > largest:
+        largest = last_digit
+    text = text // 10
+print(largest)"""
+
+# 2nd largest
+"""text = 95084
+first_largest = -1
+Second_largest = -1
+while text > 0:
+    digit = text % 10
+    if digit > first_largest:
+        Second_largest = first_largest 
+        first_largest = digit
+    elif digit > Second_largest and digit != first_largest:
+        Second_largest = digit
+    text = text // 10
+print(Second_largest)"""
+
+
+text = 3213234324
+while text > 0:
+    digit = text % 10
+    if digit % 2 == 0:
+        print(digit)
+    text = text // 10
+    

@@ -138,6 +138,7 @@ def result(marks):
         print("Fail")
 # marks = int(input("Enter marks: "))
 # result(marks)
+
 def Login_password():
     correct_username = "admin"
     correct_password = "1234"

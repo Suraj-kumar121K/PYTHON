@@ -113,9 +113,9 @@ a.extend(b)
 print(a)"""
 
 # 25. Add a string to a list using append().
-text = [1, 2, 3, 4, 5]
+"""text = [1, 2, 3, 4, 5]
 text.append("Suraj")
-print(text)
+print(text)"""
 
 # 26. Insert a number at the beginning of a list.
 
@@ -197,3 +197,7 @@ print(text)
 # 98. Create a list from tuple using list().
 # 99. Convert list of numbers to list of strings using map(str, ...).
 # 100. Access middle element of an odd-length list.
+
+
+
+        
