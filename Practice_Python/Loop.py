@@ -400,9 +400,9 @@ for var in str:
 # practice logic
 #=================================
 # read a even number
-"""text = "1321432"
+"""text = "56347342695723975"
 for var in text:
-    if int(var) % 2 != 0:
+    if int(var) % 2 == 0:
         print(var)"""
         
 # Reverse number
@@ -438,11 +438,62 @@ while text > 0:
     text = text // 10
 print(Second_largest)"""
 
+# 3rd largest
+"""xt = 2359675
+fir_lar = -1
+sec_lar = -1
+thid_lar = -1
+while xt > 0:
+    last_digit = xt % 10
+    if last_digit > fir_lar:
+        thid_lar = sec_lar
+        sec_lar = fir_lar
+        fir_lar = last_digit
+    elif last_digit > sec_lar:
+        thid_lar = sec_lar
+        sec_lar = last_digit
+    elif last_digit > thid_lar:
+        thid_lar = last_digit
+    xt = xt // 10
+print(thid_lar)"""
 
-text = 3213234324
+# 4Th largest
+"""text = 23456789
+f = -1
+s = -1
+t = -1
+sp = -1
 while text > 0:
-    digit = text % 10
-    if digit % 2 == 0:
-        print(digit)
+    l_d = text % 10
+    if l_d > f:
+        sp = t
+        t = s
+        s = f
+        f = l_d
+    elif l_d > s:
+        sp = t
+        t = s
+        s = l_d
+    elif l_d > t:
+        sp = t
+        t = l_d
+    elif l_d > sp:
+        sp = l_d
     text = text // 10
+print(sp)"""
+
+# 1. Check if a number is prime or not | Example: 7 → Prime, 8 → Not Prime
+"""num = 19
+count = 0
+
+for i in range(1, num+1):
+    if num % i == 0:
+        count += 1
+
+if count == 2:
+    print("Prime")
+else:
+    print("Not Prime")
+"""
+
     
