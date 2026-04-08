@@ -496,4 +496,8 @@ else:
     print("Not Prime")
 """
 
+# Print all prime numbers from 1 to 50
+
+i = 1
+
     

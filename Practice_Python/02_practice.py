@@ -151,7 +151,7 @@ Do numbers lo:
     Else → "Negative or Zero"
 """
 
-num1 = int(input("Enter a first number "))
+"""num1 = int(input("Enter a first number "))
 num2 = int(input("Enter a second number "))
 
 difference = num1 - num2
@@ -161,7 +161,7 @@ if difference > 0:
 elif difference < 0:
     print("Negative Difference")
 else:
-    print("Zero")
+    print("Zero")"""
 
 
 """
