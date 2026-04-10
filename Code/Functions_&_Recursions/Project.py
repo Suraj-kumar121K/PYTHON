@@ -15,7 +15,7 @@ else:
     print("Good night, ", name)
     
 print("Namaste! Welcome to Your ChatBot")
-print("You can ask me basic question, Type 'byt' to exit from the bot")
+print("You can ask me basic question, Type 'bye' to exit from the bot")
 
 # Chatbot Memory Creation [ dictionary of responses]
 resposnes = {
