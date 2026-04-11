@@ -1,3 +1,4 @@
 {
-    "json.schemas": []
+    "json.schemas": [],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }

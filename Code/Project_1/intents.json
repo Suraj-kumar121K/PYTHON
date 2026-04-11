@@ -1,0 +1,244 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey","Hola","Hello",
+                "Good day","Namaste",
+                "yo",
+                "hii",
+                "heyy",
+                "hello bro",
+                "hi jarvis",
+                "good morning",
+                "good evening"
+            ],
+            "responses": [
+                "Hello","Good to see you again",
+                "Hi there, how can I help?",
+                "Hey! What's up?","Hello boss 😎"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye","See you later",
+                "Goodbye","Get lost",
+                "Till next time","bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh",
+                "funny joke",
+                "another joke",
+                "tell something funny"
+            ],
+            "responses": [
+                "Why don't programmers like nature? Too many bugs 😂",
+                "Why did the computer go to the doctor? Because it caught a virus 🤒",
+                "I would tell you a UDP joke… but you might not get it 😜",
+                "Debugging: Being the detective in a crime movie where you are also the murderer 😎"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you","what are you"
+            ],
+            "responses": [
+                "I am JARVIS, a Deep-Learning based Virtual Assistant"
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time","what is the date","date","time","tell me the date",
+                "day","what day is today","current time","today date","what's the time now"
+            ],
+            "responses": [
+                "Fetching current date and time..."
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up","Wazzup","How are you","sup","How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha","lol","rofl","lmao","thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you","who designed you","who programmed you"
+            ],
+            "responses": [
+                "I was made by Suraj 😎"
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                "you are dumb","shut up","idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing","what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome","Great","I know","ok","yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome","you are the best","you are great","you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you","good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no","nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good","I'm good","i am fine"," i'm fine","good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you","when were you made","what is your age"
+            ],
+            "responses": [
+                "I was made in 2024 😎"
+            ]
+        },
+        {
+            "tag": "ai",
+            "patterns": [
+                "what is ai","define artificial intelligence","what is machine learning","what is deep learning"
+            ],
+            "responses": [
+                "AI is the ability of machines to think and learn like humans.",
+                "Machine learning is a subset of AI that allows systems to learn from data.",
+                "Deep learning is an advanced form of machine learning using neural networks."
+            ]
+        },
+        {
+            "tag": "programming",
+            "patterns": [
+                "what is python","what is coding","how to learn programming","best programming language","what is sql"
+            ],
+            "responses": [
+                "Python is an easy and powerful programming language.",
+                "Coding is the process of writing instructions for computers.",
+                "Start with Python, practice daily and build projects.",
+                "SQL is used to manage and query databases."
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "what is the weather","weather today","is it hot","is it cold","temperature"
+            ],
+            "responses": [
+                "I can't check live weather yet, but you can integrate an API for that!",
+                "Weather feature coming soon 😎"
+            ]
+        },
+        {
+            "tag": "music",
+            "patterns": [
+                "play music",
+                "play song",
+                "start music",
+                "i want to listen music"
+            ],
+            "responses": [
+                "Playing your favorite music 🎵",
+                "Music mode on 😎"
+            ]
+        }
+    ]
+}

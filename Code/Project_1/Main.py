@@ -111,13 +111,13 @@ def schedule():
           speak(week[day])
           
 def openApp(command):
-    if "Visual Studio Code" in command:
+    if "visual studio code" in command:
         speak("opening Visual Studio Code")
         os.startfile(r"C:\Users\Anish Kumar\AppData\Local\Programs\Microsoft VS Code\Code.exe")
-    elif "GitHub Desktop" in command:
-        speak("opening GitHub Desktop")
+    elif "github desktop" in command:
+        speak("opening GitHub Disktop")
         os.startfile(r"C:\Users\Anish Kumar\AppData\Local\GitHubDesktop\GitHubDesktop.exe")
-    elif "Google Chrome" in command:
+    elif "google chrome" in command:
         speak("opening Google Chrome")
         os.startfile(r"C:\Program Files\Google\Chrome\Application\chrome.exe")
 
@@ -125,11 +125,9 @@ def closeApp(command):
     if "visual studio code" in command:
         speak("Closing Visual Studio Code")
         os.system("taskkill /f /im Code.exe")
-
     elif "github desktop" in command:
         speak("Closing GitHub Desktop")
         os.system("taskkill /f /im GitHubDesktop.exe")
-
     elif "google chrome" in command:
         speak("Closing Google Chrome")
         os.system("taskkill /f /im chrome.exe") 
@@ -138,7 +136,7 @@ if __name__ == "__main__":
     wishMe()
     while True:
         # query = command().lower()
-        query = input("Enter a command-> ")
+        query = input("Enter a command-> ").lower()
         if('facebook' in query) or ('youtube' in query) or ('instagram' in query) or ('whatsapp' in query):
             social_media(query)
         elif ("company time table" in query) or ("schedule" in query):
@@ -152,9 +150,9 @@ if __name__ == "__main__":
         elif ("volume mute" in query) or ("mute the sound" in query):
             pyautogui.press("Volumemute")
             speak("Volume muted")
-        elif ("open Visual Studio Code" in query) or ("open GitHub Desktop" in query) or ("open Google Chrome" in query):
+        elif ("open visual studio Code" in query) or ("open github desktop" in query) or ("open google chrome" in query):
             openApp(query)
-        elif ("close Visual Studio Code" in query) or ("close GitHub Desktop" in query) or ("close Google Chrome" in query):
+        elif ("close visual studio Code" in query) or ("close github desktop" in query) or ("close google chrome" in query):
             closeApp(query)   
         elif "exit" in query:
             sys.exit() 
