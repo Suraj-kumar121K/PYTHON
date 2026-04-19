@@ -32,8 +32,7 @@ def getResponseOfBot(userQuestion):
     userQuestion = userQuestion.lower()
     for var in resposnes:
         if var in  userQuestion:
-            return resposnes[var]
-        
+            return resposnes[var]       
     return "I am not able to tell that yet. I am still in learning mode"
     
 # Take user input
