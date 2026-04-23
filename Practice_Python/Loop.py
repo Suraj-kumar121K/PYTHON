@@ -496,8 +496,37 @@ else:
     print("Not Prime")
 """
 
-# Print all prime numbers from 1 to 50
+# Add Two Numbers
+"""num = 1.5
+num2 = 2.5
+res = num + num2
+# print(res)"""
 
-i = 1
+# Add Two Numbers With User Input
+"""num_1 = int(input("Enter a Number "))
+num_2 = int(input("Enter a Number "))
+res = num_1 + num_2
+# print(res)"""
+        
+# Create a Variable `name` and assign your name to it.
+name  = "Suraj Kumar" 
+# print(name)
 
-    
+# Take two numbers and print their multiplication
+"""a = int(input("a = "))
+b = int(input("b = "))
+sum = a * b
+# print(sum)
+"""
+# Swap two variables
+"""a = 5
+b = 4
+temp = a
+a =  b
+b = temp
+print(a,  b)"""
+
+# Area of circle
+"""r = float(input("r = "))
+st = 3.14 * r * r
+print(st)"""
