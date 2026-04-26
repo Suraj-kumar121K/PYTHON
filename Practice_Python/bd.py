@@ -161,24 +161,111 @@ def max(a, b):
 
 # 12. Create a function to find the minimum of two numbers
 def mix(a, b):
-    return b if a < b else a
-x = int(input("x = "))
-y = int(input("y = "))
-print(mix(x,y))
+    return a if a < b else b
+# x = int(input("x = "))
+# y = int(input("y = "))
+# print(mix(x,y))
 
 # 13. Create a function to calculate the average of three numbers
+def Avg_Cal(a, b, c):
+    return (a + b + c) / 3
+# x = int(input("x = "))
+# y = int(input("y = "))
+# z = int(input("z = "))
+# print(Avg_Cal(x, y, z))
+
 # 14. Create a function to calculate the area of a circle
+def area_circle(r):
+    return 3.14 * r * r
+# x = int(input("area of circle = "))
+# print(area_circle(x))
+
 # 15. Create a function to convert Celsius to Fahrenheit
+
 # 16. Create a function to find the sum of a list
+def sum_list(list):
+    total = 0
+    for i in list:
+        total += i
+    return total
+# num = [10, 12, 13, 15]
+# print(sum_list(num))
+        
 # 17. Create a function to return the length of a string
+def str_len(s):
+    return len(s)
+# name = "suraj"
+# print(str_len(name))
+
 # 18. Create a function to convert a string to uppercase
+def str_upp(s):
+    return s.upper()
+# name = input("Enter a name = ")
+# print(str_upp(name))
+
 # 19. Create a function to convert a string to lowercase
+def str_upp(s):
+    return s.lower()
+# name = input("Enter a name = ")
+# print(str_upp(name))
+
 # 20. Create a function to find the factorial of a number
+# factorial formula(n!) = n x (n - 1) x (n - 2) x .... x 1 
+def fact_num(n): 
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+# num = int(input("enter a number:- "))
+# print(fact_num(num))
+
 # 21. Create a function to print the multiplication table of a number
+def mul_tab(n):
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n*i}")
+# num = int(input("Enter a number = "))
+# mul_tab(num)
+    
 # 22. Create a function to count even numbers in a list
+def count_even(list):
+    count = 0
+    for i in list:
+        if i % 2 == 0:
+            count += 1
+    return count
+# num = [1, 2, 3, 4, 5, 6]
+# print(count_even(num))
+
 # 23. Create a function to count odd numbers in a list
+def count_odd(list):
+    count = 0
+    for i in list:
+        if i % 2 != 0:
+            count += 1
+    return count
+# num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print(count_odd(num))
+
 # 24. Create a function to find the maximum value in a list
+def max(list):
+    maximum = 0
+    for i in list:
+        if i > maximum:
+            maximum = i
+    return maximum
+# num = [12, 34, 52, 43, 68, 56, 48, 22] 
+# print(max(num))  
+        
 # 25. Create a function to find the minimum value in a list
+def find_min(list):
+    minimum = list[0]   # first element se start
+    for i in list:
+        if i < minimum:
+            minimum = i
+    return minimum
+# num = [12, 34, 52, 43, 68, 56, 48, 22]
+# print(find_min(num))
+
 # 26. Create a function to check if a string is a palindrome
 # 27. Create a function to reverse a string
 # 28. Create a function to count vowels in a string
