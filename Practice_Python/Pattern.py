@@ -13,8 +13,79 @@ for i in range(1, n + 1):
     print()"""
 
 # Reverse Triangle
-n = int(input("Enter a Number: "))
+"""n = int(input("Enter a Number: "))
 for i in range(n, 0, -1):
     for j in range(1, i + 1):
         print("*", end=" ")
+    print()"""
+
+"""n = int(input("enter n "))
+for i in range(n):
+    for j in range(n):
+        print("*", end="")
+    print()"""
+    
+"""n = int(input("enter n "))
+for i in range(1, n + 1):
+    for j in range(n - i):
+        print(" ", end=" ")
+    for k in range(i):
+        print("*", end=" ")
+    print()"""
+    
+# Q:1   
+"""n = int(input("Enter n "))
+for i in range(1, n + 1):
+    for j in range(n):
+        print(i, end=" ")
+    print()"""
+
+# Q:2   
+"""n = int(input("Enter n "))
+for i in range(1, n + 1):
+    for j in range(i):
+        if i % 2 == 1:
+            print("1", end=" ")
+        else:
+            print("0", end=" ")
+    print()"""
+    
+"""n = int(input("Enter n "))
+for i in range(1, n + 1):
+    for j in range(i):
+        print(i, end=" ")
+    print()"""
+    
+# Q:3
+"""n = int(input("Enter n:- "))
+for i in range(1, n + 1):
+    for j in range(1, n+1):
+        print(j, end=" ")
+    print()"""
+    
+# Q:4
+"""n = int(input("Enter n:- "))
+for i in range(1, n+1):
+    for j in range(1, n + 1):
+        if j % 2 == 1:
+            print("1", end=" ")
+        else:
+            print("0", end=" ")
+    print()"""
+
+# Printing Stars in Hollow Diamond Shape
+"""n = int(input("Enter n: "))
+for i in range(1, n+1):
+    for j in range(1, n*2):
+        if j == n - i + 1 or j == n + i - 1:
+            print("*", end="")
+        else:
+            print(" ", end="")
     print()
+for i in range(n-1, 0, -1):
+    for j in range(1, n*2):
+        if j == n - i + 1 or j == n + i - 1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()"""
