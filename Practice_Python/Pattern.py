@@ -82,10 +82,18 @@ for i in range(1, n+1):
         else:
             print(" ", end="")
     print()
-for i in range(n-1, 0, -1):
+for i in range(n, 0, -1):
     for j in range(1, n*2):
         if j == n - i + 1 or j == n + i - 1:
             print("*", end="")
         else:
             print(" ", end="")
     print()"""
+    
+for i in range(7):
+    for j in range(7):
+        if i + j == 3 or j - i == 3 or i - j == 3 or i + j == 9:
+            print("*", end=" ")
+        else:
+            print(end=" ")
+    print()
