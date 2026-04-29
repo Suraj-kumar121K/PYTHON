@@ -267,14 +267,89 @@ def find_min(list):
 # print(find_min(num))
 
 # 26. Create a function to check if a string is a palindrome
+def is_palindrome(s):
+    if s == s[::-1]:
+        return True
+    else:
+        return False
+# n = input("Enter a string:- ")
+# print(is_palindrome(n))
+
+    
 # 27. Create a function to reverse a string
+def rev_str(s):
+    return s[::-1]
+s = "SURAJ"
+# print(rev_str(s))
+
 # 28. Create a function to count vowels in a string
+def count_vowels(v):
+    count = 0
+    for i in v:
+        if i in "aeiouAEIOU":
+            count += 1
+    return count
+# word = input("Enter s string: ")
+# print("Vowels =", count_vowels(word))
+
 # 29. Create a function to count digits in a number
+def count_digits(n):
+    count = 0
+    if n == 0:
+        return 1
+    while n > 0:
+        n = n // 10
+        count += 1
+    return count
+
+# num = int(input("Enter a number: "))
+# print(count_digits(num))
+     
 # 30. Create a function to check if a number is a multiple of 5
+def mul_num(n):
+    if n % 5 == 0:
+        return True
+    else:
+        return False
+# num = int(input("Enter a number: "))
+# print(mul_num(num))
+
 # 31. Create a function to generate Fibonacci series
+""" Fn = Fn-1 + Fn-2
+current term = previous term + usse previous term"""
+def Fib_pre(n):
+    a = 0
+    b = 1
+    for i in range(n):
+        print(a, end=" ")
+        c = a + b
+        a = b
+        b = c
+# num = int(input("Enter a number: "))
+# Fib_pre(num)
+
 # 32. Create a function to check if a number is prime
+def prime_num(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+# num = int(input("Enter a number: "))
+# print(prime_num(num))
+
 # 33. Create a function to find all prime numbers in a given range
+
 # 34. Create a function to reverse a list (without slicing)
+def rev_list(lst):
+    new_list = []
+    for i in range(len(lst) -1, -1, -1):
+        new_list.append(lst[i])
+    return new_list
+# num = [10, 20, 30, 40]
+# print(rev_list(num))
+
 # 35. Create a function to remove duplicates from a list
 # 36. Create a function to sort a list (without using sort())
 # 37. Create a function to merge two lists
