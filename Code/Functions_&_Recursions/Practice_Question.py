@@ -249,8 +249,21 @@ nums = [1, 2, 3, 4, 5]
 # print(list(map(lambda x: x * 2, nums)))
 
 # 7. map() - square numbers
+num = [1, 2, 3, 4]
+# print(list(map(lambda x:x**2, num)))
+
 # 8. filter() - even numbers
-# 9. filter() - > 10 numbers
+numa = [1, 2, 3, 4, 50]
+# print(list(filter(lambda x: x > 10, numa)))
+
 # 10. names starting with A
+names = ["Anish", "Rahul", "Aman"]
+# print(list(filter(lambda x: x.startswith("A"), names)))
+
 # 11. Sort ascending
+nums = [5, 2, 9, 1]
+print(sorted(nums, key=lambda x: x, reverse=True))
+
 # 14. Sort dict by age
+data = [{"name": "A", "age": 25}, {"name": "B", "age": 20}]
+# print(sorted(data, key=lambda x: x["age"]))
