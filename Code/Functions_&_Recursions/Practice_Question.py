@@ -210,6 +210,7 @@ def user(name, country="India"):
 # Write a function using **kwargs to print keys only.
 # Write a function using **kwargs to print values only.
 # Write a function using **kwargs to check if "name" key exists.
+
 # Return Statement Questions
 # Write a function that returns sum of two numbers.
 # Write a function that returns square of a number.
@@ -221,3 +222,35 @@ def user(name, country="India"):
 # Write a function that returns even numbers from a list.
 # Write a function that returns multiple values.
 # Write a function that returns whether a number is prime or not.
+
+# Lambda Function Question
+# 1. Add Two numbers
+add = lambda a, b: a + b
+# print(add(10, 20))
+
+# 2. Square of number
+Square = lambda x: x*x
+# print(Square(5))
+
+# 3. Cube of number
+Cube = lambda x: x**3
+# print(Cube(3)) 
+
+# 4. Even or Odd
+check = lambda x : "Even" if x % 2 == 0 else "Odd"
+# print(check(7))
+
+# 5. Max of two numbers
+max = lambda a, b: a if a > b else b
+# print(max(10, 20))
+
+# 6. map() - double numbers
+nums = [1, 2, 3, 4, 5]
+# print(list(map(lambda x: x * 2, nums)))
+
+# 7. map() - square numbers
+# 8. filter() - even numbers
+# 9. filter() - > 10 numbers
+# 10. names starting with A
+# 11. Sort ascending
+# 14. Sort dict by age
