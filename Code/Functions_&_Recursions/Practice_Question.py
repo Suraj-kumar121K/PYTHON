@@ -69,12 +69,155 @@ def student(name, age):
 # 2. Write a function to calculate simple interest using arguments.
 def cal(p, r, t):
     return (p * r * t)/100
-pr
+# print(cal(1000, 5, 2))
+
 # 3. Write a function to calculate area of rectangle using arguments.
+def rectangle_area(length, breadth):
+    area = length * breadth
+    return f"Area = {area}"
+# print(rectangle_area(10, 5))
+    
 # 4. Write a function to swap two numbers using arguments.
+def swap(a, b):
+    a, b = b, a
+    return a , b
+# print(swap(10, 20))
+
 # 5. Write a function to find average of three numbers.
+def avg(a, b, c):
+    return (a + b + c) / 3
+# print(avg(10, 20, 30))
+
 # 6. Write a function that accepts a student name and marks and prints result.
+def result(name, marks):
+    if marks >= 40:
+        return {
+            "Student Name = ": name,
+            "Result": "Pass"            
+        }
+    else:
+        return {
+            "Student Name = ": name,
+            "Result": "Fail" 
+        }
+# print(result("Suraj", 50))
+
 # 7. Write a function to calculate electricity bill using arguments.
-# 8. Write a function that accepts list of numbers and prints largest number.
-# 9. Write a function that accepts a string and prints its length.
-# 10. Write a function to calculate factorial using arguments.
+def electricity_bill(units, rate):
+    Bill = units * rate
+    return f"Electricity Bill =  {Bill}"
+# print(electricity_bill(5, 10))
+
+# 8. Write a function to calculate factorial using arguments.
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    return f"factorial = {fact}"
+# print(factorial(5))
+
+# Positional & Keyword Arguments
+# 1. Write a function using positional arguments for employee details.
+def Employee(emp_id, name, salary):
+    return emp_id, name, salary
+# print(Employee(emp_id=101, name="Suraj", salary=50000))
+
+# 2. Write a function using keyword arguments for student details.
+def Student(name, age, marks):
+    return f"Name = {name}, Age = {age}, Marks = {marks}"
+# print(Student(name="Suraj", age=23, marks=379))
+
+# 3. Write a function to calculate salary using positional arguments.
+def Salary(basic, hra, da):
+    total = basic + hra + da
+    return total
+# print("Total Salary:", Salary(20000, 5000, 3000))
+
+# 4. Write a function using keyword arguments where order does not matter.
+def info1(name, city, age):
+    return name, city, age
+# print(info1(name="suraj", age= 21, city="Delhi"))
+
+# 5. Write a program mixing positional and keyword arguments.
+def mix(name, age, city):
+    return f"{name} is {age} year of old from {city}"
+# print(mix("suraj", age=23, city="Delhi"))
+
+# 6. Create a function with three parameters and call it in different orders using keyword arguments.
+def details(a, b, c):
+    return a + b + c
+# print(details(c=30, a=10, b=20))
+
+# 7. Write a function to display product details using keyword arguments.
+def product(name, price, brand):
+    return {
+        "Name": name,
+        "Price": price,
+        "Brand": brand
+    }
+# print(product(name="Laptop", price=50000, brand="HP"))
+
+# 8. Write a function using positional arguments to calculate area of triangle.
+def triangle_area(base, height):
+    area = 0.5 * base * height
+    return area
+# print(triangle_area(10, 5))
+
+# 9. Write a function that takes city and state as keyword arguments.
+def location(city, states):
+    return city + "," + states
+# print(location(city="Lakhisarai", states="Bihar"))
+
+# 10. Write a function to print full address using positional and keyword arguments.
+def address(name, city, state, pincode):
+    return f"{name} live in {city},{state},{pincode}"
+# print(address(name="Suraj", city="Lakhisarai", state="Bihar", pincode=811106))
+
+# Default Arguments Questions 
+# 1. Write a function with default country "India".
+def user(name, country="India"):
+    return name + " from " + country
+# print(user("Suraj"))
+# print(user("Suraj", "USA"))
+
+# 2. Write a function with default salary value.
+
+# 3. Write a function with default marks = 40.
+
+# 4. Write a function to greet user with default "Guest" name.
+
+# 5. Write a function to calculate interest with default rate = 5.
+
+# 6. Write a function with multiple default arguments.
+
+# 7. Write a function to print employee details with default department "IT".
+
+# 8. Write a function where default quantity = 1.
+
+# 9. Write a function with default message "Welcome".
+
+# 10. Write a function to calculate bill with default tax percentage.
+
+
+# **kwargs Questions
+# Write a function using **kwargs to print student details.
+# Write a function using **kwargs to print employee information.
+# Write a function using **kwargs to display product details.
+# Write a function using **kwargs to print user profile.
+# Write a function using **kwargs to print dictionary items.
+# Write a function using **kwargs to count total keyword arguments.
+# Write a function using **kwargs to display car details.
+# Write a function using **kwargs to print keys only.
+# Write a function using **kwargs to print values only.
+# Write a function using **kwargs to check if "name" key exists.
+# Return Statement Questions
+# Write a function that returns sum of two numbers.
+# Write a function that returns square of a number.
+# Write a function that returns cube of a number.
+# Write a function that returns largest of three numbers.
+# Write a function that returns factorial of a number.
+# Write a function that returns reverse of a string.
+# Write a function that returns count of vowels in a string.
+# Write a function that returns even numbers from a list.
+# Write a function that returns multiple values.
+# Write a function that returns whether a number is prime or not.
