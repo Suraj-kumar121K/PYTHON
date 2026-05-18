@@ -71,3 +71,5 @@ if (sump == n):
     print(“The number is a Perfect number”)
 else:
     print(“The number is not a Perfect number”)"""
+
+# print
