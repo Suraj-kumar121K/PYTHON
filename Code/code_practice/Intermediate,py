@@ -1,0 +1,85 @@
+# 1. Write a function to find factorial using recursion.
+from functools import lru_cache
+@lru_cache(maxsize=None)
+def factorial(n: int)-> int:
+    if n < 0:
+        raise ValueError("Number must be no-negative")
+    if n in (0, 1):
+        return 1  
+    return n * factorial(n - 1)
+# print(factorial(5))
+
+# 2. Create a function to check palindrome string.
+def palindrome(text):
+    reverse_text = text[::-1]
+    if text == reverse_text:
+        return " palindrome"
+    else:
+        return "Not palindrome"
+# print(palindrome("121"))
+
+## palindrome without slicing
+def check_palindrome(value):
+    value = str(value)
+    n = len(value)
+    is_palindrome = True
+    #sirf half check karte hain
+    for i in range(n // 2):
+        if value[i] != value[n - i - 1]:
+            is_palindrome = False
+            break
+    if is_palindrome:
+        return "Palindrome"
+    else:
+        return "Not Palindrome"
+# print(check_palindrome("madam"))
+# print(check_palindrome(121))
+# print(check_palindrome("hello"))
+# print(check_palindrome(12321))
+   
+# 3. Write a function to calculate simple interest.
+
+# 4. Create a function to return maximum of 3 numbers.
+# 5. Write a function to count vowels in a string.
+# 6. Create a function to check prime numbers.
+# 7. Write a function to calculate Fibonacci series.
+# 8. Create a function to remove duplicates from a list.
+# 9. Write a function to find GCD of two numbers.
+# 10. Create a function to convert Celsius to Fahrenheit.
+
+# Strings
+# 1. Reverse a string without slicing.
+def reverse_string(text):
+    reversed_text = " "
+    for ch in text:
+        reversed_text = ch + reversed_text
+    return reversed_text
+# print(reverse_string("suraj"))
+
+# 2. Count uppercase and lowercase letters.
+def count_case(text):
+    upper = sum(1 for ch in text if ch.isupper())
+    lower = sum(1 for ch in text if ch.islower())
+    return upper, lower
+# print(count_case("SuRaJ"))
+    
+# 3. Find duplicate characters in a string.
+def duplicate_char(text):
+    freq = {}
+    duplicate = []
+    for ch in text:
+        freq[ch] = freq.get(ch, 0) + 1
+    
+    for ch in freq:
+        if freq[ch] > 1:
+            duplicate.append(ch)
+    return duplicate
+print(duplicate_char("surajkumar"))
+
+# 4. Check if two strings are anagrams.
+# 5. Replace spaces with hyphens.
+# 6. Find first non-repeating character.
+# 7. Count frequency of each character.
+# 8. Remove all vowels from a string.
+# 9 Find longest word in a sentence.
+# 10. Capitalize first letter of every word.
