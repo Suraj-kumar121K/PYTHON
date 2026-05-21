@@ -1,20 +1,43 @@
 # Level 1 – Very Basic (1–15)
+# 1. Create an empty dictionary in two different ways and print both.
+d1 = {}
+d2 = dict()
+# print(d1)
+# print(d2)
 
-# Create an empty dictionary in two different ways and print both.
-# Create a dictionary with 3 key-value pairs (name, age, city) and print it.
-# What symbols are used to define a dictionary? {} or () or [] ?
-# Create a dictionary using the dict() constructor from a list of tuples: [("a", 1), ("b", 2)]
-# Create a dictionary with integer keys and string values.
-# Print the type of this: d = {} vs d = dict()
-# Can dictionary keys be duplicated? Create one with duplicate keys and explain what happens.
-# Can dictionary values be duplicated? Show an example.
-# Use len() to find how many key-value pairs are in {"x":10, "y":20, "z":30, "x":99}
-# Access the value of key "name" in person = {"name": "Suraj", "age": 25}
-# Try to access a non-existing key like "country" — what error do you get?
-# Add a new key "profession": "Student" to an existing dictionary and print it.
-# Change the value of "age" to 26 in the person dictionary.
-# Remove the key "city" from {"name":"A", "city":"Delhi", "age":30} using del
-# Remove and return a value using pop() — what happens if the key doesn't exist?
+# 2. Create a dictionary with 3 key-value pairs (name, age, city) and print it.
+person = {
+    "name": "Suraj",
+    "age": 25,
+    "city": "Delhi"
+}
+# print(person)
+
+# 3. What symbols are used to define a dictionary? {} or () or [] ?
+
+# 4. Create a dictionary using the dict() constructor from a list of tuples: [("a", 1), ("b", 2)]
+d = dict([("a", 1), ("b", 2)])
+# print(d)
+
+# 5. Create a dictionary with integer keys and string values.
+person = {1: "one", 2: "two", 3: "three"}
+# print(person)
+
+# 6. Print the type of this: d = {} vs d = dict()
+d = {}
+d1 = ()
+# print(type(d))
+# print(type(d1))
+
+# 7. Can dictionary keys be duplicated? Create one with duplicate keys and explain what happens.
+# 8. Can dictionary values be duplicated? Show an example.
+# 9. Use len() to find how many key-value pairs are in {"x":10, "y":20, "z":30, "x":99}
+# 10. Access the value of key "name" in person = {"name": "Suraj", "age": 25}
+# 11. Try to access a non-existing key like "country" — what error do you get?
+# 12. Add a new key "profession": "Student" to an existing dictionary and print it.
+# 13. Change the value of "age" to 26 in the person dictionary.
+# 14. Remove the key "city" from {"name":"A", "city":"Delhi", "age":30} using del
+# 15 Remove and return a value using pop() — what happens if the key doesn't exist?
 
 # Level 2 – Access, Update & Methods (16–28)
 
