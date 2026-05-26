@@ -57,14 +57,14 @@ for num in range(len(List)-1,-1,-1):
 print("Reverse List = ", reverse_List)"""
 
 # 9. Count in list.
-List = [10, 20, 10, 30, 10, 40, 40, 20]
+"""List = [10, 20, 10, 30, 10, 40, 40, 20]
 freq = []
 for i in List:
     if i in freq:
         freq[i] += 1
     else:
         freq[i] = 1
-print(freq)
+print(freq)"""
 
 # 10. Create a new list with squares of elements.
 
