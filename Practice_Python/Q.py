@@ -50,9 +50,21 @@ for i in List:
 print(count);"""
     
 # 8. Print list in reverse order.
-List = [10, 43, 67, 85, 45, 64, 81, 44, 65, 98, 1, 24]
+"""List = [10, 43, 67, 85, 45, 64, 81, 44, 65, 98, 1, 24]
+reverse_List =  []
+for num in range(len(List)-1,-1,-1):
+    reverse_List.append(List[num])
+print("Reverse List = ", reverse_List)"""
 
-# 9. Count how many times 10 appears in list.
+# 9. Count in list.
+List = [10, 20, 10, 30, 10, 40, 40, 20]
+freq = []
+for i in List:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+print(freq)
 
 # 10. Create a new list with squares of elements.
 
