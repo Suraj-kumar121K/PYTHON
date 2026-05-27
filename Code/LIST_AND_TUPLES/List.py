@@ -40,22 +40,63 @@ result = num_1 + num_2
 # print(result)
 
 # Find the largest element in a list
-num_1 = [1, 2, 3, 4, 5, 6, 7, 32]
+"""num_1 = [1, 2, 3, 4, 5, 6, 7, 32]
 lar = num_1[0]
 
 for i in num_1:
     if i > lar:
         lar = i
-print(lar)
+print(lar)"""
         
-# Find the second largest number in a list
-# Sort a list in ascending order
-# Extract even numbers into a separate list
-# Count odd numbers in a list
-# Count frequency of an element in a list
-# Find the sum of all elements in a list
-# Remove negative numbers from a list
-# Rotate a list (left/right rotation)
-# Flatten a nested list
-# Find common elements between two lists
-# Divide a list into chunks
+# Append:- add last element
+"""list = [10, 20, 30, 40]
+list.append(100)
+print(list)"""
+
+# insert():- Adds element at specific position.
+"""list = [10, 20, 30, 40]
+list.insert(2, 100)
+print(list)"""
+
+# Extend():- Adds multiple elements from another list.
+"""list = [10, 20, 30, 40]
+list.extend([100, 101])
+print(list)"""
+
+#remove():- Removes first matching value.
+# pop():- Removes element by index (default last).
+# clear():- Removes all elements.
+# index():-Returns position of element.
+# count():- Counts occurrences.
+# sort():- Sorts list ascending.
+# reverse():- Reverses list.
+# copy():- Creates shallow copy.
+
+# Remove value 20 from a list.
+"""list = [10, 20, 30, 40, 50]
+list.remove(20)
+print(list)"""
+
+# Remove last element and print it.
+"""list = [10, 20, 30, 40, 50]
+add = list.pop()
+print(add)"""
+
+# Empty the list.
+"""list = [10, 20, 30, 40, 50]
+list.clear()
+print(list)"""
+
+# Find position of value 30.
+"""list = [10, 20, 30, 40, 50]
+add = list.index(20)
+print(add)"""
+
+# 1. Remove duplicates
+"""list = [10, 20, 30, 40, 50, 20, 30]
+res = []
+for i in list:
+    if i not in res:
+        res.append(i)
+print(res)"""
+
