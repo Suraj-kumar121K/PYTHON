@@ -100,3 +100,8 @@ for i in list:
         res.append(i)
 print(res)"""
 
+
+"""List = [10, 20, "suraj", 30.0]
+print(List)
+print("Length = ",len(List))"""
+
