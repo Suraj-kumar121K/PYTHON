@@ -212,16 +212,68 @@ print(t)"""
 # 18. Count frequency of elements in list
 
 # 19. Find sum of all elements in list
+"""List = [10, 20, 40, 70]
+total = 0
+for i in List:
+    total += i
+print(total)"""
 
 # 20. Multiply all elements in list
+"""List = [1, 2, 3, 4]
+t = 1
+for i in List:
+    t *= i
+print(t)"""
 
 # 21. Swap first and last element in list
+"""List = [1, 2, 3, 4] # [4, 2, 3, 1]
+List = [1, 2, 3, 4] # [1, 3, 2, 4]
+temp = List[1]
+List[1] = List[-2]
+List[-2] = temp
+print(List)"""
+
+# Swap number
+"""List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] # Swap = [1, 4, 3, 2, 7,8, 5, 6, 9, 10]
+temp = List[1] 
+List[1] = List[-7]
+List[-7] = temp
+temp = List[4] 
+List[4] = List[-4]
+List[-4] = temp
+temp = List[5] 
+List[5] = List[-3]
+List[-3] = temp
+print(List)"""
+
 
 # 22. Find second largest number in list
+List = [1, 2, 3, 4, 5, 6, 7]
+# second largest 
+"""largest = List[0]
+Second = List[0]
+for i in List:
+    if i > largest:
+        Second = largest
+        largest = i 
+print(Second)"""
+    
+# Largest 
+"""largest = List[0]
+for i in List:
+    if i > largest:
+        largest = i
+print(largest)"""
 
 # 23. Find second smallest number in list
+"""smaller = List[0]
+for i in List:
+    if i < smaller:
+        smailler = i
+print(smaller)"""
 
 # 24. Merge two lists
+
 
 # 25. Merge two tuples
 
@@ -253,4 +305,7 @@ print(t)"""
 # 1. Find most frequent element in list
 # 1. Check if two lists are identical
 # 1. Create tuple with single elements
-# 1. Demonstrate why tuple is immutable (try modifying it and handle error)
+# 1. Demonstrate why tuple is immutable 
+
+
+
