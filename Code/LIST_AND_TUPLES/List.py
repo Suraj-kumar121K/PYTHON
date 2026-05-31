@@ -291,21 +291,21 @@ print(smaller)"""
 
 # 32. Slice a list (first 5 elements)
 
-# 1. Remove all even numbers from list
-# 1. Remove all odd numbers from list
-# 1. Check if list is sorted
-# 1. Find all duplicates in list
-# 1. Flatten a nested list
-# 1. Find largest element without max()
-# 1. Find smallest element without min()
-# 1. Rotate list by k positions
-# 1. Split list into even and odd lists
-# 1. Convert tuple of tuples into dictionary
-# 1. Count occurrences using dictionary
-# 1. Find most frequent element in list
-# 1. Check if two lists are identical
-# 1. Create tuple with single elements
-# 1. Demonstrate why tuple is immutable 
+# 33. Remove all even numbers from list
+# 34. Remove all odd numbers from list
+# 35. Check if list is sorted
+# 36. Find all duplicates in list
+# 37. Flatten a nested list
+# 38. Find largest element without max()
+# 39. Find smallest element without min()
+# 40. Rotate list by k positions
+# 41. Split list into even and odd lists
+# 42. Convert tuple of tuples into dictionary
+# 43. Count occurrences using dictionary
+# 44. Find most frequent element in list
+# 45. Check if two lists are identical
+# 46. Create tuple with single elements
+# 47. Demonstrate why tuple is immutable 
 
 
 
