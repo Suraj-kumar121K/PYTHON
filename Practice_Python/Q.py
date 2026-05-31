@@ -67,16 +67,46 @@ for i in List:
 print(freq)"""
 
 # 10. Create a new list with squares of elements.
-
+"""a = [1, 2, 3, 4, 5]
+rest = []
+for i in a:
+    rest.append(i**2)
+print(rest)"""
+    
 # 11. Remove duplicates using loop.
+"""a = [1, 2, 2, 3, 4, 4, 5]
+rest = []
+for i in a:
+    if i not in rest:
+        rest.append(i)
+print(rest)"""
 
 # 12. Print positive numbers only.
+"""a = [1, -1, 2, 3, -4, 5, -8]
+rest = []
+for i in a:
+    if i > 0:
+        rest.append(i)
+print(rest)"""
 
 # 13. Print negative numbers only.
-
-# 14. Find second largest number.
+"""a = [1, -1, 2, 3, -4, 5, -8]
+rest = []
+for i in a:
+    if i < 0:
+        rest.append(i)
+print(rest)"""
 
 # 15. Merge two lists using loop.
+a = [1, 2, 3, 4]
+b = [5, 6, 7, 8]
+rest = []
+for i in range(len(a)):
+    rest.append(a[i])
+
+for i in range(len(b)):
+    rest.append(b[i])
+print(rest)
 
 # 16. Copy list using loop.
 
@@ -132,8 +162,6 @@ print(freq)"""
 
 # 20. Create a new tuple with squares of values.
 
-
-
 # ================================
 # SET + LOOP QUESTIONS (20)
 # ================================
@@ -177,8 +205,6 @@ print(freq)"""
 
 # 20. Create new set with squares of values.
 
-
-
 # ================================
 # STRING + LOOP QUESTIONS (20)
 # ================================
@@ -221,8 +247,6 @@ print(freq)"""
 # 19. Create new string with alternate characters.
 
 # 20. Check whether string contains special characters.
-
-
 
 # ================================
 # DICTIONARY + LOOP QUESTIONS (20)
@@ -311,8 +335,6 @@ print(freq)"""
 
 # 20. Flatten nested list using loops.
 
-
-
 # =========================================
 # TUPLE + LOOP QUESTIONS (20)
 # =========================================
@@ -355,8 +377,6 @@ print(freq)"""
 # 19. Count positive and negative numbers.
 
 # 20. Find repeated words in tuple.
-
-
 
 # =========================================
 # SET + LOOP QUESTIONS (20)
@@ -401,8 +421,6 @@ print(freq)"""
 
 # 20. Find prime numbers stored in set.
 
-
-
 # =========================================
 # STRING + LOOP QUESTIONS (20)
 # =========================================
@@ -445,8 +463,6 @@ print(freq)"""
 # 19. Create pyramid pattern using string.
 
 # 20. Sort characters alphabetically.
-
-
 
 # =========================================
 # DICTIONARY + LOOP QUESTIONS (20)
