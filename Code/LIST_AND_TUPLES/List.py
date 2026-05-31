@@ -273,39 +273,158 @@ for i in List:
 print(smaller)"""
 
 # 24. Merge two lists
-
+"""a = [1, 2, 3, 4, 9]
+b = [3, 6, 4, 5, 8]
+res = a + b
+print(res)"""
 
 # 25. Merge two tuples
+"""a = (1, 2, 3, 4, 9)
+b = (3, 6, 4, 5, 8)
+res = a + b
+print(res)"""
 
 # 26. Find common elements in two lists
+"""a = [1, 3, 4, 6]
+b = [1, 6, 3, 7]
+rest = []
+for i in a:
+    if i in b:
+        rest.append(i)
+print(rest)"""
 
 # 27. Find unique elements in list
+"""a = [1, 2, 2, 3, 4, 4, 5]
+result = []
+for i in a:
+    if i not in result:
+        result.append(i)
+print(result) """      
+
 
 # 28. Convert list of tuples into list of lists
+"""a = [(1, 2), (3, 4), (5, 6)]
+rest = []
+for i in a:
+    rest.append(list(i))
+print(rest)"""    
 
 # 29. Convert list of lists into list
+"""lst = [[1, 2], [3, 4], [5, 6]]
+result = []
+for i in lst:
+    for j in i:
+        result.append(j)
+print(result)"""
 
 # 30. Find index of element in list
+"""lst = [10, 20, 30, 40]
+print(lst.index(30))"""
 
-# 31. Find index of element in tuple
-
+# 31. tup = (10, 20, 30, 40)
+"""tup = (10, 20, 30, 40)
+print(tup.index(30))
+"""
 # 32. Slice a list (first 5 elements)
+"""a = [1, 2, 3, 4, 5, 6, 7, 8]
+print(a[:5])"""
 
 # 33. Remove all even numbers from list
+"""a = [1, 2, 3, 4, 5, 6, 7, 8]
+rest = []
+for i in a:
+    if i % 2 != 0:
+        rest.append(i)
+print(rest)"""
+
 # 34. Remove all odd numbers from list
-# 35. Check if list is sorted
+"""a = [1, 2, 3, 4, 5, 6, 7, 8]
+rest = []
+for i in a:
+    if i % 2 == 0:
+        rest.append(i)
+print(rest)"""
+
 # 36. Find all duplicates in list
-# 37. Flatten a nested list
+"""a = [1, 2, 2, 3, 4, 4, 5]
+rest = []
+for i in a:
+    if a.count(i) > 1 and i not in rest:
+        rest.append(i)
+print(rest)"""
+
+# 37. Flatten a nested list.
+"""a = [[1, 2], [3, 4], [5, 6]]
+rest = []
+for i in a:
+    for j in i:
+        rest.append(j)
+print(j)"""
+
 # 38. Find largest element without max()
+"""a = [1, 2, 2, 3, 4, 4, 5]
+large = a[0]
+for i in a:
+    if i > large:
+        large = i
+print(large)"""
+
 # 39. Find smallest element without min()
+"""a = [1, 2, 2, 3, 4, 4, 5]
+lower = a[0]
+for i in a:
+    if i < lower:
+        lower = i
+print(lower)"""
+
 # 40. Rotate list by k positions
+"""a = [1, 2, 3, 4, 5]
+k = 3
+result = a[k:] + a[:k]
+print(result)"""
+
 # 41. Split list into even and odd lists
+"""lst = [1, 2, 3, 4, 5, 6]
+even = []
+odd = []
+
+for i in lst:
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+print("Even:", even)
+print("Odd :", odd)"""
+
 # 42. Convert tuple of tuples into dictionary
+"""tup = (("a", 1), ("b", 2), ("c", 3))
+result = dict(tup)
+print(result)"""
+
 # 43. Count occurrences using dictionary
+"""lst = [1, 2, 2, 3, 3, 3]
+count = {}
+for i in lst:
+    if i in count:
+        count[i] += 1
+    else:
+        count[i] = 1
+print(count)"""
+
 # 44. Find most frequent element in list
+"""lst = [1, 2, 2, 3, 3, 3]
+max_count = 0
+element = None
+for i in lst:
+    if lst.count(i) > max_count:
+        max_count = lst.count(i)
+        element = i
+print(element)"""
+
 # 45. Check if two lists are identical
-# 46. Create tuple with single elements
-# 47. Demonstrate why tuple is immutable 
-
-
-
+"""list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+if list1 == list2:
+    print("Identical")
+else:
+    print("Not Identical")"""
