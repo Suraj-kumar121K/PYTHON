@@ -530,3 +530,130 @@ print(a,  b)"""
 """r = float(input("r = "))
 st = 3.14 * r * r
 print(st)"""
+
+
+"""a = int(input("a = "))
+b = int(input("b = "))
+c = int(input("c = "))
+if a >= b and a >= c:
+    print("a = ", a)
+elif b >= a and b >= c:
+    print("b = ", b)
+else:
+    print("c = ", c)"""
+    
+    
+"""a = int(input("a = "))
+b = int(input("b = "))
+c = int(input("c = "))
+d = int(input("d = "))
+e = int(input("e = "))
+f = int(input("f = "))
+
+if a >= b and a >= c and a >= d and a >= e and a >= f:
+    print("a = ", a)
+elif b >= a and b >= c and b >= d and b >= e and b >= f:
+    print("b = ", b)
+elif c >= a and c >= b and  c >= d and c >= e and c >= f:
+    print("c = ", c)
+elif d >= a and d >= d and  d >= d and d >= e and d >= f:
+    print("d =", d)
+elif e >= a and e >= b and  e >= d and e >= e and e >= f:
+    print("e = ", e)
+else:
+    print("f = ", f)"""
+    
+
+"""user = "Suraj"
+passw = "1234"
+
+u = input("Enter a username ")
+p = input("Enter a password ")
+
+if u == user and p == passw:
+    print("Login Successful")
+else:
+    print("Invalid Credentials")"""
+    
+    class Bank:
+    def __init__(self):
+        self.__username = "admin"
+        self.__password = "1234"
+        self.__balance = 1000
+        self.__logged_in = False
+
+    # Login system
+    def login(self):
+        u = input("Enter username: ")
+        p = input("Enter password: ")
+
+        if u == self.__username and p == self.__password:
+            print("Login Successful!\n")
+            self.__logged_in = True
+        else:
+            print("Invalid Credentials")
+
+    # Check balance
+    def check_balance(self):
+        if self.__logged_in:
+            print("Current Balance:", self.__balance)
+        else:
+            print("Please login first!")
+
+    # Deposit money
+    def deposit(self):
+        if self.__logged_in:
+            amount = float(input("Enter deposit amount: "))
+            self.__balance += amount
+            print("Deposit successful")
+        else:
+            print("Please login first!")
+
+    # Withdraw money
+    def withdraw(self):
+        if self.__logged_in:
+            amount = float(input("Enter withdraw amount: "))
+
+            if amount <= self.__balance:
+                self.__balance -= amount
+                print("Withdrawal successful")
+            else:
+                print("Insufficient balance")
+        else:
+            print("Please login first!")
+
+    # ATM menu
+    def menu(self):
+        while True:
+            print("\n===== ATM MENU =====")
+            print("1. Login")
+            print("2. Check Balance")
+            print("3. Deposit")
+            print("4. Withdraw")
+            print("5. Exit")
+
+            choice = int(input("Enter choice: "))
+
+            if choice == 1:
+                self.login()
+
+            elif choice == 2:
+                self.check_balance()
+
+            elif choice == 3:
+                self.deposit()
+
+            elif choice == 4:
+                self.withdraw()
+
+            elif choice == 5:
+                print("Thank you for using ATM")
+                break
+
+            else:
+                print("Invalid choice")
+
+
+# Run program
+atm = Bank()
+atm.menu()
