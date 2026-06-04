@@ -262,8 +262,32 @@ names = ["Anish", "Rahul", "Aman"]
 
 # 11. Sort ascending
 nums = [5, 2, 9, 1]
-print(sorted(nums, key=lambda x: x, reverse=True))
+# print(sorted(nums, key=lambda x: x, reverse=True))
 
 # 14. Sort dict by age
 data = [{"name": "A", "age": 25}, {"name": "B", "age": 20}]
 # print(sorted(data, key=lambda x: x["age"]))
+
+# Simple login System
+def login(user, password):
+    if user == "admin" and password == "1234":
+        return "Login Success"
+    else:
+        return "Login Failed"
+# print(login("admin", "1234"))
+
+# 1. Student Management System (OOP)
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    
+    def tt(self):
+        print("Name: ", self.name)
+        print("Marks: ", self.marks)
+    
+"""s1 = Student("Suraj", 85)
+s2 = Student("Rahul", 30)
+s1.tt()
+s2.tt()"""
+
