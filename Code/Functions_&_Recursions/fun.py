@@ -74,25 +74,85 @@ def Calculator(a, b, op):
         return a * b
     else:
         return "Invalid Operator"
-print(Calculator(10, 20, "add"))
+# print(Calculator(10, 20, "add"))
 
 # 1. Write a function to add two numbers.
+def add_two(a, b):
+    return a + b
+# print(add_two(10, 20))
 
 # 2. Write a function to find square of a number.
+def square(n):
+    return n * n
+res = square(5)
+# print(res)
 
 # 3. Write a function to check even or odd.
+def eve(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "odd"
+# print(eve(5))
 
 # 4. Write a function to find largest of two numbers.
+def largest_of_two(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+# print("largest of two num = ",largest_of_two(25, 42))
 
 # 5. Write a function to find largest of three numbers.
+def largest_of_three(a, b, c):
+    if a > b and a > c:
+        return a
+    elif b > a and b > c:
+        return b
+    else:
+        return c
+# print("largest of three num = ",  largest_of_three(30, 45, 40))
+
 
 # 6. Write a function to calculate factorial.
+def fact(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+# print(fact(5))
 
 # 7. Write a function to check prime number.
+def prime_number(n):
+    if n <= 1:
+        return "Not Prime"
+    for i in range(2, n):
+        if n % i == 0:
+            return "not prime"
+    return "Prime"
+# n = int(input("Enter a Number: "))
+# print(prime_number(n))
 
 # 8. Write a function to print Fibonacci series.
+def Fibonacci_series(n):
+    a = 0
+    b = 1
+    
+    for i in range(n):
+        print(a)
+        c = a + b
+        a = b
+        b = c
+# num = int(input("Enter a Number: "))
+# Fibonacci_series(num)
 
 # 9. Write a function to reverse a string.
+def reverse_string(text):
+    rev = ""
+    for i in text:
+        rev = i + rev
+    return rev
+# print(reverse_string("hello"))
 
 # 10. Write a function to check palindrome string.
 
