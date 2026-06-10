@@ -174,23 +174,48 @@ def max_list(List_1):
     largest = List_1[0]
     for i in List_1:
         if i > largest:
-            m = i
-    return maxes
-print(max_list(List_1))
+            largest = i
+    return largest
+# print(max_list(List_1))
         
     
-
 # 14. Write a function to find minimum element in a list.
+List_2 = [10, 20, 30, 60, 8]
+def max_list(List_2):
+    min = List_1[0]
+    for i in List_1:
+        if i < min:
+            min = i
+    return min
+# print(max_list(List_2))
 
 # 15. Write a function to sort a list.
+List_3 = [10, 20, 30, 60, 8]
+def sort_val(lst):
+    lst.sort()
+    return lst
+# print(sort_val(List_3))
 
 # 16. Write a function using default arguments.
+def def_fun(name="Suraj"):
+    return "Kumar " + name
+# print(def_fun())
+# print(def_fun("Ram"))
 
 # 17. Write a function using keyword arguments.
+def key_arg(name, age):
+    return name, age
+# print(key_arg(name="suraj", age=21))
 
 # 18. Write a function using *args.
+def add(*nums):
+    print(nums)
+add(1, 2, 3, 4)
 
 # 19. Write a function using **kwargs.
+def show(**data):
+    print(data)
+show(name="Suraj", age=20)
 
 # 20. Write a recursive function for factorial.
 
