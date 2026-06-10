@@ -157,10 +157,28 @@ def reverse_string(text):
 # 10. Write a function to check palindrome string.
 
 # 11. Write a function to count vowels in a string.
-
+    
 # 12. Write a function to find sum of list elements.
+List = [1, 2, 3, 4, 5, 6]
+
+def fun_list(List):
+    total = 0
+    for i in List:
+        total += i
+    return total
+# print(fun_list(List))
 
 # 13. Write a function to find maximum element in a list.
+List_1 = [10, 20, 30, 60, 8]
+def max_list(List_1):
+    largest = List_1[0]
+    for i in List_1:
+        if i > largest:
+            m = i
+    return maxes
+print(max_list(List_1))
+        
+    
 
 # 14. Write a function to find minimum element in a list.
 
