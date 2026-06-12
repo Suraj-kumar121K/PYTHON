@@ -77,31 +77,26 @@ for i in range(n, 0, -1):
        *     
 
 """
-
+"""
 # n = int(input("Enter a Number "))
 
 # Upper Part
 for i in range(n):
-
     # Space
     for j in range(n - i - 1):
         print(" ", end=" ")
-
     # Star
     for k in range(i + 1):
         print("*", end="   ")
-
     print()
 
 # Lower Part
 for i in range(n - 1, 0, -1):
-
     # Space
     for j in range(n - i):
         print(" ", end=" ")
-
     # Star
     for k in range(i):
         print("*", end="   ")
-
     print()
+"""
