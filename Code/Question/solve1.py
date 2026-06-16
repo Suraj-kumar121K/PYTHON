@@ -15,18 +15,18 @@ Expected Output:
 The result is 600
 The result is 70
 """
-
+# Ans
 def multiplication_or_sum(num1, num2):
     product = num1 * num2
     if product <= 1000:
         return product
     else:
         return num1 + num2
-result = multiplication_or_sum(20, 30)
-print("The result is", result)
+# result = multiplication_or_sum(20, 30)
+# print("The result is", result)
 
-result = multiplication_or_sum(40, 30)
-print("The result is", result)
+# result = multiplication_or_sum(40, 30)
+# print("The result is", result)
     
     
 # Exercise 2. Cumulative Sum of a Range
@@ -42,3 +42,31 @@ algorithms like Fibonacci sequences or running totals.
 
 Given Input: Range: numbers = range(10)
 """
+# Ans
+"""print("Printing current and previous number sum in a range(10)")
+previous_num = 0
+for i in range(10):
+    total = previous_num + i
+    print(f"Current Number {i} Previous Number {previous_num} Sum: ", total)
+    previous_num = i
+print(previous_num)"""
+
+# Exercise 3. String Indexing and Even Slicing
+"""
+Practice Problem: Display only those characters which are present at an even 
+index number in given string.
+
+Exercise Purpose: Understand how data is stored in memory using zero-based 
+indexing. In most languages, the first character is at position 0, the second 
+at 1, and so on. Mastering indexing is vital for data parsing.
+
+Given Input: String: "pynative"
+"""
+def remove_chars(word, n):
+    print('Original string:', word)
+    res = word[n:]
+    return res
+
+# print("Removing characters from a string")
+# print(remove_chars("pynative", 4))
+# print(remove_chars("pynative", 2))
