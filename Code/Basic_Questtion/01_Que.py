@@ -66,7 +66,6 @@ while num > 0:
     num = num // 10
 print(largest)"""
 
-
 # 7. Find Smallest Digit
 """
 num = int(input("Enter a Number: "))
