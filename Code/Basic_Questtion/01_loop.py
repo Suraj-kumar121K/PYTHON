@@ -103,6 +103,11 @@ print("Even Digits =", count)
 """
 
 # 10. Print Digits One by One
+num = int(input("Enter a Number: "))
+while num > 0:
+    digit = num % 10
+    print(digit)
+    num = num // 10
 
 # 11. Find Second Largest Digit
 """
