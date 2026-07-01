@@ -52,7 +52,7 @@ result = list(filter(lambda x: x % 2 == 0, nums))
 # Sort using Lambda
 students = [("Ram", 80), ("Shyam", 60), ("Mohan", 90)]
 students.sort(key=lambda x: x[1])
-print(students)
+# print(students)
 
 # Decorator Function
 def decorator(func):
@@ -70,4 +70,22 @@ def hello():
 def table(n):
     for i in range(1, 11):
         print(f"{n} x {i} = {n*i}")
-table(5)
+# table(5)
+
+# Factorial
+def Factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+# print(Factorial(5))
+
+# Fibonacci
+def Fibonacci(n):
+    a = 0
+    b = 1
+    for i in range(n):
+        print(a)
+        a, b = b, a + b
+# print(Fibonacci(8))
+    
