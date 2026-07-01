@@ -49,3 +49,5 @@ while True:
     if stop == "Yes":
         print("Program Stopped")
         break"""
+        
+# 3. Table Generator
