@@ -29,7 +29,7 @@ class Mobile:
     def show(self):
         print("company Name: ",self.company)
         print("price: ",self.price)
-s1 = Mobile("vivo", 15000)
+# s1 = Mobile("vivo", 15000)
 # s1.show()
     
 # 4. Create an Employee class with salary calculation
@@ -42,12 +42,31 @@ class Employee:
         total_salary = self.salary + self.bouns
         print("Name: ",self.name)
         print("Name: ",total_salary)
-s1 = Employee("Suraj", 16000, 5000)
+# s1 = Employee("Suraj", 16000, 5000)
 # s1.clas()
     
 # 5. Create a Book class with author and price
-
+class Book:
+    def __init__(self, author, price):
+        self.author = author
+        self.price = price
+    def clas(self):
+        print("Author Name: ",self.author)
+        print("Price: ",self.price)
+# s1 = Book("Chetan Bhagat", 230)
+# s1.clas()
+   
 # 6. Create a Laptop class with RAM and processor
+class Laptop:
+    def __init__(self, ram, processor):
+        self.ram = ram
+        self.processor = processor
+    def proce(self):
+        print("RAM: ",self.ram)
+        print("processor: ",self.processor)
+# s1 = Laptop("8GB", "Intel i5")
+# s1.proce()
+
 # 7. Create a Bank class with balance details
 # 8. Create an Animal class with a sound method
 # 9. Create a Movie class with rating information
