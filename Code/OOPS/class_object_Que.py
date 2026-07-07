@@ -212,7 +212,13 @@ class Student:
 # 5. What is the main purpose of a constructor?
 # Code Practice
 # 6. Create a constructor in Student class
+class Studen:
+    def __init__(self):
+        print("Hello")
+s1 = Studen()
+
 # 7. Create a parameterized constructor in Car class
+
 # 8. Initialize values in Mobile class using constructor
 # 9. Set Employee salary using constructor
 # 10. Store Bank balance using constructor
