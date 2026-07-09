@@ -222,8 +222,6 @@ class Car:
 
 """
 Inhe khud solve karo:
-1. Create a College class with name and city.
-2. Create a Teacher class with name, subject, and salary.
 3. Create a Product class with id, name, and price.
 4. Create a Hospital class with doctor_name and specialization.
 5. Create a CricketPlayer class with name, team, and runs.
@@ -234,7 +232,135 @@ Inhe khud solve karo:
 10. Create a Company class with company_name, location, and employees.
 Bonus Challenge
 
-Ek Student class banao jisme constructor name, age, aur marks le. Ek display()
+Ek Student class banao jisme constructor(कन्स्ट्रक्टर) name, age, aur marks le. Ek display()
 method banao jo saari details print kare, aur is_pass() method banao jo bataye 
 ki student pass hai ya fail (maan lo marks >= 33 pass hai).
+"""
+
+# 1. Create a College class with name and city.
+# Q2. self.name = name ka matlab?
+# Left side (self.name) → Object ka instance variable.
+# Right side (name) → Constructor ka parameter.
+# s1 = College("BCET", "Durgapur")
+# Parameter (name)  ─────►  Instance Variable (self.name)
+class College:
+    def __init__(self, name, city):
+        self.name = name
+        self.city = city
+s1 = College("BCET", "Durgapur")
+# print(s1.name)
+# print(s1.city)
+
+# 2. Create a Teacher class with name, subject, and salary. 
+class Teacher:
+    def __init__(self, name, subject, salary):
+        self.name = name
+        self.subject = subject
+        self.salary = salary
+s1 = Teacher("Suraj", "Math", 25000)
+# print(s1.name)
+# print(s1.subject)
+# print(s1.salary)
+
+"""
+Constructor + Method Practice (20 Questions)
+1. Student Class
+Create a Student class with name, age, and marks.
+Create a display() method to print all details.
+Create an is_pass() method to check if the student passed (marks >= 33).
+
+2. Employee Class
+Create an Employee class with name, salary, and department.
+Create a display() method.
+Create a bonus() method that prints 10% bonus.
+
+3. Car Class
+Create a Car class with brand, model, and price.
+Create a display() method.
+Create an expensive() method that checks if the price is greater than 10,00,000.
+
+4. BankAccount Class
+Create a BankAccount class with holder_name and balance.
+Create a display() method.
+Create an is_rich() method that checks if the balance is greater than 1,00,000.
+
+5. Book Class
+Create a Book class with title, author, and pages.
+Create a display() method.
+Create an is_big_book() method that checks if the book has more than 300 pages.
+
+6. Mobile Class
+Create a Mobile class with company, model, and price.
+Create a display() method.
+Create a discount_price() method that gives a 10% discount.
+
+7. Movie Class
+Create a Movie class with title, rating, and duration.
+Create a display() method.
+Create a hit_or_flop() method (rating >= 8 means Hit).
+
+8. Product Class
+Create a Product class with product_name, price, and quantity.
+Create a display() method.
+Create a total_cost() method.
+
+9. Teacher Class
+Create a Teacher class with name, subject, and salary.
+Create a display() method.
+Create an annual_salary() method.
+
+10. Laptop Class
+Create a Laptop class with brand, ram, and price.
+Create a display() method.
+Create an upgrade_ram() method that adds 8GB RAM.
+
+11. Hospital Class
+Create a Hospital class with doctor_name, specialization, and experience.
+Create a display() method.
+Create an is_experienced() method (experience >= 10 years).
+
+12. College Class
+Create a College class with name, city, and students.
+Create a display() method.
+Create an is_large_college() method (students > 5000).
+
+13. CricketPlayer Class
+Create a CricketPlayer class with name, team, and runs.
+Create a display() method.
+Create a century() method that checks if runs are >= 100.
+
+14. Bike Clas
+Create a Bike class with brand, model, and mileage.
+Create a display() method.
+Create a good_mileage() method (mileage >= 50).
+
+15. Customer Clas
+Create a Customer class with name, age, and city.
+Create a display() method.
+Create an is_senior_citizen() method (age >= 60).
+
+16. Restaurant Clas
+Create a Restaurant class with food_name, price, and rating.
+Create a display() method.
+Create a recommended() method (rating >= 4.5).
+
+17. Company Class
+Create a Company class with name, employees, and location.
+Create a display() method.
+Create an is_big_company() method (employees >= 1000).
+
+18. Animal Class
+Create an Animal class with name, type, and age.
+Create a display() method.
+Create an is_old() method (age >= 10).
+
+19. Library Class
+Create a Library class with book_name, author, and copies.
+Create a display() method.
+Create an available() method that checks whether copies are greater than 0.
+
+20. CinemaTicket Class
+Create a CinemaTicket class with movie_name, seat_number, and price.
+Create a display() method.
+Create an is_premium() method that checks if the ticket price is greater than 500.
 """
