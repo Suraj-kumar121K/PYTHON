@@ -209,7 +209,6 @@ class Studen:
     def __init__(self):
         print("Hello")
 s1 = Studen()
-
 # 7. Create a parameterized constructor in Car class
 # 8. Initialize values in Mobile class using constructor
 # 9. Set Employee salary using constructor
