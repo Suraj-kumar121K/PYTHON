@@ -1,4 +1,4 @@
-# 1️⃣ Class Logic Questions
+# Class Logic Questions
 # 1. Create a Student class with name and marks
 class Student:
     def show(self, name, marks):
@@ -75,7 +75,7 @@ class Laptop:
 
 # 10. Create a College class with student count
 
-# 2️⃣ Object Logic Questions
+# Object Logic Questions
 # 1. Create an object of Student class
 # 2. Create 3 objects of Car class
 # 3. Create different objects of Mobile class
@@ -92,7 +92,7 @@ class College:
 # c1 = College("ABC College")
 # print(c1.name)
 
-#3️⃣ Variable Logic Questions
+# Variable Logic Questions
 # 1. What is an instance variable?
 # An instance variable is a variable that belongs to an object.
 # It is created using self.
@@ -152,13 +152,11 @@ class Student:
 # 8. Store balance in Bank class variable
 # 9. Update price variable in Mobile class
 # 10. Print Employee salary variable
-# Intermediate
 # 11. Explain the difference between instance variable and class variable
 # 12. How do all objects share a class variable?
 # 13. Update a variable using an object
 # 14. Initialize variables using constructor
 # 15. Write logic to delete a variable
-# Advanced
 # 16. Create a dynamic variable
 # 17. Create an object counter variable
 # 18. Use a private variable
@@ -166,26 +164,22 @@ class Student:
 # 20. Access variables using inheritance
 
 
-# 4️⃣ Method Logic Questions
-# Basic
+#Method Logic Questions
 # 1. What is a normal method?
 # 2. What is a static method?
 # 3. What is a class method?
 # 4. What is the use of self keyword?
 # 5. What is the use of cls keyword?
-# Code Practice
 # 6. Create a display() method in Student class
 # 7. Create a speed() method in Car class
 # 8. Create a deposit() method in Bank class
 # 9. Create a withdraw() method
 # 10. Create a show_data() method in Mobile class
-# Intermediate
 # 11. Explain method calling logic
 # 12. Call one method inside another method
 # 13. Create an example of static method
 # 14. Create an example of class method
 # 15. Perform calculation inside instance method
-# Advanced
 # 16. Create an example of method overriding
 # 17. Explain method overloading logic
 # 18. Call parent method using super()
@@ -203,8 +197,7 @@ class Student:
 # 30. Call methods using multiple inheritance
 
 
-# 5️⃣ Constructor Logic Questions
-# Basic
+# Constructor Logic Questions
 # 1. What is a constructor?
 # 2. When is init method called?
 # 3. What is a default constructor?
@@ -218,17 +211,14 @@ class Studen:
 s1 = Studen()
 
 # 7. Create a parameterized constructor in Car class
-
 # 8. Initialize values in Mobile class using constructor
 # 9. Set Employee salary using constructor
 # 10. Store Bank balance using constructor
-# Intermediate
 # 11. Explain constructor overloading logic
 # 12. How does constructor work in inheritance?
 # 13. Call constructor using super()
 # 14. Access parent constructor
 # 15. Create child constructor
-# Advanced
 # 16. Explain multiple constructors logic
 # 17. Create constructor with default arguments
 # 18. Take dynamic values in constructor
@@ -239,26 +229,3 @@ s1 = Studen()
 # 23. Add validation logic inside constructor
 # 24. Create singleton constructor logic
 # 25. Create constructor example with inheritance
-
-
-# 6️⃣ Full OOPS Mixed Logic Questions (Advanced)
-# 1. Create an ATM Machine project
-# 2. Create a Library Management System
-# 3. Create a Student Report Card System
-# 4. Create a Bank Management System
-# 5. Create an Employee Payroll System
-# 6. Create an Online Shopping Cart
-# 7. Create a Hospital Management System
-# 8. Create a Railway Reservation System
-# 9. Create a Hotel Booking System
-# 10. Create a School Management System
-# 11. Create an E-commerce project
-# 12. Create a Quiz Application
-# 13. Create an Inventory Management System
-# 14. Create a Parking System
-# 15. Create a Voting System
-# 16. Create a Bus Ticket Booking System
-# 17. Create a Restaurant Billing System
-# 18. Create a Cricket Score System
-# 19. Create a Movie Ticket Booking System
-# 20. Create an Online Exam System
