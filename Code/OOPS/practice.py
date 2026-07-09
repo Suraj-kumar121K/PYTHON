@@ -27,263 +27,354 @@
 # Movie object bana kar movie name print karo
 # College object create karo aur data access karo
 
-# =========================================
-# 3️⃣ Constructor Practice Questions
-# =========================================
+# Student
+class Student:
+    def __init__(self, name, age, course):
+        self.name = name
+        self.age = age
+        self.course = course
+    def display(self):
+        print("Name :", self.name)
+        print("Age :", self.age)
+        print("Course :", self.course)
+s1 = Student("Suraj", 22, "Python")
+s2 = Student("Rahul", 21, "Data Analysis")
 
-# Default constructor ka example banao
-# Parameterized constructor ka example banao
-# Student class me constructor use karo
-# Employee salary constructor se lo
-# Book name constructor se initialize karo
-# Car model constructor se lo
-# Mobile brand constructor me pass karo
-# Bank balance constructor me initialize karo
-# Animal name constructor se set karo
-# Multiple objects constructor ke through banao
+# s1.display()
+# print()
+# s2.display()
 
-# =========================================
-# 4️⃣ Variable Practice Questions
-# =========================================
+# Employee:
+class Employee:
+    def __init__(self, name, salary, department):
+        self.name = name
+        self.salary = salary
+        self.department = department
+        
+    def display(self):
+        print("Name :", self.name)
+        print("Salary :", self.salary)
+        print("Department :", self.department)
+s1 = Employee("Suraj", 50000, "IT")
+s2 = Employee("Rahul", 10000, "HR")
 
-# Class variable ka example banao
-# Instance variable ka example banao
-# Student name variable banao
-# Car speed variable banao
-# Mobile price variable banao
-# Employee salary variable banao
-# Book author variable banao
-# College name class variable banao
-# Bank balance variable banao
-# Animal type variable banao
+# s1.display()
+# print()
+# s2.display()
+
+class Car:
+    def __init__(self, brand, model, price):
+        self.brand = brand
+        self.model = model
+        self.price = price
+    
+    def display(self):
+        print("Brand :", self.brand)
+        print("Model :", self.model)
+        print("Price :", self.price)
+    
+c1 = Car("Toyota", "Fortuner", 4500000)               
+c2 = Car("Hyundai", "Creta", 1800000)  
+
+# c1.display()             
+# print()
+# c1.display()            
+
+# Book
+class Book:
+    def __init__(self, name, author, price):
+        self.name = name
+        self.author = author 
+        self.price = price
+    
+    def display(self):
+        print("Book :", self.name)
+        print("Author :", self.author)
+        print("Price :", self.price)
+b1 = Book("Python", "Guido", 499)
+b2 = Book("SQL", "John", 350)
+
+# b1.display()
+# print()
+# b2.display()
+
+# Bank Class (4 Methods)
+# Class Declaration (Class banana)
+class Bank:
+    # Constructor (Special Method)
+    # Object create hote hi automatically call hota hai.
+    def __init__(self, name, balance):
+        # Instance Variable
+        # Customer ka name object ke andar store hota hai.
+        self.name = name
+        # Instance Variable
+        # Customer ka balance object ke andar store hota hai.
+        self.balance = balance
+    # Instance Method
+    # Account me paise jama (Deposit) karta hai.
+    def deposit(self, amount):
+        # Assignment Operator (+=)
+        # Current balance me amount add karta hai.
+        self.balance += amount
+        # Output Statement
+        print(amount, "Deposited Successfully")
+    # Instance Method
+    # Account se paise nikalta hai.
+    def withdraw(self, amount):
+        # Conditional Statement (if)
+        # Check karta hai ki balance enough hai ya nahi.
+        if amount <= self.balance:
+            # Assignment Operator (-=)
+            # Balance me se amount minus karta hai.
+            self.balance -= amount
+            # Output Statement
+            print(amount, "Withdraw Successfully")
+        # Else Block
+        else:
+            print("Insufficient Balance")
+    # Instance Method
+    # Current balance dikhata hai.
+    def check_balance(self):
+        # Output Statement
+        print("Current Balance:", self.balance)
+    # Instance Method
+    # Customer ki details dikhata hai.
+    def display(self):
+        # Output Statement
+        print("Customer Name:", self.name)
+        # Output Statement
+        print("Balance:", self.balance)
+
+# Object Creation
+# b1 = Bank("Suraj", 100000)
+
+# Method Calling
+# b1.display()
+
+# Method Calling
+# b1.deposit(5000)
+
+# Method Calling
+# b1.withdraw(3000)
+
+# Method Calling
+# b1.check_balance()
+
+"""
+1. Student Management
+Class: Student
+Variables:
+name
+age
+marks
+
+Methods:
+display()
+show_marks()
+result()
+grade()
+
+Objects:
+2 Students
+"""
+class  Students:
+    def __init__(self, name, age, marks):
+        self.name = name
+        self.age = age
+        self.marks = marks
+    
+    def display(self):
+        print("Name", self.name) 
+        
+    def show_marks(self):
+        print("marks", self.marks)
+    
+    def result(self):
+        if self.marks >= 40:
+            print("pass")
+        else:
+            print("Fail")
+    
+    def grade(self):
+        if self.marks >= 90:
+            print("Grade A")
+        elif self.marks >= 75:
+            print("Grade B")
+        else:
+            print("Grade C")
+# s1 = Students("Suraj", 25, 85)
+# s1.display()
+# s1.show_marks()
+# s1.result()
+# s1.grade()
+
+"""
+2. Bank Management
+Class: Bank
+
+Variables:
+customer_name
+account_number
+balance
+
+Methods:
+deposit()
+withdraw()
+check_balance()
+display()
+
+Objects:
+2 Customers
+"""
 
 
-# =========================================
-# 5️⃣ Method Practice Questions
-# =========================================
-# -----------------------------------------
-# Normal Method
-# -----------------------------------------
-# Student class me show() method banao
-# Car start() method banao
-# Employee details() method banao
-# Book info() method banao
-# Animal sound() method banao
-# Mobile display() method banao
-# Bank deposit() method banao
-# College show_data() method banao
-# Laptop on() method banao
-# Movie play() method banao
+"""
+3. Employee Management
+Class: Employee
 
-# -----------------------------------------
-# Static Method
-# -----------------------------------------
-# Addition static method banao
-# Multiplication static method banao
-# Circle area static method banao
-# Temperature convert static method banao
-# Calculator static method banao
-# Square number static method banao
-# Cube number static method banao
-# Max number static method banao
-# Min number static method banao
-# Average static method banao
+Variables:
+name
+salary
+department
 
-# -----------------------------------------
-# Class Method
-# -----------------------------------------
-# College name print karne ka class method banao
-# Company data class method se print karo
-# School name update karo using class method
-# Bank interest rate class method banao
-# Employee company change class method banao
-# Car brand update class method banao
-# Mobile company class method banao
-# Student school class method banao
-# Book library name class method banao
-# Animal category class method banao
+Methods:
+display()
+bonus()
+increment()
+show_salary()
 
+Objects:
+2 Employees
+"""
 
-# =========================================
-# 6️⃣ self Keyword Practice Questions
-# =========================================
-# self keyword ka use karke name print karo
-# self se age access karo
-# self se salary print karo
-# self se mobile model print karo
-# self se book name access karo
-# self se car speed print karo
-# self se employee details print karo
-# self se bank balance access karo
-# self se animal type print karo
-# self keyword ka complete example banao
+"""
+4. Library Management
+Class: Library
+Variables:
+book_name
+author
+price
 
-# =========================================
-# 7️⃣ super() Function Practice Questions
-# =========================================
-# Parent class method child class me access karo
-# super() use karke constructor call karo
-# Father aur Son class banao
-# Vehicle aur Car class banao
-# Animal aur Dog class banao
-# Employee aur Manager class banao
-# Bank aur Customer class banao
-# Teacher aur Student class banao
-# Mobile aur Smartphone class banao
-# Parent class variable super() se access karo
+Methods:
+display()
+issue_book()
+return_book()
+book_info()
 
+Objects:
+2 Books
+"""
 
-# =========================================
-# 8️⃣ Mixed OOPS Practice Questions
-# =========================================
-# Student Management System
-# ATM Machine Project
-# Library Management System
-# School Management System
-# Employee Management System
-# Hospital Management System
-# Online Shopping System
-# Railway Reservation System
-# Movie Ticket Booking System
-# Bank Management System
+"""
+5. Mobile Shop
+Class: Mobile
 
+Variables:
+brand
+model
+price
 
+Methods:
+display()
+discount()
+change_price()
+mobile_info()
 
+Objects:
+2 Mobiles
+"""
 
+"""
+6. Car Showroom
+Class: Car
 
+Variables:
+brand
+model
+price
 
+Methods:
+display()
+start()
+stop()
+car_info()
 
-"""1️⃣ Class Logic Questions
-Student class banao jisme name aur marks ho
-Car class banao jisme brand aur speed ho
-Mobile class banao jisme company aur price ho
-Employee class banao jisme salary calculate ho
-Book class banao jisme author aur price ho
-Laptop class banao jisme RAM aur processor ho
-Bank class banao jisme balance show ho
-Animal class banao jisme sound method ho
-Movie class banao jisme rating store ho
-College class banao jisme students count ho
-2️⃣ Object Logic Questions
-Student class ka object banao
-Car class ke 3 objects banao
-Mobile class ke different objects create karo
-Employee objects me alag salary store karo
-Book objects me alag author store karo
-Animal class ke multiple objects banao
-Laptop object ka data print karo
-Bank account object create karo
-Movie object ka rating show karo
-College object ka name print karo
-3️⃣ Variable Logic Questions
-Basic
-Instance variable kya hota hai?
-Class variable kya hota hai?
-Global variable kya hota hai?
-Local variable kya hota hai?
-self.name kis type ka variable hai?
-Code Based
-Student class me name variable create karo
-Car class me company variable create karo
-Bank class me balance variable store karo
-Mobile class me price variable update karo
-Employee salary variable print karo
-Intermediate
-Instance variable aur class variable me difference batao
-Ek class variable ko sab objects kaise share karte hain?
-Object se variable update karo
-Constructor ke through variable initialize karo
-Variable delete ka logic likho
-Advanced
-Dynamic variable create karo
-Object counter variable banao
-Private variable use karo
-Protected variable use karo
-Variable inheritance me access karo
-4️⃣ Method Logic Questions
-Basic
-Normal method kya hota hai?
-Static method kya hota hai?
-Class method kya hota hai?
-self keyword ka use kya hai?
-cls keyword ka use kya hai?
-Code Practice
-Student class me display() method banao
-Car class me speed() method banao
-Bank class me deposit() method banao
-Withdraw() method banao
-Mobile class me show_data() method banao
-Intermediate
-Method calling ka logic samjhao
-Ek method dusre method ko call kare
-Static method ka example banao
-Class method ka example banao
-Instance method me calculation karo
-Advanced
-Method overriding ka example banao
-Method overloading ka logic samjhao
-super() se parent method call karo
-Private method use karo
-Polymorphism method example banao
-Magic method (str) use karo
-Magic method (len) use karo
-Abstract method create karo
-Method chaining ka example banao
-Recursive method banao
-Getter and Setter method banao
-Decorator method use karo
-Static vs Class method compare karo
-Parent-child method access karo
-Multiple inheritance method call karo
-5️⃣ Constructor Logic Questions
-Basic
-Constructor kya hota hai?
-init method kab call hota hai?
-Default constructor kya hota hai?
-Parameterized constructor kya hota hai?
-Constructor ka main purpose kya hai?
-Code Practice
-Student class me constructor banao
-Car class me parameterized constructor banao
-Mobile class me values initialize karo
-Employee salary constructor se set karo
-Bank balance constructor me lo
-Intermediate
-Constructor overloading ka logic samjhao
-Constructor inheritance me kaise work karta hai?
-super() constructor call karo
-Parent constructor access karo
-Child constructor create karo
-Advanced
-Multiple constructors ka logic
-Constructor with default argument
-Dynamic constructor values lo
-Constructor me object counter banao
-Private constructor concept samjhao
-Destructor (del) kya hota hai?
-Constructor chaining ka example
-Constructor me validation logic lagao
-Singleton constructor logic
-Constructor with inheritance project
-6️⃣ Full OOPS Mixed Logic Questions (Advanced)
-ATM Machine project banao
-Library Management System banao
-Student Report Card System banao
-Bank Management System banao
-Employee Payroll System banao
-Online Shopping Cart banao
-Hospital Management System banao
-Railway Reservation System banao
-Hotel Booking System banao
-School Management System banao
-E-commerce project banao
-Quiz Application banao
-Inventory Management System banao
-Parking System banao
-Voting System banao
-Bus Ticket Booking System banao
-Restaurant Billing System banao
-Cricket Score System banao
-Movie Ticket Booking System banao
-Online Exam System banao"""
+Objects:
+2 Cars
+"""
 
+"""
+7. Hospital
+Class: Patient
+
+Variables:
+name
+disease
+age
+
+Methods:
+display()
+admit()
+discharge()
+patient_info()
+
+Objects:
+2 Patients
+"""
+
+"""
+8. College
+Class: College
+
+Variables:
+student_name
+course
+fees
+
+Methods:
+display()
+pay_fees()
+course_details()
+student_info()
+
+Objects:
+2 Students
+"""
+
+"""
+9. Movie
+Class: Movie
+
+Variables:
+name
+hero
+rating
+
+Methods:
+display()
+show_rating()
+hit_or_flop()
+movie_info()
+
+Objects:
+2 Movies
+"""
+
+"""
+10. Shopping Cart
+Class: Product
+
+Variables:
+product_name
+price
+quantity
+
+Methods:
+display()
+total_price()
+discount()
+bill()
+
+Objects:
+2 Products
+"""

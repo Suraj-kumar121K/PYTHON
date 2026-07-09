@@ -197,34 +197,3 @@ class Student:
 # 30. Call methods using multiple inheritance
 
 
-# Constructor Logic Questions
-# 1. What is a constructor?
-# 2. When is init method called?
-# 3. What is a default constructor?
-# 4. What is a parameterized constructor?
-# 5. What is the main purpose of a constructor?
-# Code Practice
-# 6. Create a constructor in Student class
-class Studen:
-    def __init__(self):
-        print("Hello")
-s1 = Studen()
-# 7. Create a parameterized constructor in Car class
-# 8. Initialize values in Mobile class using constructor
-# 9. Set Employee salary using constructor
-# 10. Store Bank balance using constructor
-# 11. Explain constructor overloading logic
-# 12. How does constructor work in inheritance?
-# 13. Call constructor using super()
-# 14. Access parent constructor
-# 15. Create child constructor
-# 16. Explain multiple constructors logic
-# 17. Create constructor with default arguments
-# 18. Take dynamic values in constructor
-# 19. Create object counter using constructor
-# 20. Explain private constructor concept
-# 21. What is a destructor (del)?
-# 22. Create constructor chaining example
-# 23. Add validation logic inside constructor
-# 24. Create singleton constructor logic
-# 25. Create constructor example with inheritance
