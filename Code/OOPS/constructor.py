@@ -9,8 +9,7 @@ class Student:
 class Student:
     def __init__(self, name, age):
         self.name = name
-        self.age = age
-        
+        self.age = age       
     def show(self):
         print("name", self.name)
         print("Age", self.age)
@@ -23,8 +22,7 @@ class Student:
 class Mobile:
     def __init__(self, Company, Price):
         self.Company = Company
-        self.Price = Price
-        
+        self.Price = Price        
     def show(self):
         print("Company Name: ", self.Company)
         print("Mobile price: ", self.Price)
@@ -68,11 +66,9 @@ class Students:
         print("Name:- ", self.name)
         print("Age:- ", self.age)
         print("Succesfully Add Name")
-
 for i in range(3):
     Name = input("Enter Name: ")
-    Age = int(input("Enter Age: "))
-    
+    Age = int(input("Enter Age: "))    
     # s = Students(Name, Age)
     # s.show()
 """   
@@ -196,7 +192,6 @@ class Employee:
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
-
     def show(self):
         print(self.name)
         print(self.salary)
@@ -221,28 +216,19 @@ class Car:
 # print(c1.price)
 
 """
-Inhe khud solve karo:
-3. Create a Product class with id, name, and price.
-4. Create a Hospital class with doctor_name and specialization.
-5. Create a CricketPlayer class with name, team, and runs.
-6. Create a Bike class with brand, model, and price.
-7. Create a Customer class with customer_id, name, and mobile.
-8. Create a Library class with book_name, author, and copies.
-9. Create a Restaurant class with food_name, price, and rating.
-10. Create a Company class with company_name, location, and employees.
-Bonus Challenge
-
 Ek Student class banao jisme constructor(कन्स्ट्रक्टर) name, age, aur marks le. Ek display()
 method banao jo saari details print kare, aur is_pass() method banao jo bataye 
 ki student pass hai ya fail (maan lo marks >= 33 pass hai).
 """
 
-# 1. Create a College class with name and city.
-# Q2. self.name = name ka matlab?
-# Left side (self.name) → Object ka instance variable.
-# Right side (name) → Constructor ka parameter.
-# s1 = College("BCET", "Durgapur")
-# Parameter (name)  ─────►  Instance Variable (self.name)
+"""
+1. Create a College class with name and city.
+Q2. self.name = name ka matlab?
+Left side (self.name) → Object ka instance variable.
+Right side (name) → Constructor ka parameter.
+s1 = College("BCET", "Durgapur")
+Parameter (name)  ─────►  Instance Variable (self.name)
+"""
 class College:
     def __init__(self, name, city):
         self.name = name
@@ -262,105 +248,251 @@ s1 = Teacher("Suraj", "Math", 25000)
 # print(s1.subject)
 # print(s1.salary)
 
+# 3. Create a Product class with id, name, and price.
+class Product:
+    def __init__(self, id, name, price):
+        self.id = id
+        self.name = name
+        self.price = price
+# s1 = Product(1, "Suraj", 5000)
+# print(s1.id)
+# print(s1.name)
+# print(s1.price)
+        
+# 4. Create a Hospital class with doctor_name and specialization.
+class Hospital:
+    def __init__(self, doctor_name, specialization):
+        self.doctor_name = doctor_name
+        self.specialization = specialization
+    def display(self):
+        print("Doctor Name :", self.doctor_name)
+        print("Specialization :", self.specialization)
+# h1 = Hospital("Suraj", "Cardiologist")
+# h1.display()
+
+# 5. Create a CricketPlayer class with name, team, and runs.
+class CricketPlayer:
+    def __init__(self, name, team, run):
+        self.name = name
+        self.team = team
+        self.run = run
+    def dis(self):
+        print("Name :", self.name)
+        print("Team :", self.team)
+        print("Runs :", self.run)        
+# s1 = CricketPlayer("SUraj", "India Team", 96)
+# s1.dis()
+    
+# 6. Create a Bike class with brand, model, and price.
+class Bick:
+    def __init__(self, brand, model, price):
+        self.brand = brand
+        self.model = model
+        self.price = price     
+    def dis(self):
+        print("Brand :", self.brand)
+        print("Model :", self.model)
+        print("Price :", self.price)
+# b1 = Bick("BMW", "X5", 1200000)
+# b1.dis()
+    
+# 7. Create a Customer class with customer_id, name, and mobile.
+class Customer:
+    def __init__(self, customer_id, name, mobile):
+        self.customer_id = customer_id
+        self.name = name 
+        self.mobile = mobile       
+    def display(self):
+        print("customer_id :-", self.customer_id)
+        print("Name :-", self.name)
+        print("Mobile No:- +91", self.mobile)
+# h1 = Customer("1", "Suraj Kumar", 7667795227)
+# h1.display()
+    
+# 8. Create a Library class with book_name, author, and copies.
+class Library:
+    def __init__(self, classes , book_name, author, copies):
+        self.classes = classes
+        self.book_name = book_name
+        self.author = author
+        self.copies = copies
+    def Display(self):
+        print("Class :- ", self.classes)
+        print("Book Name :- ", self.book_name)
+        print("Author :- ", self.author)
+        print("copies :- ", self.copies)
+h1 = Library("10th", "Hindi", "Raj Mohan", 560)
+# h1.Display()
+
 """
-Constructor + Method Practice (20 Questions)
 1. Student Class
 Create a Student class with name, age, and marks.
 Create a display() method to print all details.
 Create an is_pass() method to check if the student passed (marks >= 33).
+"""
+class Student:
+    def __init__(self, name, age, marks):
+        self.name = name
+        self.age = age
+        self.marks = marks
+    def display(self):
+        print("Name :", self.name)
+        print("Age :", self.age)
+    
+    def marks_check(self):
+        print("Marks :", self.marks)
+    
+    def is_pass(self):
+        if self.marks >= 33:
+            print("Result : Pass")
+        else:
+            print("Result : Fail")
+# h1 = Student("Suraj", 21, 85)
+# h1.display()
+# h1.marks_check()
+# h1.is_pass()
 
+"""
 2. Employee Class
 Create an Employee class with name, salary, and department.
 Create a display() method.
 Create a bonus() method that prints 10% bonus.
+"""
 
+
+"""
 3. Car Class
 Create a Car class with brand, model, and price.
 Create a display() method.
 Create an expensive() method that checks if the price is greater than 10,00,000.
+"""
 
+
+"""
 4. BankAccount Class
 Create a BankAccount class with holder_name and balance.
 Create a display() method.
 Create an is_rich() method that checks if the balance is greater than 1,00,000.
+"""
 
+
+"""
 5. Book Class
 Create a Book class with title, author, and pages.
 Create a display() method.
 Create an is_big_book() method that checks if the book has more than 300 pages.
+"""
 
+
+"""
 6. Mobile Class
 Create a Mobile class with company, model, and price.
 Create a display() method.
 Create a discount_price() method that gives a 10% discount.
+"""
 
+
+"""
 7. Movie Class
 Create a Movie class with title, rating, and duration.
 Create a display() method.
 Create a hit_or_flop() method (rating >= 8 means Hit).
+"""
 
+
+"""
 8. Product Class
 Create a Product class with product_name, price, and quantity.
 Create a display() method.
 Create a total_cost() method.
+"""
 
+
+"""
 9. Teacher Class
 Create a Teacher class with name, subject, and salary.
 Create a display() method.
 Create an annual_salary() method.
+"""
 
+
+"""
 10. Laptop Class
 Create a Laptop class with brand, ram, and price.
 Create a display() method.
 Create an upgrade_ram() method that adds 8GB RAM.
+"""
 
+
+"""
 11. Hospital Class
 Create a Hospital class with doctor_name, specialization, and experience.
 Create a display() method.
 Create an is_experienced() method (experience >= 10 years).
+"""
 
+
+"""
 12. College Class
 Create a College class with name, city, and students.
 Create a display() method.
 Create an is_large_college() method (students > 5000).
+"""
 
+
+"""
 13. CricketPlayer Class
 Create a CricketPlayer class with name, team, and runs.
 Create a display() method.
 Create a century() method that checks if runs are >= 100.
+"""
 
+"""
 14. Bike Clas
 Create a Bike class with brand, model, and mileage.
 Create a display() method.
 Create a good_mileage() method (mileage >= 50).
+"""
 
+"""
 15. Customer Clas
 Create a Customer class with name, age, and city.
 Create a display() method.
 Create an is_senior_citizen() method (age >= 60).
+"""
 
+"""
 16. Restaurant Clas
 Create a Restaurant class with food_name, price, and rating.
 Create a display() method.
 Create a recommended() method (rating >= 4.5).
+"""
 
+"""
 17. Company Class
 Create a Company class with name, employees, and location.
 Create a display() method.
 Create an is_big_company() method (employees >= 1000).
+"""
 
+"""
 18. Animal Class
 Create an Animal class with name, type, and age.
 Create a display() method.
 Create an is_old() method (age >= 10).
+"""
 
+"""
 19. Library Class
 Create a Library class with book_name, author, and copies.
 Create a display() method.
 Create an available() method that checks whether copies are greater than 0.
+"""
 
+"""
 20. CinemaTicket Class
 Create a CinemaTicket class with movie_name, seat_number, and price.
 Create a display() method.
 Create an is_premium() method that checks if the ticket price is greater than 500.
 """
+
