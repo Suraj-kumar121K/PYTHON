@@ -405,14 +405,48 @@ b1 = Bankaccount("Suraj", "Savings", 10000)
 # Protected: _ram
 # Private: __price
 # Create get_price() and set_price() methods.
-
+class Mobile:
+    def __init__(self, company, ram, price):
+        self.company = company
+        self._ram = ram
+        self.__price = price      
+    def get_price(self):
+        return self.__price
+    def set_price(self, new_price):
+        self.__price = new_price
+    def display(self):
+        print("Mobile Name:", self.company)
+        print("Mobile ram:", self._ram)
+        print("new Price :", self.get_price())       
+m1 = Mobile("VIVO", "8GB",15000)
+# m1.display()
+# m1.set_price(20000)
+# print("New Price :", m1.get_price())    
 
 # 6. Create a Laptop class.
 # Public: brand
 # Protected: _processor
 # Private: __password
 # Create change_password() method.
-
+class Laptop:
+    def __init__(self, brand, processor, password):
+        self.brand = brand
+        self._processor = processor
+        self.__password = password
+    def change_password(self, new_password):
+        self.__password = new_password
+        print("Password changed successfully.")
+    def display(self):
+        print("Brand :", self.brand)
+        print("Processor :", self._processor)
+        print("Password :", self.__password)
+l1 = Laptop("HP", "Intel i5", "abc123")
+# print("Before Changing Password:")
+# l1.display()
+# l1.change_password("Sur7aj6@")
+# print()
+# print("After Changing Password:")
+# l1.display()
 
 # 7. Create a Teacher class.
 # Public: name
