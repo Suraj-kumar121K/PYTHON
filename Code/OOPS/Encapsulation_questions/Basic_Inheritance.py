@@ -66,14 +66,16 @@ class Circle(Shape):
     def area(self):
         print("Are of Circle")
 c = Circle()
-c.draw()
-c.area()
+# c.draw()
+# c.area()
 
 # Q7. Create a Bank class with bank_name variable. Inherit it into Customer.
+class Bank:
+    def __init__(self):
+        self.bank_name = "State Bank"
+class Customer(Bank):
+    def show(self):
+        print("Bank Name :", self.bank_name)
+c = Customer()
+c.show()
 
-
-# Q8. Create a Teacher class with teach() method. Inherit it into MathTeacher.
-
-# Q9. Create a Computer class with boot() method. Inherit it into Laptop.
-
-# Q10. Create a Phone class with call() method. Inherit it into SmartPhone.
