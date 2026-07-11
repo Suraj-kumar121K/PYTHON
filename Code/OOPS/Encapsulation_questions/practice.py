@@ -54,9 +54,6 @@ s1.display()
 # Invalid Value (Validation Check)
 s1.set_marks(120)
 
-
-
-
 """
 2. Employee Class
 Create an Employee class.
