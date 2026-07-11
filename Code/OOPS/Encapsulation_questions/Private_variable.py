@@ -121,157 +121,182 @@ e1 = Employee(5000)
 # print(e1.display())
 
 # 3. Create a Car class with a private __brand variable.
+class Car:
+    def __init__(self, brand):
+        self.__brand = brand
+    def display(self):
+        print("Brand :", self.__brand)
+c1 = Car("BMW")
+# c1.display()
+        
+        
 # 4. Create a Mobile class with a private __price variable.
-# 5. Create a Laptop class with a private __model variable.
-# 6. Create a Book class with a private __title variable.
-# 7. Create a Movie class with a private __rating variable.
-# 8. Create a Hospital class with a private __doctor_name variable.
-# 9. Create a Bank class with a private __account_number variable.
-# 10. Create a Teacher class with a private __subject variable.
-# 11. Create a College class with a private __college_name variable.
-# 12. Create a Bike class with a private __speed variable.
-# 13. Create a Company class with a private __ceo variable.
-# 14. Create a Hotel class with a private __room_number variable.
-# 15. Create a Customer class with a private __email variable.
-# 16. Create a School class with a private __principal variable.
-# 17. Create a Restaurant class with a private __menu variable.
-# 18. Create a Passport class with a private __passport_number variable.
-# 19. Create a Train class with a private __coach_number variable.
-# 20. Create a Flight class with a private __flight_number variable.
+class Mobile:
+    def __init__(self, price):
+        self.__price = price
+    def display(self):
+        print("Amount :", self.__price)
+c1 = Mobile(150000)
+# c1.display()
 
 # ==========================================
-# Level 2 (Question 21–40) Getter Method
+# Level 2 (Question 1–10) Getter Method
 # ==========================================
+# 1. Create a Student class with get_name() method.
+class Student:
+    def __init__(self, name):
+        self.__name = name      # Private Variable
+    def get_name(self):         # Getter Method
+        return self.__name
+# Object
+s1 = Student("Suraj")
+# Calling Getter Method
+# print(s1.get_name())
 
-# 21. Create a Student class with get_name() method.
+# 2. Create an Employee class with get_salary() method.
+class Employee:
+    def __init__(self, salary):
+        self.__salary = salary
+    def get_salary(self):
+        return self.__salary
+e1 = Employee(2500000)
+# print(e1.get_salary())        
 
-# 22. Create an Employee class with get_salary() method.
+# 3. Create a Car class with get_brand() method.
+class Car:
+    def __init__(self, brand):
+        self.__brand = brand
+    def get_brand(self):
+        print("Brand :", self.__brand)
+s1 = Car("BMW")  
+# s1.get_brand()          
 
-# 23. Create a Car class with get_brand() method.
+# 4. Create a Mobile class with get_price() method.
+class Mobile:
+    def __init__(self, price):
+        self.__price = price
+    def get_price(self):
+        print("Price :", self.__price)
+c1 = Mobile(52000)  
+# c1.get_price()
 
-# 24. Create a Mobile class with get_price() method.
+# 5. Create a Laptop class with get_model() method.
+class Laptop:
+    def __init__(self, model):
+        self.__model = model
+    def get_model(self):
+        print("Model :", self.__model)
+c1 = Laptop(52000)  
+# c1.get_model()
 
-# 25. Create a Laptop class with get_model() method.
+# 6. Create a Book class with get_title() method.
+class Book:
+    def __init__(self, title):
+        self.__title = title
+    def get_title(self):
+        print("title :", self.__title)
+c1 = Book("Python Programming")  
+# c1.get_title()
 
-# 26. Create a Book class with get_title() method.
+# 7. Create a Movie class with get_rating() method.
+class Movie:
+    def __init__(self, rating):
+        self.__rating = rating
+    def get_rating(self):
+        print("Rating :", self.__rating)
+c1 = Movie(4.5)  
+# c1.get_rating()
 
-# 27. Create a Movie class with get_rating() method.
+# 8. Create a Teacher class with get_subject() method.
+class Teacher:
+    def __init__(self, subject):
+        self.__subject = subject
+    def get_subject(self):
+        print("Subject :", self.__subject)
+t1 = Teacher("Hindi") 
+# t1.get_subject()
 
-# 28. Create a Teacher class with get_subject() method.
+# 9. Create a Hospital class with get_doctor() method.
+class Hospital:
+    def __init__(self, doctor):
+        self.__doctor = doctor
+    def get_doctor(self):
+        print("Doctor :", self.__doctor)
+h1 = Hospital("Suraj")
+# h1.get_doctor()
 
-# 29. Create a Hospital class with get_doctor() method.
 
-# 30. Create a Bank class with get_account() method.
+# 10. Create a Bank class with get_account() method.
+class Bank:
+    def __init__(self, account):
+        self.__account = account
+    def get_account(self):
+        print("account :", self.__account)
+h1 = Bank("Suraj")
+# h1.get_account()
 
-# 31. Create a Company class with get_ceo() method.
+# ==========================================
+# Level 3 (Question 1–10) Setter Method
+# ==========================================
+# 6. Create a Book class with get_title() method.
+class Book:
+    def __init__(self, title):
+        self.__title = title
+    # Getter Method
+    def get_title(self):
+        return self.__title
+    # Setter Method
+    def set_title(self, new_title):
+        self.__title = new_title
+# Object
+b1 = Book("Python Programming")
+# print("Before:", b1.get_title())
+b1.set_title("Data Analysis with Python")
+# print("After :", b1.get_title())
 
-# 32. Create a School class with get_principal() method.
+# 2. Create an Employee class with set_salary() method.
 
-# 33. Create a Hotel class with get_room() method.
 
-# 34. Create a Customer class with get_email() method.
+# 3. Create a Mobile class with set_price() method.
 
-# 35. Create a Restaurant class with get_menu() method.
+# 4. Create a Car class with set_brand() method.
 
-# 36. Create a Passport class with get_passport() method.
+# 5. Create a Bike class with set_speed() method.
 
-# 37. Create a Flight class with get_flight() method.
+# 6. Create a Laptop class with set_model() method.
 
-# 38. Create a College class with get_name() method.
+# 7. Create a Hospital class with set_doctor() method.
 
-# 39. Create a Bike class with get_speed() method.
+# 8. Create a Teacher class with set_subject() method.
 
-# 40. Create a Library class with get_books() method.
+# 9. Create a Company class with set_ceo() method.
+
+# 10. Create a Hotel class with set_room() method.
 
 
 # ==========================================
-# Level 3 (Question 41–60) Setter Method
+# Level 4 (Question 1–10) Validation
 # ==========================================
+# 1. Create an Employee class where salary must be greater than 0.
 
-# 41. Create a Student class with set_name() method.
+# 2. Create a Student class where marks must be between 0 and 100.
 
-# 42. Create an Employee class with set_salary() method.
+# 3. Create a Person class where age must be at least 18.
 
-# 43. Create a Mobile class with set_price() method.
+# 4. Create a Product class where price cannot be negative.
 
-# 44. Create a Car class with set_brand() method.
+# 5. Create a Bike class where speed cannot exceed 200.
 
-# 45. Create a Bike class with set_speed() method.
+# 6. Create a User class where password must contain at least 8 characters.
 
-# 46. Create a Laptop class with set_model() method.
+# 7. Create an ATM class where PIN must be exactly 4 digits.
 
-# 47. Create a Hospital class with set_doctor() method.
+# 8. Create a Customer class where mobile number must be exactly 10 digits.
 
-# 48. Create a Teacher class with set_subject() method.
+# 9. Create a Customer class where email must contain '@'.
 
-# 49. Create a Company class with set_ceo() method.
+# 10. Create a Bank class where balance cannot be negative.
 
-# 50. Create a Hotel class with set_room() method.
-
-# 51. Create a School class with set_principal() method.
-
-# 52. Create a Customer class with set_email() method.
-
-# 53. Create a Restaurant class with set_menu() method.
-
-# 54. Create a Library class with set_books() method.
-
-# 55. Create a Flight class with set_flight() method.
-
-# 56. Create a Movie class with set_rating() method.
-
-# 57. Create a Book class with set_title() method.
-
-# 58. Create a Passport class with set_passport() method.
-
-# 59. Create a Train class with set_coach() method.
-
-# 60. Create a College class with set_name() method.
-
-
-# ==========================================
-# Level 4 (Question 61–80) Validation
-# ==========================================
-
-# 61. Create an Employee class where salary must be greater than 0.
-
-# 62. Create a Student class where marks must be between 0 and 100.
-
-# 63. Create a Person class where age must be at least 18.
-
-# 64. Create a Product class where price cannot be negative.
-
-# 65. Create a Bike class where speed cannot exceed 200.
-
-# 66. Create a User class where password must contain at least 8 characters.
-
-# 67. Create an ATM class where PIN must be exactly 4 digits.
-
-# 68. Create a Customer class where mobile number must be exactly 10 digits.
-
-# 69. Create a Customer class where email must contain '@'.
-
-# 70. Create a Bank class where balance cannot be negative.
-
-# 71. Create a Book class where book price must be positive.
-
-# 72. Create a Movie class where rating must be between 1 and 5.
-
-# 73. Create a Hotel class where room number must be positive.
-
-# 74. Create a Student class where roll number must be positive.
-
-# 75. Create an Employee class where Employee ID must start with "EMP".
-
-# 76. Create a Flight class where flight number must start with "AI".
-
-# 77. Create a Passport class where passport number length must be exactly 8 characters.
-
-# 78. Create a Train class where train number must be exactly 5 digits.
-
-# 79. Create a Student class where student name cannot be empty.
-
-# 80. Create a Teacher class where subject name cannot be blank.
 
 # ==========================================
 # Public + Protected + Private Mix Questions
@@ -370,19 +395,19 @@ class Bankaccount:
 b1 = Bankaccount("Suraj", "Savings", 10000)
 
 # Display initial balance
-print("Initial Balance:", b1.get_balance())
+# print("Initial Balance:", b1.get_balance())
 
 # Deposit money
-b1.deposit(5000)
-print("Balance:", b1.get_balance())
+# b1.deposit(5000)
+# print("Balance:", b1.get_balance())
 
 # Withdraw money
-b1.withdraw(3000)
-print("Balance:", b1.get_balance())
+# b1.withdraw(3000)
+# print("Balance:", b1.get_balance())
 
 # Withdraw more than balance
-b1.withdraw(15000)
-print("Final Balance:", b1.get_balance()) 
+# b1.withdraw(15000)
+# print("Final Balance:", b1.get_balance()) 
 
 # 5. Create a Mobile class.
 # Public: company
@@ -473,31 +498,3 @@ print("Final Balance:", b1.get_balance())
 # 24. Flight number must start with "AI".
 
 # 25. Employee ID must start with "EMP".
-
-# ==========================================
-# Interview Level
-# ==========================================
-# 26. Create a Bank class using
-# Public, Protected and Private variables.
-# Implement Deposit, Withdraw and Balance methods.
-
-# 27. Create an ATM class with PIN verification.
-# Use Public, Protected and Private variables.
-
-# 28. Create a Library class.
-# Public: library_name
-# Protected: _librarian
-# Private: __books
-# Add add_book(), remove_book(), show_books() methods.
-
-# 29. Create a Hospital Management class.
-# Public: hospital_name
-# Protected: _doctor_name
-# Private: __patients
-# Add admit(), discharge(), show_patients() methods.
-
-# 30. Create a Student Management System.
-# Public: student_name
-# Protected: _roll_number
-# Private: __marks
-# Add get_marks(), set_marks(), result(), display() methods.
