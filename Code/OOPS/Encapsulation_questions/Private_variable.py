@@ -336,11 +336,9 @@ class Employee:
     def __init__(self, employee_name, department, salary):
         self.employee_name = employee_name
         self._department = department
-        self.__salary = salary
-             
+        self.__salary = salary             
     def get_salary(self):
-        return self.__salary
-    
+        return self.__salary   
     def display(self):
        print("Employee :", self.employee_name) 
        print("Departmant :", self._department) 
@@ -376,35 +374,28 @@ class Bankaccount:
     def __init__(self, account_holder, account_type, balance):
         self.account_holder = account_holder
         self._account_type = account_type
-        self.__balance = balance
-        
+        self.__balance = balance   
     def deposit(self, amount):
         self.__balance += amount
         print(f"₹{amount} deposited successfully.")
-        
     def withdraw(self, amount):
         if amount <= self.__balance:
             self.__balance -= amount
             print(f"₹{amount} withdrawn successfully.")
         else:
-            print("Insufficient Balance!")
-            
+            print("Insufficient Balance!")           
     def get_balance(self):
         return self.__balance
 # Object
 b1 = Bankaccount("Suraj", "Savings", 10000)
-
 # Display initial balance
 # print("Initial Balance:", b1.get_balance())
-
 # Deposit money
 # b1.deposit(5000)
 # print("Balance:", b1.get_balance())
-
 # Withdraw money
 # b1.withdraw(3000)
 # print("Balance:", b1.get_balance())
-
 # Withdraw more than balance
 # b1.withdraw(15000)
 # print("Final Balance:", b1.get_balance()) 
@@ -422,11 +413,13 @@ b1 = Bankaccount("Suraj", "Savings", 10000)
 # Private: __password
 # Create change_password() method.
 
+
 # 7. Create a Teacher class.
 # Public: name
 # Protected: _subject
 # Private: __salary
 # Create get_salary() method.
+
 
 # 8. Create a Hospital class.
 # Public: hospital_name
@@ -434,11 +427,13 @@ b1 = Bankaccount("Suraj", "Savings", 10000)
 # Private: __patient_count
 # Create admit_patient() method.
 
+
 # 9. Create a Movie class.
 # Public: movie_name
 # Protected: _director
 # Private: __rating
 # Create set_rating() method.
+
 
 # 10. Create a Company class.
 # Public: company_name
@@ -446,11 +441,13 @@ b1 = Bankaccount("Suraj", "Savings", 10000)
 # Private: __ceo_salary
 # Create get_ceo_salary() method.
 
+
 # 11. Create a College class.
 # Public: college_name
 # Protected: _course
 # Private: __fees
 # Create get_fees() method.
+
 
 # 12. Create a School class.
 # Public: school_name
@@ -458,11 +455,13 @@ b1 = Bankaccount("Suraj", "Savings", 10000)
 # Private: __student_count
 # Create display() method.
 
+
 # 13. Create a Passport class.
 # Public: holder_name
 # Protected: _country
 # Private: __passport_number
 # Create get_passport() method.
+
 
 # 14. Create a Flight class.
 # Public: flight_name
