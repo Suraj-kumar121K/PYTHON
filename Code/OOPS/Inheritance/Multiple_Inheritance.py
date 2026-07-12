@@ -1,5 +1,7 @@
+# ============================================
+# Multiple Inheritance – 10 Practice Questions
+# ============================================
 """
-2. Multiple Inheritance
 Question 2
 Create class Father with method father_skill().
 Create class Mother with method mother_skill().
@@ -8,110 +10,216 @@ Call both methods.
 """
 # Solution
 class Father:
-    def father_skill(self):
-        print("Father knows driving")
+    def __init__(self, father_name):
+        self.father_name = father_name
+    def show_father(self):
+        print("Father Name:", self.father_name)
 class Mother:
-    def mother_skill(self):
-        print("Mother knows cooking")
+    def __init__(self, mother_name):
+        self.mother_name = mother_name
+    def show_mother(self):
+        print("Mother Name:", self.mother_name)
 class Child(Father, Mother):
-    pass
-c = Child()
-# c.father_skill()
-# c.mother_skill()
+    def __init__(self, father_name, mother_name, child_name):
+        Father.__init__(self, father_name)
+        Mother.__init__(self, mother_name)
+        self.child_name = child_name
+    def show_child(self):
+        print("Child Name:", self.child_name)
+c1 = Child("Ram", "Sita", "Aman")
+# c1.show_father()
+# c1.show_mother()
+# c1.show_child()
+
+"""
+Q2
+Create class Writer with method write().
+Create class Singer with method sing().
+Create class Artist that inherits from both classes.
+Call both methods.
+"""
+class Writer:
+    def writer(self):
+        print("Writing a Book")
+class Singer:
+    def sing(self):
+        print("tum hi hai")
+class Artist(Writer, Singer):
+    def name(self):
+        print("sonu nigam")
+a1 = Artist()
+# a1.writer()
+# a1.sing()
+# a1.name()
+
 
 # ============================================
-# 2. MULTIPLE INHERITANCE (10 Questions)
+# Multiple Inheritance + Constructor Practice
 # ============================================
-# Q1. Create Father and Mother. Create Child that inherits both.
+"""
+Q1. Employee Management System
+Create class Person:
+Constructor:
+name
+age
 
-# Q2. Create Writer and Singer. Create Artist.
+Method:
+display_person()
 
-# Q3. Create Teacher and Engineer. Create Professor.
+Create class Salary:
+Constructor:
+salary
+department
 
-# Q4. Create Camera and Phone. Create SmartPhone.
+Method:
+display_salary()
 
-# Q5. Create Person and Employee. Create Developer.
+Create class Manager:
+Inherit from both Person and Salary
+Constructor me dono parent constructors call karo.
+Extra attribute:
+experience
 
-# Q6. Create Printer and Scanner. Create AllInOnePrinter.
+Method:
+display_manager()
 
-# Q7. Create Cricketer and Student. Create SportsStudent.
-
-# Q8. Create MusicPlayer and VideoPlayer. Create MediaPlayer.
-
-# Q9. Create ElectricVehicle and LuxuryCar. Create Tesla.
-
-# Q10. Create Keyboard and Mouse. Create Computer.
-
-
-# ============================================
-# Multiple Inheritance – 10 Practice Questions
-# ============================================
-# Q1
-# Create class Father with method father_skill().
-# Create class Mother with method mother_skill().
-# Create class Child that inherits from both classes.
-# Call both methods.
-
-
-# Q2
-# Create class Writer with method write().
-# Create class Singer with method sing().
-# Create class Artist that inherits from both classes.
-# Call both methods.
+Object create karo aur sab methods call karo.
+m1 = Manager("Suraj", 25, 50000, "IT", 3)
+"""
 
 
-# Q3
-# Create class Teacher with method teach().
-# Create class Engineer with method develop().
-# Create class Professor that inherits from both classes.
-# Call both methods.
+"""
+Q2. Student Result System
+Create class Student:
+
+Constructor:
+name
+roll_no
+Method:
+show_student()
+
+Create class Marks:
+
+Constructor:
+python_marks
+sql_marks
+Method:
+show_marks()
+
+Create class Result:
+
+Inherit from Student and Marks
+Constructor me dono parent constructors call karo.
+Extra attribute:
+grade
+
+Method:
+show_result()
+
+Object:
+r1 = Result("Rahul", 101, 90, 85, "A")
+"""
 
 
-# Q4
-# Create class Camera with method take_photo().
-# Create class Phone with method make_call().
-# Create class SmartPhone that inherits from both classes.
-# Call both methods.
+"""
+Q3. Vehicle Service System
+
+Create class Vehicle:
+Constructor:
+brand
+model
+
+Method:
+display_vehicle()
+
+Create class Service:
+Constructor:
+service_type
+cost
+
+Method:
+display_service()
+
+Create class CarService:
+Inherit from both classes.
+Extra attribute:
+customer_name
+
+Method:
+display_customer()
+
+Object:
+c1 = CarService("Tata", "Nexon", "Engine Repair", 5000, "Amit")
+"""
+
+"""
+Q4. Hospital Management System
+Create class Doctor:
+Constructor:
+doctor_name
+specialization
+
+Method:
+show_doctor()
+
+Create class Patient:
+Constructor:
+patient_name
+disease
+
+Method:
+show_patient()
+
+Create class Appointment:
+Inherit from both Doctor and Patient.
+Extra attribute:
+appointment_date
+
+Method:
+show_appointment()
+
+Object:
+a1 = Appointment(
+    "Dr. Sharma",
+    "Cardiologist",
+    "Rahul",
+    "Heart Problem",
+    "13-07-2026"
+)
+"""
 
 
-# Q5
-# Create class Person with method show_name().
-# Create class Employee with method show_salary().
-# Create class Developer that inherits from both classes.
-# Call both methods.
+"""
+Q5. Online Shopping System
 
+Create class Product:
+Constructor:
+product_name
+price
+Method:
+show_product()
 
-# Q6
-# Create class Printer with method print_document().
-# Create class Scanner with method scan_document().
-# Create class AllInOnePrinter that inherits from both classes.
-# Call both methods.
+Create class Customer:
+Constructor:
+customer_name
+location
+Method:
+show_customer()
 
+Create class Order:
+Inherit from both Product and Customer.
+Extra attribute:
+quantity
 
-# Q7
-# Create class Cricketer with method play_cricket().
-# Create class Student with method study().
-# Create class SportsStudent that inherits from both classes.
-# Call both methods.
+Method:
+show_order()
 
-
-# Q8
-# Create class MusicPlayer with method play_music().
-# Create class VideoPlayer with method play_video().
-# Create class MediaPlayer that inherits from both classes.
-# Call both methods.
-
-
-# Q9
-# Create class ElectricVehicle with method charge_battery().
-# Create class LuxuryCar with method show_features().
-# Create class Tesla that inherits from both classes.
-# Call both methods.
-
-
-# Q10
-# Create class Keyboard with method type_text().
-# Create class Mouse with method click().
-# Create class Computer that inherits from both classes.
-# Call both methods.
-
+Object:
+o1 = Order(
+    "Laptop",
+    50000,
+    "Suraj",
+    "Noida",
+    2
+)
+"""
