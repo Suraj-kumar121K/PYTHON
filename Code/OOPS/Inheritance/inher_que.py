@@ -1,8 +1,25 @@
 # 1. Basic Inheritance (10 Questions)
-
 # Q1. Create a Person class and inherit it into Student.
+class Person:
+    def show(self):
+        print("I am a Person")
+class Student(Person):
+    def study(self):
+        print("I go to school")
+d = Student()
+# d.shoe()
+# d.show()
 
 # Q2. Create a Vehicle class and inherit it into Car.
+class Vehicle:
+    def show(self):
+        print("I have a vehical")
+class Car(Vehicle):
+    def drive(self):
+        print("I drive a car.")
+c = Car()
+# c.show()
+# c.drive()
 
 # Q3. Create an Animal class and inherit it into Dog.
 
@@ -19,8 +36,80 @@
 # Q9. Create a Laptop class and inherit it into GamingLaptop.
 
 # Q10. Create a Teacher class and inherit it into Professor.
+class Teacher:
+    def teach(self):
+        print("I do research")
+class Professor(Teacher):
+    def research(self):
+        print("I cover two school")
+p = Professor()
+# p.teach()
+# p.research()
 
-# 2. Constructor Inheritance (10 Questions)
+
+# 2. Constructor Inheritance
+# Syntax
+class Person:
+    def __init__(self, name):
+        self.name = name
+class Student(Person):
+    def __init__(self, name, roll):
+        super().__init__(name)
+        self.roll = roll
+s = Student("Suraj", 101)
+# print(s.name)
+# print(s.roll)
+
+# Example
+class Person:
+    def __init__(self, name):
+        self.name = name #Jo bhi object banega, us object ke andar name naam ka instance variable create hoga.
+class Student(Person):
+    def __init__(self, name, roll): #Jab Student ka object banega to ye constructor chalega.
+        super().__init__(name) # Yahi Constructor Inheritance hai. | Parent class (Person) ka constructor call karo.
+        self.roll = roll
+s = Student("Suraj", 101)
+# print(s.name)
+# print(s.roll)
+
+# Example
+# Parent Class
+class Vechicle:
+    # Parent Constructor
+    def __init__(self, brand):
+        # Object ke andar brand naam ka instance variable ban raha hai
+        self.brand = brand
+# Child Class (Vehicle ko inherit kar rahi hai)
+class Car(Vechicle):
+    # Child Constructor
+    def __init__(self, brand, model):
+        # Parent constructor ko call kar raha hai
+        # Yahan "Toyota" parent constructor me pass hoga
+        super().__init__(brand)
+        # Child apna khud ka instance variable bana raha hai
+        self.model = model
+    # Display Method
+    def display(self):
+        # Parent constructor se bana hua variable print hoga
+        print("Brand :", self.brand)
+        # Child constructor se bana hua variable print hoga
+        print("model :", self.model)
+# Car class ka object create ho raha hai | brand = "Toyota" | model = "Fortuner"
+# c1 = Car("Toyota", "Fortuner")
+# Object ki details print karne ke liye display() method call ho raha hai
+# c1.display()
+
+# Parent and Child Constructors Together
+class Employee:
+    def __init__(self, name):
+        print("Parent Constructor")
+        self.name = name
+class Developer(Employee):
+    def __init__(self, name, language):
+        print("Child Constructor")
+        super().__init__(name)
+        self.language = language
+d = Developer("Suraj", "Python")
 
 # Q1. Create Person(name) and Student(name, roll) using super().__init__().
 
