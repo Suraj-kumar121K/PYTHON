@@ -75,6 +75,7 @@ s = Student("Suraj", 101)
 # Example
 # Parent Class
 class Vechicle:
+    
     # Parent Constructor
     def __init__(self, brand):
         # Object ke andar brand naam ka instance variable ban raha hai
@@ -109,17 +110,78 @@ class Developer(Employee):
         print("Child Constructor")
         super().__init__(name)
         self.language = language
-d = Developer("Suraj", "Python")
+# d = Developer("Suraj", "Python")
 
 # Q1. Create Person(name) and Student(name, roll) using super().__init__().
+class Person:
+    def __init__(self, name):
+        self.name = name
+class Student(Person):
+    def __init__(self, name, roll):
+        super().__init__(name)
+        self.roll = roll
+    
+    def display(self):
+        print("Name :", self.name)
+        print("ROLL :", self.roll)
+s = Student("Suraj", 20)
+# s.display()
 
 # Q2. Create Vehicle(brand) and Car(brand, model).
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+class Car(Vehicle):
+    def __init__(self, brand, model):
+        super().__init__(brand)
+        self.model = model
+    def display(self):
+        print("Brand :", self.brand)
+        print("Model :", self.model)
+c1 = Car("tata", "Nexon")
+# c1.display()
 
 # Q3. Create Employee(name) and Manager(name, salary).
-
+class Employee:
+    def __init__(self, name):
+        self.name = name  
+class Manager(Employee):
+    def __init__(self, name, salary):
+        super().__init__(name)
+        self.salary = salary
+    def display(self):
+        print("Name :", self.name)
+        print("Salary :", self.salary)
+m1 = Manager("Suraj", 15000)
+# m1.display()
+            
 # Q4. Create Animal(name) and Dog(name, breed).
+class Animal:
+    def __init__(self, name):
+        self.name = name
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+    def display(self):
+        print("Name :", self.name)
+        print("Breed :", self.breed)
+d1 = Dog("Rahul", "Labrador")
+# d1.display()
 
 # Q5. Create Book(title) and EBook(title, size).
+class Book:
+    def __init__(self,title):
+        self.title = title
+class EBook(Book):
+    def __init__(self, title, size):
+        super().__init__(title)
+        self.size = size
+    def display(self):
+        print("Title :", self.title)
+        print("Size :", self.size)
+e1 = EBook("Nexon", 28)
+# e1.display()
 
 # Q6. Create Mobile(company) and SmartPhone(company, ram).
 
@@ -131,9 +193,29 @@ d = Developer("Suraj", "Python")
 
 # Q10. Create Shape(color) and Rectangle(color, length, width).
 
-# 3. super() Function (10 Questions)
-
+# 3. super() Function
 # Q1. Use super() to call the parent constructor.
+# Parent Class
+class Animal:
+    # Parent constructor
+    def __init__(self, name):
+        self.name = name      # Parent instance variable
+# Child Class
+class Dog(Animal):
+    # Child constructor
+    def __init__(self, name, breed):
+        # Calls the parent constructor
+        super().__init__(name)
+        # Child instance variable
+        self.breed = breed
+    # Child method
+    def display(self):
+        print("Dog Name :", self.name)
+        print("Breed :", self.breed)
+# Creating object of Child class
+d1 = Dog("Tommy", "Labrador")
+# Calling display method
+d1.display()
 
 # Q2. Use super() to call a parent method.
 
@@ -153,9 +235,33 @@ d = Developer("Suraj", "Python")
 
 # Q10. Create Computer and Laptop using super().
 
-# 4. Method Overriding (10 Questions)
-
+# 4. Method Overriding
 # Q1. Create Animal and override sound() in Dog.
+# Parent Class
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+# Child Class
+class Dog(Animal):
+    # 👇 Method Overriding ho raha hai.
+    # Parent class ka sound() method yahan same name se dobara banaya gaya hai.
+    # Isliye Dog ka sound() method Parent wale method ko replace (override) kar deta hai.
+    def sound(self):
+        print("Dog barks")
+# Object of Child Class
+d1 = Dog()
+# Child class ka overridden method call hoga
+d1.sound()
+"""
+Rule of Method Overriding
+Parent aur Child dono me same method name hona chahiye.
+Child class Parent ke method ko naye implementation ke saath likhti hai.
+Jab Child object se method call karte hain, to Child ka method execute hota 
+hai, Parent ka nahi.
+Yaad rakhne ka shortcut:
+Method Overriding = Child class Parent ke same method ko dobara likhti hai 
+(same name, naya behavior).
+"""
 
 # Q2. Create Vehicle and override start() in Car.
 
@@ -175,9 +281,26 @@ d = Developer("Suraj", "Python")
 
 # Q10. Create Laptop and override show_info() in GamingLaptop.
 
-# 5. isinstance() and issubclass() (10 Questions)
-
+# 5. isinstance() and issubclass()
 # Q1. Check whether a Student object is an instance of Student.
+# Parent Class
+class Student:
+    # Constructor to initialize the student's name
+    def __init__(self, name):
+        self.name = name
+# Creating an object of Student class
+s1 = Student("Suraj")
+# Displaying the student's name
+print("Student Name :", s1.name)
+# Checking whether s1 is an instance (object) of Student class
+result = isinstance(s1, Student)
+# Printing the result
+print("Is s1 an instance of Student?", result)
+"""
+Yaad Rakho:
+✅ isinstance() → Object ko check karta hai.
+✅ issubclass() → Class ko check karta hai.
+"""
 
 # Q2. Check whether a Student object is an instance of Person.
 
@@ -194,5 +317,3 @@ d = Developer("Suraj", "Python")
 # Q8. Check whether GamingLaptop is a subclass of Laptop.
 
 # Q9. Create three-level inheritance (Person → Employee → Manager) and check isinstance() for each level.
-
-# Q10. Create two unrelated classes and verify that issubclass() returns False.
