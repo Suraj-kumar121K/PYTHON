@@ -77,5 +77,5 @@ class Customer(Bank):
     def show(self):
         print("Bank Name :", self.bank_name)
 c = Customer()
-c.show()
+# c.show()
 
