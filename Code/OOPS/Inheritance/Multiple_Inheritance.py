@@ -86,6 +86,31 @@ display_manager()
 Object create karo aur sab methods call karo.
 m1 = Manager("Suraj", 25, 50000, "IT", 3)
 """
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def display_person(self):
+        print("Name :", self.name)
+        print("Age :", self.age)
+class Salary:
+    def __init__(self, salary, department):
+        self.salary = salary
+        self.department = department
+    def display_salary(self):
+        print("Net Salary :", self.salary)
+        print("Net Department :", self.department)
+class Manager(Person, Salary):
+    def __init__(self,name, age, salary, department, experience):
+        Person.__init__(self, name, age)
+        Salary.__init__(self, salary, department)
+        self.experience = experience
+    def show_experience(self):
+        print("Total Experience :", self.experience)
+m1 = Manager("Suraj", 25, 50000, "IT", 3)
+m1.display_person()
+m1.display_salary()
+m1.show_experience()
 
 
 """
