@@ -106,12 +106,11 @@ class Manager(Person, Salary):
         Salary.__init__(self, salary, department)
         self.experience = experience
     def show_experience(self):
+        Person.display_person(self)
+        Salary.display_salary(self)
         print("Total Experience :", self.experience)
 m1 = Manager("Suraj", 25, 50000, "IT", 3)
-m1.display_person()
-m1.display_salary()
-m1.show_experience()
-
+# m1.show_experience()
 
 """
 Q2. Student Result System
@@ -132,20 +131,41 @@ Method:
 show_marks()
 
 Create class Result:
-
 Inherit from Student and Marks
 Constructor me dono parent constructors call karo.
 Extra attribute:
 grade
-
 Method:
 show_result()
 
 Object:
 r1 = Result("Rahul", 101, 90, 85, "A")
 """
-
-
+class Student:
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
+    def show_student(self):
+        print("Name:- ",self.name)
+        print("ROLL NO:- ", self.roll_no)
+class Marks:
+    def __init__(self, python_marks, sql_marks):
+        self.python_marks = python_marks
+        self.sql_marks = sql_marks
+    def show_marks(self):
+        print("Total Python Marks :", self.python_marks)
+        print("Total SQL Marks :", self.sql_marks)
+class Result:
+    def __init__(self, name, roll_no, python_marks, sql_marks, grade):
+        Student.__init__(self, name, roll_no)
+        Marks.__init__(self, python_marks, sql_marks)
+        self.grade = grade
+    def show_result(self):
+        Student.show_student(self)
+        Marks.show_marks(self)
+        print("Grade: ", self.grade)
+r1 = Result("Rahul", 101, 90, 85, "A")
+r1.show_result()
 """
 Q3. Vehicle Service System
 
