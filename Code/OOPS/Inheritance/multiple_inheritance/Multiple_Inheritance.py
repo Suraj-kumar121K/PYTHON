@@ -165,22 +165,21 @@ class Result:
         Marks.show_marks(self)
         print("Grade: ", self.grade)
 r1 = Result("Rahul", 101, 90, 85, "A")
-r1.show_result()
+# r1.show_result()
 """
 Q3. Vehicle Service System
-
 Create class Vehicle:
 Constructor:
-brand
-model
+    brand
+    model
 
 Method:
-display_vehicle()
+    display_vehicle()
 
 Create class Service:
 Constructor:
-service_type
-cost
+    service_type
+    cost
 
 Method:
 display_service()
@@ -188,7 +187,7 @@ display_service()
 Create class CarService:
 Inherit from both classes.
 Extra attribute:
-customer_name
+    customer_name
 
 Method:
 display_customer()
@@ -196,75 +195,144 @@ display_customer()
 Object:
 c1 = CarService("Tata", "Nexon", "Engine Repair", 5000, "Amit")
 """
+class Vechicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+    
+    def display_vehicle(self):
+        print("Brand: ", self.brand)
+        print("Model: ", self.model)
+        
+class Service:
+    def __init__(self, service_type, cost):
+        self.service_type = service_type
+        self.cost = cost
+    def display_service(self):
+        print("Service Type: ", self.service_type)
+        print("Cost: ", self.cost)
+        
+class CarService(Vechicle, Service):
+    def __init__(self, brand, model, service_type, cost, customer_name):
+        Vechicle.__init__(self, brand, model)
+        Service.__init__(self, service_type, cost)
+        self.customer_name = customer_name
+    def display_customer(self):
+        Vechicle.display_vehicle(self)
+        Service.display_service(self)
+        print("Customer Name:- ", self.customer_name)
+c1 = CarService("Tata", "Nexon", "Engine Repair", 5000, "Amit")
+# c1.display_customer()
 
 """
 Q4. Hospital Management System
 Create class Doctor:
 Constructor:
-doctor_name
-specialization
-
+    doctor_name
+    specialization
 Method:
-show_doctor()
+   show_doctor()
 
 Create class Patient:
 Constructor:
-patient_name
-disease
-
+    patient_name
+    patient_problem
 Method:
-show_patient()
+   show_patient()
 
 Create class Appointment:
 Inherit from both Doctor and Patient.
-Extra attribute:
-appointment_date
+    Extra attribute:
+    appointment_date
 
 Method:
-show_appointment()
-
+    show_appointment()
 Object:
-a1 = Appointment(
-    "Dr. Sharma",
-    "Cardiologist",
-    "Rahul",
-    "Heart Problem",
-    "13-07-2026"
-)
+a1 = Appointment("Dr. Sharma","Cardiologist","Rahul","Heart Problem","13-07-2026")
 """
-
+class Doctor:
+    def __init__(self, doctor_name, specialization):
+        self.doctor_name = doctor_name
+        self.specialization = specialization
+        
+    def show_doctor(self):
+        print("Doctor Name: ", self.doctor_name)
+        print("specialization: ", self.specialization)
+        
+class Patient:
+    def __init__(self, patient_name, patient_problem):
+        self.patient_name = patient_name
+        self.patient_problem = patient_problem
+    def show_patient(self):
+        print("Patient Name: ", self.patient_name)
+        print("Patient Problem: ", self.patient_problem)
+        
+class Appointment(Doctor, Patient):
+    def __init__(self, doctor_name, specialization, patient_name, patient_problem, appointment_date):
+        Doctor.__init__(self, doctor_name, specialization)
+        Patient.__init__(self, patient_name, patient_problem)
+        self.appointment_date = appointment_date
+    
+    def show_appointment(self):
+        Doctor.show_doctor(self)
+        Patient.show_patient(self)
+        print("Appointment Date:- ", self.appointment_date) 
+a1 = Appointment("Dr. Sharma","Cardiologist","Rahul","Heart Problem","13-07-2026")
+# a1.show_appointment()
 
 """
 Q5. Online Shopping System
-
 Create class Product:
 Constructor:
-product_name
-price
-Method:
-show_product()
+    product_name
+    price
+    Method:
+    show_product()
 
 Create class Customer:
-Constructor:
-customer_name
-location
-Method:
-show_customer()
+    Constructor:
+    customer_name
+    location
+    Method:
+    show_customer()
 
 Create class Order:
 Inherit from both Product and Customer.
-Extra attribute:
-quantity
+    Extra attribute:
+    quantity
 
 Method:
-show_order()
+    show_order()
 
 Object:
-o1 = Order(
-    "Laptop",
-    50000,
-    "Suraj",
-    "Noida",
-    2
-)
+o1 = Order("Laptop",50000,"Suraj","Noida",2)
 """
+class Product:
+    def __init__(self, product_name ,price):
+        self.product_name = product_name
+        self.price = price
+        
+    def show_product(self):
+        print("Product Name: ", self.product_name)
+        print("Product Price: ", self.price)
+        
+class Customer:
+    def __init__(self, customer_name, location):
+        self.customer_name = customer_name
+        self.location = location
+    def show_customer(self):
+        print("Customer Name: ", self.customer_name)
+        print("Customer Location: ", self.location)
+        
+class Order(Product, Customer):
+    def __init__(self, product_name ,price, customer_name, location, quantity):
+        Product.__init__(self, product_name ,price)
+        Customer.__init__(self, customer_name, location)
+        self.quantity = quantity
+    
+    def show_order(self):
+        Product.show_product(self)
+        Customer.show_customer(self)
+        print("Order Quantity:- ", self.quantity)
+o1 = Order("Laptop",50000,"Suraj","Noida",2)
+o1.show_order()

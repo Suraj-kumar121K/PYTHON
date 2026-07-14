@@ -1,5 +1,5 @@
 """
-3. Multilevel Inheritance
+1. Multilevel Inheritance
 Question 3
 Create
 Person
@@ -22,29 +22,37 @@ m = Manager()
 # m.show_company()
 # m.show_salary()
 
-
 # ============================================
 # 3. MULTILEVEL INHERITANCE (10 Questions)
 # ============================================
-# Q1. Create Person -> Employee -> Manager.
-
 # Q2. Create Animal -> Dog -> Puppy.
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-# Q3. Create Vehicle -> Car -> SportsCar.
+    def Animal_name(self):
+        print("Animal Name:", self.name)
 
-# Q4. Create Book -> EBook -> KindleBook.
+class Dog(Animal):
+    def __init__(self, name, breeds):
+        super().__init__(name)
+        self.breeds = breeds
 
-# Q5. Create Mobile -> SmartPhone -> AndroidPhone.
+    def dog_breeds(self):
+        print("Dog Breed:", self.breeds)
 
-# Q6. Create Shape -> Rectangle -> Square.
+class Puppy(Dog):
+    def __init__(self, name, breeds, golden):
+        super().__init__(name, breeds)
+        self.golden = golden
 
-# Q7. Create School -> Teacher -> Principal.
+    def Puppy_golden(self):
+        self.Animal_name()
+        self.dog_breeds()
+        print("Golden Retriever Puppy:", self.golden)
 
-# Q8. Create Bank -> Account -> SavingsAccount.
-
-# Q9. Create Computer -> Laptop -> GamingLaptop.
-
-# Q10. Create Hospital -> Doctor -> Surgeon.
+p1 = Puppy("Dog", "Labrador", "Tommy")
+p1.Puppy_golden()
 
 # ============================================
 # MULTILEVEL INHERITANCE (10 Questions)
