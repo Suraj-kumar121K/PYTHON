@@ -24,29 +24,6 @@ b = Bike()
 # b.fuel()
 # b.wheels()
 
-# ============================================
-# 4. HIERARCHICAL INHERITANCE (10 Questions)
-# ============================================
-# Q1. Create parent class Animal. Create child classes Dog and Cat.
-
-# Q2. Create parent class Vehicle. Create child classes Car and Bike.
-
-# Q3. Create parent class Employee. Create child classes Developer and Tester.
-
-# Q4. Create parent class Shape. Create child classes Circle and Rectangle.
-
-# Q5. Create parent class Person. Create child classes Student and Teacher.
-
-# Q6. Create parent class Book. Create child classes Novel and Magazine.
-
-# Q7. Create parent class Mobile. Create child classes Android and iPhone.
-
-# Q8. Create parent class Bank. Create child classes SBI and HDFC.
-
-# Q9. Create parent class Appliance. Create child classes TV and Refrigerator.
-
-# Q10. Create parent class Fruit. Create child classes Apple and Mango.
-
 # ==========================================
 # Hierarchical Inheritance (10 Questions)
 # ==========================================
@@ -97,11 +74,9 @@ b = Bike()
 
 # Q5
 # Create parent class Shape.
-#
 # Create child classes:
 # - Circle
 # - Rectangle
-#
 # Both should inherit from Shape.
 # Each child should have its own method.
 

@@ -52,7 +52,7 @@ class TeachingAssistant(Student, Teacher):
         print("Roll No:", self.roll_no)
         print("Subject:", self.subject)
 ta = TeachingAssistant("Rahul", 101, "Python")
-ta.display()
+# ta.display()
 
 """
 Q1. Person → Student, Teacher → Monitor
@@ -156,73 +156,76 @@ Object:
 """
 Q7. Person → Employee, Customer → Manager
 Parent Class: Person
+    Attributes:
+    name
+    age
 
-Attributes:
-
-name
-age
 Child 1: Employee
-employee_id
+    employee_id
+
 Child 2: Customer
-customer_id
+    customer_id
+
 Hybrid Class: Manager(Employee, Customer)
-department
+    department
+
 Object
 m1 = Manager("Suraj", 24, "EMP101", "CUS501", "IT")
 """
 
 """
 Q8. Device → Laptop, Mobile → SmartDevice
-Parent
-company
-Laptop
-ram
-Mobile
-camera
-SmartDevice
-price
+Device:
+    company
+Laptop:
+    ram
+Mobile:
+    camera
+SmartDevice:
+    price
+
 Object
 s1 = SmartDevice("HP", "16GB", "64MP", 65000)
 """
 
 """
 Q9. University → Student, Professor → ResearchAssistant
-University
-university_name
-Student
-roll_no
-Professor
-subject
-ResearchAssistant
-stipend
+University:
+    university_name
+Student:
+    roll_no
+Professor:
+    subject
+ResearchAssistant:
+    stipend
 Object
 r1 = ResearchAssistant("MAKAUT", 101, "Python", 12000)
 """
 
 """
 Q10. Vehicle → Car, Truck → Transport
-Vehicle
-brand
-Car
-model
-Truck
-capacity
-Transport
-owner_name
+Vehicle:
+    brand
+Car:
+    model
+Truck:
+    capacity
+Transport:
+    owner_name
 Object
 t1 = Transport("Tata", "Nexon", "20 Ton", "Rahul")
 """
 
 """
 Q11. Hospital → Doctor, Nurse → Surgeon
-Hospital
-hospital_name
-Doctor
-specialization
-Nurse
-experience
-Surgeon
-surgery_type
+Hospital:
+    hospital_name
+Doctor:
+    specialization
+Nurse:
+    experience
+Surgeon:
+    surgery_type
 Object
 s1 = Surgeon("AIIMS", "Cardiology", 8, "Heart Surgery")
 """

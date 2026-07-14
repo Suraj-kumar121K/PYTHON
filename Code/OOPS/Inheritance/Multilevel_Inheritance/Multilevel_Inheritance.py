@@ -57,82 +57,74 @@ p1.Puppy_golden()
 # ============================================
 # MULTILEVEL INHERITANCE (10 Questions)
 # ============================================
-# Q1
-# Create
-# Person
-# Employee
-# Manager
-#
-# Manager should access methods from both parent classes.
+"""
+Q1. Create
+    Person
+    Employee
+    Manager
+Manager should access methods from both parent classes.
+"""
 
-# Q2
-# Create
-# Animal
-# Dog
-# Puppy
-#
-# Puppy should access methods from both parent classes.
+"""
+Q2 Create
+    Vehicle
+    Car
+    SportsCar
+SportsCar should access methods from both parent classes.
+"""
 
-# Q3
-# Create
-# Vehicle
-# Car
-# SportsCar
-#
-# SportsCar should access methods from both parent classes.
+"""
+Q3. Create
+    Book
+    EBook
+    KindleBook
+KindleBook should access methods from both parent classes.
+"""
 
-# Q4
-# Create
-# Book
-# EBook
-# KindleBook
-#
-# KindleBook should access methods from both parent classes.
+"""
+Q4. Create
+    Mobile
+    SmartPhone
+    AndroidPhone
+AndroidPhone should access methods from both parent classes.
+"""
 
-# Q5
-# Create
-# Mobile
-# SmartPhone
-# AndroidPhone
-#
-# AndroidPhone should access methods from both parent classes.
+"""
+Q5. Create
+    Shape
+    Rectangle
+    Square
+Square should access methods from both parent classes.
+"""
 
-# Q6
-# Create
-# Shape
-# Rectangle
-# Square
-#
-# Square should access methods from both parent classes.
+"""
+Q6. Create
+    School
+    Teacher
+    Principal
+Principal should access methods from both parent classes.
+"""
 
-# Q7
-# Create
-# School
-# Teacher
-# Principal
-#
-# Principal should access methods from both parent classes.
+"""
+Q7. Create
+    Bank
+    Account
+    SavingsAccount
+SavingsAccount should access methods from both parent classes.
+"""
 
-# Q8
-# Create
-# Bank
-# Account
-# SavingsAccount
-#
-# SavingsAccount should access methods from both parent classes.
+"""
+Q8. Create
+    Computer
+    Laptop
+    GamingLaptop
+GamingLaptop should access methods from both parent classes.
+"""
 
-# Q9
-# Create
-# Computer
-# Laptop
-# GamingLaptop
-#
-# GamingLaptop should access methods from both parent classes.
-
-# Q10
-# Create
-# Hospital
-# Doctor
-# Surgeon
-#
-# Surgeon should access methods from both parent classes.
+"""
+Q9. Create
+    Hospital
+    Doctor
+    Surgeon
+Surgeon should access methods from both parent classes.
+"""
