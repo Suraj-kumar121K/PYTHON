@@ -79,9 +79,25 @@ Create a class EBook that inherits from Book.
 Add:
 - attribute: file_size
 - method: display_size()
-Create an object and call both methods."""
-
-
+Create an object and call both methods.
+"""
+class Book:
+    def __init__(self, title):
+        self.title = title     
+    def display_title(self):
+        print("Title: ", self.title)
+class EBook(Book):
+    def __init__(self, title ,file_size):
+        super().__init__(title)
+        self.file_size = file_size
+        
+    def display_size(self):
+        self.display_title()
+        print("File size:- ", self.file_size)
+b1 = EBook("sk", 500)
+# b1.display_size()
+        
+        
 """
 Q5. Create a class Employee with:
 - attribute: name
@@ -92,7 +108,21 @@ Add:
 - method: display_salary()
 Create an object and display all details.
 """
-
+class Employee:
+    def __init__(self, name):
+        self.name = name    
+    def display_name(self):
+        print("Name : ", self.name)
+class Manager(Employee):
+    def __init__(self, name, salary):
+        super().__init__(name)
+        self.salary = salary
+        
+    def display_salary(self):
+        self.display_name()
+        print("Salary:- ", self.salary)
+b1 = Manager("suraj", 15000)
+# b1.display_salary()
 
 """
 Q6. Create a class Mobile with:
@@ -104,7 +134,20 @@ Add:
 - method: display_ram()
 Create an object and call both methods.
 """
-
+class Mobile:
+    def __init__(self, company):
+        self.company = company
+    def display_company(self):
+        print("company Name:- ", self.company)
+class SmartPhone(Mobile):
+    def __init__(self, company, ram):
+        super().__init__(company)
+        self.ram = ram
+    def display_ram(self):
+        self.display_company()
+        print("Ram:- ", self.ram)
+s1 = SmartPhone("VIVO", "8GB")
+# s1.display_ram()
 
 """
 Q7. Create a class Shape with:
@@ -116,7 +159,20 @@ Add:
 - method: display_radius()
 Create an object and display both values.
 """
-
+class Shape:
+    def __init__(self, color):
+        self.color = color
+    def dis_color(self):
+        print("color: ", self.color)
+class Circle(Shape):
+    def __init__(self, color, radius):
+        super().__init__(color)
+        self.radius = radius
+    def display_radius(self):
+        self.dis_color()
+        print("Radius:", self.radius)
+c1 = Circle("Red", 10)
+# c1.display_radius()
 
 """
 Q8. Create a class Bank with:
@@ -128,6 +184,20 @@ Add:
 - method: display_customer()
 Create an object and call both methods.
 """
+class Bank:
+    def __init__(self, bank_name):
+        self.bank_name = bank_name
+    def display_bank(self):
+        print("Bank Name: ", self.bank_name)
+class Customer(Bank):
+    def __init__(self, bank_name, customer_name):
+        super().__init__(bank_name)
+        self.customer_name = customer_name
+    def display_custome(self):
+        self.display_bank()
+        print("customer name:", self.customer_name)
+c1 = Customer("SBI", "Suraj")
+# c1.display_custome()
 
 """
 Q9. Create a class Laptop with:
@@ -139,7 +209,20 @@ Add:
 - method: display_gpu()
 Create an object and display all details.
 """
-
+class Laptop:
+    def __init__(self, company):
+        self.company = company
+    def display_company(self):
+        print("Company Name: ", self.company)
+class GamingLaptop(Laptop):
+    def __init__(self, company, gpu):
+        super().__init__(company)
+        self.gpu = gpu
+    def display_gpu(self):
+        self.display_company()
+        print("GPU Name:", self.gpu)
+c1 = GamingLaptop("HP", "NVIDIA GeForce RTX 5090")
+# c1.display_gpu()
 
 """
 Q10. Create a class Hospital with:
@@ -151,26 +234,17 @@ Add:
 - method: display_specialization()
 Create an object and call both methods.
 """
-
-# ============================================
-# 1. SINGLE INHERITANCE (10 Questions)
-# ============================================
-# Q1. Create Person(name) and Student(name, roll) using inheritance.
-
-# Q2. Create Vehicle(brand) and Car(brand, model).
-
-# Q3. Create Animal(name) and Dog(name, breed).
-
-# Q4. Create Book(title) and EBook(title, size).
-
-# Q5. Create Employee(name) and Manager(name, salary).
-
-# Q6. Create Mobile(company) and SmartPhone(company, ram).
-
-# Q7. Create Shape(color) and Circle(color, radius).
-
-# Q8. Create Bank(bank_name) and Customer(bank_name, customer_name).
-
-# Q9. Create Laptop(company) and GamingLaptop(company, gpu).
-
-# Q10. Create Hospital(name) and Doctor(name, specialization).
+class Hospital:
+    def __init__(self, hospital_name):
+        self.hospital_name = hospital_name
+    def display_hospital(self):
+        print("Hospital Name: ", self.hospital_name)
+class Doctor(Hospital):
+    def __init__(self, color, specialization):
+        super().__init__(color)
+        self.specialization = specialization
+    def display_specialization(self):
+        self.display_hospital()
+        print("specialization: ", self.specialization)
+c1 = Doctor("GNU", "kumar")
+# c1.display_specialization()
