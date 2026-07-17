@@ -1,14 +1,57 @@
-# Create an abstract class Animal with an abstract method sound().
-# Create Dog and Cat classes.
+"""
+Create an abstract class Animal with an abstract method sound().
+Create Dog and Cat classes.
+"""
+# ABC aur abstractmethod import kiya
+from abc import ABC, abstractmethod   
+# Abstract Class banayi
+class Animal(ABC):
+    # Abstract method banaya (sirf declaration hai, implementation nahi)
+    @abstractmethod
+    def sound(self):
+        pass
 
+# Child Class 1 banayi jo Animal class ko inherit karti hai
+class Dog(Animal):
 
-# Create an abstract class Vehicle with an abstract method start().
-# Create Bike and Car classes.
+    # Abstract method sound() ko implement kiya
+    def sound(self):
+        print("Dog says Bark")
 
+# Child Class 2 banayi jo Animal class ko inherit karti hai
+class Cat(Animal):
+
+    # Abstract method sound() ko implement kiya
+    def sound(self):
+        print("Cat says Meow")
+
+# Dog class ka object create kiya
+dog = Dog()
+# Cat class ka object create kiya
+cat = Cat()
+# Dog ka sound method call kiya
+# dog.sound()
+# Cat ka sound method call kiya
+# cat.sound()
 
 # Create an abstract class Shape with an abstract method area().
 # Create Circle and Rectangle classes.
+from abc import ABC, abstractmethod  
+class Shape(ABC):
+    @abstractmethod 
+    def area(self):
+        pass
+class circle(Shape):
+    def area(self):
+        print("This is circle")
+class Rectangle(Shape):
+    def area(self):
+        print("This is Rectangle")
 
+cir = circle()
+rect = Rectangle()
+cir.area()
+rect.area()
 
 # Create an abstract class Payment with an abstract method pay().
 # Create UPI, CreditCard, and Cash classes.
