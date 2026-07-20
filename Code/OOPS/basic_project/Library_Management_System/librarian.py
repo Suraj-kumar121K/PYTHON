@@ -1,5 +1,4 @@
 from person import Person
-
 class Librarian(Person):
     def __init__(self, name, person_id, salary):
         super().__init__(name, person_id)
