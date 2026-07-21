@@ -4,7 +4,6 @@ library = LibraryManagement("books.txt")
 while True:
 
     print("\n--- Library Management System ---")
-
     print("1. Add Book")
     print("2. View Books")
     print("3. Search Book")
@@ -13,7 +12,6 @@ while True:
     choice = input("Enter Choice: ")
 
     if choice == "1":
-
         book_id = input("Enter Book ID: ")
         title = input("Enter Book Title: ")
         author = input("Enter Author Name: ")
@@ -25,20 +23,14 @@ while True:
         )
         library.add_book(book)
     elif choice == "2":
-
         library.view_books()
 
     elif choice == "3":
-
         book_id = input("Enter Book ID: ")
-
         library.search_book(book_id)
 
     elif choice == "4":
-
         print("Program Closed")
         break
-
     else:
-
         print("Invalid Choice")
