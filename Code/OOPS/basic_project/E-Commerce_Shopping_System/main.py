@@ -3,12 +3,7 @@ from customer import Customer
 from seller import Seller
 from product import Product
 
-
 def main():
-
-    # ==========================
-    # Create Store
-    # ==========================
     store = AmazonStore(
         "Amazon India",
         "Delhi",
@@ -19,9 +14,6 @@ def main():
     store.show_store()
     store.show_manager()
 
-    # ==========================
-    # Create Products
-    # ==========================
     laptop = Product(
         101,
         "Laptop",
@@ -49,9 +41,6 @@ def main():
         15
     )
 
-    # ==========================
-    # Create Seller
-    # ==========================
     seller = Seller(
         1,
         "Amit",
@@ -70,16 +59,10 @@ def main():
     print("\nSeller Product List")
     seller.view_products()
 
-    # ==========================
-    # Add Products To Store
-    # ==========================
     store.add_product(laptop)
     store.add_product(mouse)
     store.add_product(keyboard)
 
-    # ==========================
-    # Create Customer
-    # ==========================
     customer = Customer(
         101,
         "Suraj",
@@ -93,26 +76,17 @@ def main():
 
     store.add_customer(customer)
 
-    # ==========================
-    # Customer Cart
-    # ==========================
     customer.add_to_cart(laptop)
     customer.add_to_cart(mouse)
 
     print("\n===== CUSTOMER CART =====")
     customer.view_cart()
 
-    # ==========================
-    # Wishlist
-    # ==========================
     customer.add_to_wishlist(keyboard)
 
     print("\n===== CUSTOMER WISHLIST =====")
     customer.view_wishlist()
 
-    # ==========================
-    # Place Order
-    # ==========================
     customer.place_order(laptop)
 
     print("\n===== CUSTOMER ORDERS =====")
@@ -120,15 +94,9 @@ def main():
 
     store.add_order(laptop)
 
-    # ==========================
-    # Update Stock
-    # ==========================
     laptop.reduce_stock(1)
     mouse.reduce_stock(2)
 
-    # ==========================
-    # Update Sales
-    # ==========================
     seller.update_sales(laptop.price)
     seller.update_sales(mouse.price * 2)
 
@@ -141,14 +109,10 @@ def main():
     print("\n===== STORE SALES =====")
     print(f"Total Store Sales : ₹{store.total_sales}")
 
-    # ==========================
-    # Product Details
-    # ==========================
     print("\n===== PRODUCT DETAILS =====")
     laptop.show_product()
     mouse.show_product()
     keyboard.show_product()
-
 
 if __name__ == "__main__":
     main()
