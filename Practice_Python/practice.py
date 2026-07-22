@@ -1,34 +1,105 @@
 # ============================================
 # 100 Python Coding Questions for Practice
 # ============================================
-
-# 🔹 Basics (1–20)
-
+# 🔹 Basics
 # 1. Print "Hello, World!"
+"""x = "Hello World"
+print(x)
+"""
 # 2. Take user input and print it.
+"""user = input("Enter a value: ")
+print(user)"""
+
 # 3. Add two numbers.
+"""x = int(input("Enter a Number: "))
+y = int(input("Enter a Number: "))
+result = x + y
+print(result)"""
+
 # 4. Subtract two numbers.
+"""x = int(input("Enter a Number: "))
+y = int(input("Enter a Number: "))
+result_1 = x - y
+print(result_1)"""
+
 # 5. Multiply two numbers.
+"""x = int(input("Enter a Number: "))
+y = int(input("Enter a Number: "))
+result = x * y
+print(result)"""
+
 # 6. Divide two numbers.
+"""x = int(input("Enter a Number: "))
+y = int(input("Enter a Number: "))
+result = x / y
+print(result)"""
+
 # 7. Find the remainder.
+"""x = int(input("Enter a Number: "))
+y = int(input("Enter a Number: "))
+result = x % y
+print(result)"""
+
 # 8. Find the square of a number.
+"""x = int(input("Enter a Number: "))
+result = x * x
+print(result)"""
+
 # 9. Find the cube of a number.
+"""x = int(input("Enter a Number: "))
+result = x ** 3
+print(result)"""
+
 # 10. Swap two variables.
+"""x = 10
+y = 29
+x, y = y, x
+print("x =", x)
+print("y =", y)"""
+
 # 11. Check even or odd.
+"""even_num = int(input("Enter a number: "))
+if even_num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")"""
+
 # 12. Check positive, negative, or zero.
-# 13. Find the largest of two numbers.
-# 14. Find the largest of three numbers.
+"""even_num = int(input("Enter a number: "))
+if even_num > 0:
+    print("positive")
+elif even_num < 0:
+    print("negative")
+else:
+    print("zero")"""
+
+# 13. Find the largest of two numbers. | practice
+
+
+# 14. Find the largest of three numbers. | practice
+
+
 # 15. Convert Celsius to Fahrenheit.
+
+
 # 16. Convert Fahrenheit to Celsius.
+
+
 # 17. Calculate Simple Interest.
+
+
 # 18. Calculate Area of Circle.
+
+
 # 19. Calculate Area of Rectangle.
+
+
 # 20. Calculate Perimeter of Rectangle.
+
 
 # ============================================
 # 🔹 If-Else (21–35)
 # ============================================
-
 # 21. Check voting eligibility.
 # 22. Check leap year.
 # 23. Check prime number.
@@ -48,7 +119,6 @@
 # ============================================
 # 🔹 Loops (36–55)
 # ============================================
-
 # 36. Print numbers from 1 to N.
 # 37. Print even numbers.
 # 38. Print odd numbers.
@@ -73,7 +143,6 @@
 # ============================================
 # 🔹 Strings (56–70)
 # ============================================
-
 # 56. Reverse a string.
 # 57. Check palindrome string.
 # 58. Count vowels.
@@ -93,7 +162,6 @@
 # ============================================
 # 🔹 List, Tuple, Set, Dictionary (71–85)
 # ============================================
-
 # 71. Find the largest element in a list.
 # 72. Find the smallest element.
 # 73. Find the second largest element.
@@ -113,7 +181,6 @@
 # ============================================
 # 🔹 Functions & Advanced Python (86–100)
 # ============================================
-
 # 86. Create a function to calculate factorial.
 # 87. Create a function to check prime.
 # 88. Recursive factorial.
