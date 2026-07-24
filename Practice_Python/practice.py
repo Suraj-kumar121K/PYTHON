@@ -77,7 +77,12 @@ else:
 
 
 # 14. Find the largest of three numbers. | practice
-
+x = [10, 20, 30]
+large = x[0]
+for num in x:
+    if num > large:
+        large = num
+print(large)
 
 # 15. Convert Celsius to Fahrenheit.
 
