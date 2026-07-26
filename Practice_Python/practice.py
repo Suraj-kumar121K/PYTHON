@@ -106,6 +106,10 @@ print(large)
 # 🔹 If-Else (21–35)
 # ============================================
 # 21. Check voting eligibility.
+if num >= 18:
+    print("Eligible person")
+else:
+    
 # 22. Check leap year.
 # 23. Check prime number.
 # 24. Check palindrome number.
