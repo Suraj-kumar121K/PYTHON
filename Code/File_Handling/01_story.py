@@ -1,3 +1,5 @@
+"""
+story = 
 
 The Power of Consistency
 
@@ -17,6 +19,51 @@ A week later, Rohan received an email saying that he had been selected for the j
 
 Rohan continued to improve his skills even after getting the job. He learned Power BI, statistics, and data visualization. He also helped beginners by sharing his knowledge. He understood that success was not about being perfect but about making small improvements every day.
 
-I love Python.
-I love Python.
-I love Python.
+with open("story.txt", "w") as file:
+    file.write(story)
+print("Story saved successfully.")
+"""
+# 1. Read the complete story.txt file.
+"""file = open("story.txt", "r")
+data = file.read()
+print(data)
+file.close()"""
+
+# 2. Print only the first line of the file.
+"""file = open("story.txt", "r")
+data = file.readline()
+print(data)
+file.close()"""
+
+# 3. Store all lines in a list and print them.
+"""file = open("story.txt", "r")
+data = file.readlines()
+print(data)
+file.close()"""
+
+# 4. Add "Thank you!" at the end of the file.
+file = open("story.txt", "a")
+file.write("\nI love Python.")
+file.close()
+
+# 5. Count the total number of characters in the file.
+
+# 6. Count the total number of words in the file.
+
+# 7. Count the total number of lines in the file.
+
+# 8. Check whether the word "Rohan" exists in the file or not.
+
+# 9. Replace the word "Rohan" with "Suraj" and save it in a new file.
+
+# 10. Convert the first character of the file content into uppercase.
+
+# 11. Print the complete text in uppercase.
+
+# 12. Print the complete text in lowercase.
+
+# 13. Take a word from the user and count how many times it appears in the file.
+
+# 14. Copy the file and create a new file named backup.txt.
+
+# 15. Check whether the file exists before deleting it.
