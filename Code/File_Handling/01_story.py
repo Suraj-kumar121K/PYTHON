@@ -42,10 +42,11 @@ print(data)
 file.close()"""
 
 # 4. Add "Thank you!" at the end of the file.
+"""
 file = open("story.txt", "a")
 file.write("\nI love Python.")
 file.close()
-
+"""
 # 5. Count the total number of characters in the file.
 
 # 6. Count the total number of words in the file.
