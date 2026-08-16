@@ -422,9 +422,9 @@ for i in lst:
 print(element)"""
 
 # 45. Check if two lists are identical
-"""list1 = [1, 2, 3]
+list1 = [1, 2, 3]
 list2 = [1, 2, 3]
 if list1 == list2:
     print("Identical")
 else:
-    print("Not Identical")"""
+    print("Not Identical")
