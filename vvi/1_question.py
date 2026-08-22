@@ -1,5 +1,6 @@
 # Number & Logic
 # 1. Reverse a number 
+"""
 num = 12345163
 rev = 0
 while num > 0:
@@ -7,15 +8,37 @@ while num > 0:
     rev = rev * 10 + digit 
     num = num // 10
 print(rev)
-
+"""
 # 2. Check Palindrome Number 
+
 # 3. Check Prime Number 
+
 # 4. Print Prime Numbers from 1 to N 
+
 # 5. Find Factorial of a Number 
+
 # 6. Find Fibonacci Series 
+
 # 7. Check Armstrong Number 
+def armstrong(num):
+    original = num
+    digits = len(str(num))
+    total = 0
+    
+    while num > 0:
+        digit = num % 10
+        total = total + digit ** digits
+        num = num // 10
+    if total == original:
+        print("Armstrong Number")
+    else:
+        print("Not Armstrong Number")
+armstrong(123)
+
 # 8. Find GCD/HCF of Two Numbers 
+
 # 9. Find LCM of Two Numbers 
+
 # 10. Find Sum of Digits
 
 # String — Very Important
