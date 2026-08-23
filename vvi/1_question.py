@@ -67,8 +67,6 @@ def lcm(a, b):
 # print(lcm(4, 6))
 
 # 10. Find Sum of Digits
-
-# String — Very Important
 # 11.	Reverse a String 
 # 12.	Check Palindrome String 
 # 13.	Count Vowels and Consonants 
@@ -79,14 +77,11 @@ def lcm(a, b):
 # 18.	Find Duplicate Characters 
 # 19.	Find Largest Word in a String 
 # 20.	Count Words in a Sentence
-# Very Important
 # 21.	Find Largest Element Without max() 
 # 22.	Find Second Largest Element 
 # 23.	Remove Duplicates from List 
 # 24.	Find Duplicate Elements 
 # 25.	Find Missing Number from List
-
-# Very Important Interview Logic
 # 26.	26. Two Sum Problem 
 # 27.	Three Sum Problem 
 # 28.	Find Maximum Subarray Sum 
