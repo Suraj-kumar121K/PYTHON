@@ -1,4 +1,3 @@
-# Number & Logic
 # 1. Reverse a number 
 def reverse(num):
     rev = 0
@@ -9,7 +8,6 @@ def reverse(num):
         num = num // 10
     print(rev)
 # reverse(123456)
-
 
 # 2. Check Palindrome Number 
 def Palindrome(num):
@@ -24,14 +22,16 @@ def Palindrome(num):
     else:
         print("Not Palindrome Number")
 # Palindrome(121)
-
-# 3. Check Prime Number 
-
-# 4. Print Prime Numbers from 1 to N 
-
-# 5. Find Factorial of a Number 
+ 
 
 # 6. Find Fibonacci Series 
+def fib(num):
+    a = 0
+    b = 1
+    for i in range(num):
+        print(a, end=" ")
+        a, b = b, a + b
+# fib(10)
 
 # 7. Check Armstrong Number 
 def armstrong(num):
@@ -55,7 +55,7 @@ def gcd(a, b):
         if a % smaller == 0 and b % smaller == 0:
             return smaller
         smaller -= 1
-print(gcd(18, 12))
+# print(gcd(18, 12))
 
 # 9. Find LCM of Two Numbers 
 def lcm(a, b):
@@ -66,30 +66,42 @@ def lcm(a, b):
         multiple += 1
 # print(lcm(4, 6))
 
-# 10. Find Sum of Digits
-# 11.	Reverse a String 
-# 12.	Check Palindrome String 
-# 13.	Count Vowels and Consonants 
-# 14.	Count Character Frequency 
-# 15.	Find First Non-Repeating Character 
-# 16.	Check Two Strings are Anagrams 
-# 17.	Remove Duplicate Characters 
-# 18.	Find Duplicate Characters 
-# 19.	Find Largest Word in a String 
-# 20.	Count Words in a Sentence
-# 21.	Find Largest Element Without max() 
-# 22.	Find Second Largest Element 
-# 23.	Remove Duplicates from List 
-# 24.	Find Duplicate Elements 
-# 25.	Find Missing Number from List
-# 26.	26. Two Sum Problem 
-# 27.	Three Sum Problem 
-# 28.	Find Maximum Subarray Sum 
-# 29.	Find Common Elements in 3 Lists 
-# 30.	Merge Two Sorted Lists 
-# 31.	Remove Duplicates from Sorted List 
-# 32.	Find Majority Element 
-# 33.	Find All Pairs with Given Sum 
-# 34.	Rotate a List by K Positions 
-# 35.	Find Missing and Duplicate Number
+# Q1. Write a Python program to find the largest number in a list.
+def Largest_Number(num):
+    largest = num[0]
+    for i in num:
+        if i > largest:
+            largest = i
+    print(largest)
+# Largest_Number([10, 20, 50, 30, 40, 1])
 
+# Q2. Write a Python program to find the smallest number in a list.
+num = [10, 20, 50, 30, 40, 1]
+smaller = num[0]
+for i in num:
+    if i < smaller:
+        smaller = i
+# print(smaller)
+
+# Q3. Write a Python program to find the second largest number in a list.
+num = [10, 20, 50, 30, 40, 1]
+largest = num[0]
+second = num[0]
+for i in num:
+    if i > largest:
+        second = largest
+        largest = i
+    elif i > second and i != largest:
+        second = i
+# print(second)
+
+# program Two Sum
+def two_sum(num, target):
+    for i in range(len(num)):
+        for j in range(i + 1, len(num)):
+            if num[i] + num[j] == target:
+                return [i, j]
+num = [2, 7, 11, 15]
+target = 18
+result = two_sum(num, target)
+print(result)
