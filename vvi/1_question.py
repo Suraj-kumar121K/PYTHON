@@ -1,7 +1,6 @@
 # 1. Reverse a number 
 def reverse(num):
     rev = 0
-
     while num > 0:
         digit = num % 10
         rev = rev * 10 + digit
@@ -22,7 +21,6 @@ def Palindrome(num):
     else:
         print("Not Palindrome Number")
 # Palindrome(121)
- 
 
 # 3. Find Fibonacci Series 
 def fib(num):
@@ -188,55 +186,41 @@ print(is_anagram("listen", "silent"))
 # 25. Find the largest word in a sentence.
 def largest_word(sentence):
     words = sentence.split()
-
     largest = ""
-
     for word in words:
         if len(word) > len(largest):
             largest = word
-
     return largest
-
-
 print(largest_word("Python is very powerful"))
 
 # 27. Reverse each word of a sentence.
 def reverse_each_word(sentence):
     words = sentence.split()
-
     result = []
-
     for word in words:
         result.append(word[::-1])
-
     return " ".join(result)
 print(reverse_each_word("Python is easy"))
 
 # 28. Remove duplicate characters from a string.
 def remove_duplicates(s):
     result = ""
-
     for char in s:
         if char not in result:
             result += char
-
     return result
 print(remove_duplicates("programming"))
 
 # 29. Find the most frequent character in a string.
 def most_frequent_character(s):
     frequency = {}
-
     for char in s:
         frequency[char] = frequency.get(char, 0) + 1
-
     max_frequency = 0
     result = None
-
     for char in s:
         if frequency[char] > max_frequency:
             max_frequency = frequency[char]
             result = char
-
     return result
 print(most_frequent_character("programming"))
