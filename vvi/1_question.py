@@ -163,7 +163,7 @@ def character_frequency(s):
     for char in s:
         frequency[char] = frequency.get(char, 0) + 1
     return frequency
-print(character_frequency("hello"))
+# print(character_frequency("hello"))
 
 # 24. Check whether two strings are anagrams.
 def is_anagram(s1, s2):
@@ -181,7 +181,7 @@ def is_anagram(s1, s2):
         if frequency[char] < 0:
             return False
     return True
-print(is_anagram("listen", "silent"))
+# print(is_anagram("listen", "silent"))
 
 # 25. Find the largest word in a sentence.
 def largest_word(sentence):
@@ -191,7 +191,7 @@ def largest_word(sentence):
         if len(word) > len(largest):
             largest = word
     return largest
-print(largest_word("Python is very powerful"))
+# print(largest_word("Python is very powerful"))
 
 # 27. Reverse each word of a sentence.
 def reverse_each_word(sentence):
@@ -200,7 +200,7 @@ def reverse_each_word(sentence):
     for word in words:
         result.append(word[::-1])
     return " ".join(result)
-print(reverse_each_word("Python is easy"))
+# print(reverse_each_word("Python is easy"))
 
 # 28. Remove duplicate characters from a string.
 def remove_duplicates(s):
@@ -209,7 +209,7 @@ def remove_duplicates(s):
         if char not in result:
             result += char
     return result
-print(remove_duplicates("programming"))
+# print(remove_duplicates("programming"))
 
 # 29. Find the most frequent character in a string.
 def most_frequent_character(s):
@@ -223,4 +223,18 @@ def most_frequent_character(s):
             max_frequency = frequency[char]
             result = char
     return result
-print(most_frequent_character("programming"))
+# print(most_frequent_character("programming"))
+
+# Prime numbers
+def Prime_numbers(num):
+    count = 0
+    for i in range(1, num + 1):
+        if num % i == 0:
+            count += 1
+    if count == 2:
+        return "Prime number"
+    else:
+        return "Not Prime number"
+# print(Prime_numbers(8))
+
+
