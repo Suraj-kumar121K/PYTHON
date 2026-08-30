@@ -237,4 +237,3 @@ def Prime_numbers(num):
         return "Not Prime number"
 # print(Prime_numbers(8))
 
-
