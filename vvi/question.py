@@ -2,16 +2,40 @@
 # 1. Python Basics
 # ============================================================
 # 1. Write a program to print "Hello, World!".
+a = "Hello, World!"
+# print(a)
 
 # 2. Take two numbers as input and print their sum.
+def add(a, b):
+    sum = a + b
+    return sum
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# result = add(a, b)
+# print("Sum:", result)
 
 # 3. Take two numbers and perform +, -, *, /, and %.
 
+
 # 4. Swap two variables without using a third variable.
+def swap(a, b):
+    swap_two = a, b = b, a
+    return swap_two
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# a, b = swap(a, b)
+# print("After swapping:")
+# print("a =", a)
+# print("b =", b)
 
 # 5. Check whether a number is positive, negative, or zero.
 
 # 6. Check whether a number is even or odd.
+num = int(input("Enter number: "))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
 
 # 7. Find the largest of two numbers.
 
