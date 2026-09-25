@@ -187,9 +187,15 @@ def mul_table(num):
 # mul_table(result)
 
 # 27. Count the number of digits in a number.
-def count_number(num):
+def count_digits(num):
+    count = 0
+    while num > 0:
+        num = num // 10
+        count += 1
+    print(count)
+result = int(input("Enter a Number: "))
+count_digits(result)
     
-
 # 28. Reverse a number.
 
 # 29. Find the sum of digits of a number.
