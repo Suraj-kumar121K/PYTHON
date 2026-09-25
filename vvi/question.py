@@ -178,15 +178,17 @@ def sum_num(num):
 
 # 25. Find the factorial of a number.
 
+
 # 26. Print the multiplication table of a number.
 def mul_table(num):
     for i in range(1, 11):
         print(f"{num} X {i} = {num * i}")
-result = int(input("Enter a Number: "))
-mul_table(result)
-
+# result = int(input("Enter a Number: "))
+# mul_table(result)
 
 # 27. Count the number of digits in a number.
+def count_number(num):
+    
 
 # 28. Reverse a number.
 
@@ -430,7 +432,9 @@ mul_table(result)
 
 # 115. Use set comprehension to find unique vowels from a string.
 
-#2. Exception Handling
+# ============================================================
+# 🔥 2. Exception Handling
+# ============================================================
 # 116. Handle division by zero using try-except.
 
 # 117. Handle invalid user input using try-except.
@@ -451,8 +455,9 @@ mul_table(result)
 
 # 125. Create a function that raises an exception when a number is negative.
 
-#OOPs — Very Important
-
+# ============================================================
+# 🔥 OOPs — Very Important
+# ============================================================
 # 126. Create a class Employee with name, age, and salary attributes.
 
 # 127. Create an object of the Employee class and display its details.
@@ -473,7 +478,9 @@ mul_table(result)
 
 # 135. Create a class Sales and calculate total sales.
 
-# 4. Encapsulation
+# ============================================================
+# 🔥 4. Encapsulation
+# ============================================================
 # 136. Create a class Employee with a private salary attribute.
 
 # 137. Create getter and setter methods for salary.
@@ -484,7 +491,9 @@ mul_table(result)
 
 # 140. Allow balance modification only through deposit() and withdraw() methods.
 
-#5. Inheritance
+# ============================================================
+# 🔥 5. Inheritance
+# ============================================================
 # 141. Create a Person class and inherit it into an Employee class.
 
 # 142. Create a Vehicle class and inherit it into Car and Bike classes.
@@ -505,7 +514,9 @@ mul_table(result)
 
 # 150. Create a hierarchy of Company → Department → Employee.
 
-#6. Polymorphism
+# ============================================================
+# 🔥 6. Polymorphism
+# ============================================================
 # 151. Create different classes with the same method name.
 
 # 152. Create Dog and Cat classes with the same speak() method.
@@ -520,7 +531,9 @@ mul_table(result)
 
 # 157. Create Shape, Circle, and Rectangle classes with an area() method.
 
-#7. Abstraction
+# ============================================================
+# 🔥 7. Abstraction
+# ============================================================
 # 158. Create an abstract Shape class with an abstract area() method.
 
 # 159. Create Circle and Rectangle classes based on the Shape class.
