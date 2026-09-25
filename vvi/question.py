@@ -29,14 +29,24 @@ def swap(a, b):
 # print("b =", b)
 
 # 5. Check whether a number is positive, negative, or zero.
+def number_positive_negative(num):
+    if num > 0:
+        return "Positive"
+    elif num < 0:
+        return "negative"
+    else:
+        return "zero"
+num = int(input("Enter number: "))
+result = number_positive_negative(num)
 
 # 6. Check whether a number is even or odd.
-num = int(input("Enter number: "))
-if num % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
-
+def Even(num):
+    if num % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+# num = int(input("Enter number: "))
+# Even(num)
 # 7. Find the largest of two numbers.
 
 # 8. Find the largest of three numbers.
