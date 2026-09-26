@@ -193,10 +193,11 @@ def count_digits(num):
         num = num // 10
         count += 1
     print(count)
-result = int(input("Enter a Number: "))
-count_digits(result)
+# result = int(input("Enter a Number: "))
+# count_digits(result)
     
 # 28. Reverse a number.
+    
 
 # 29. Find the sum of digits of a number.
 
@@ -251,16 +252,66 @@ count_digits(result)
 # 5. Lists — Very Important
 # ============================================================
 # 51. Find the largest element in a list.
+def Largest_element(num):
+    Largest = num[0]
+    for i in num:
+        if i > Largest:
+            Largest = i
+    print(Largest)
+# Step 1:
+# lar = list(map(int, input("Enter numbers: ").split()))
+#Largest_element(lar)
 
+# Step 2:
+# n = int(input("How many numbers: "))
+# lar = []
+# for i in range(n):
+#     num = int(input("Enter number: "))
+#     lar.append(num)
+# Largest_element(lar)
+    
 # 52. Find the smallest element in a list.
+def smallest(num):
+    small = num[0]
+    for i in num:
+        if i < small:
+            small = i
+    print(small)
+# step 1:
+# smallest([10, 20, 5, 30])
+
+# Step 2:
+# smallests = list(map(int, input("Enter a number ").split()))
+# smallest(smallests)
 
 # 53. Find the sum and average of list elements.
+
 
 # 54. Remove duplicate elements from a list.
 
 # 55. Find the second-largest element.
+def second_largest(num):
+    largest = num[0]
+    second = num[0]
+    for i in num:
+        if i > largest:
+            second = largest
+            largest = i
+    print(second)
+# step 1:
+# second_largest([10, 20, 5, 30])
 
 # 56. Find the second-smallest element.
+def second_smallest(num):
+    small = num[0]
+    second = num[0]
+    for i in num:
+        if i < small:
+            second = small
+            small = i
+    print(second)
+# step 1:
+# second_smallest([10, 20, 5, 30])
 
 # 57. Sort a list without using .sort().
 
