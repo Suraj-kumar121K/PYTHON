@@ -218,7 +218,11 @@ def count_digits(num):
 # 4. Strings — VVI
 # ============================================================
 # 36. Reverse a string.
-
+name = "suraj"
+reverse_str = ""
+for char in name:
+    print()
+    
 # 37. Check whether a string is a palindrome.
 
 # 38. Count the number of vowels in a string.
@@ -326,6 +330,23 @@ def second_smallest(num):
 # 62. Find duplicate elements in a list.
 
 # 63. Find the top 3 largest numbers.
+def third_largest(num):
+    largest = num[0]
+    second = num[0]
+    third = num[0]
+    for i in num:
+        if i > largest:
+            third = second
+            second = largest
+            largest = i
+        elif i > second:
+            third = second
+            second = i
+        elif i > third:
+            third = i
+    return largest, second, third
+largests = third_largest([10, 20, 30, 50, 40])
+print(largests)
 
 # 64. Find the top 3 smallest numbers.
 
