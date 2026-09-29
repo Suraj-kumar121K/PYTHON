@@ -345,13 +345,39 @@ def third_largest(num):
         elif i > third:
             third = i
     return largest, second, third
-largests = third_largest([10, 20, 30, 50, 40])
-print(largests)
+# largests = third_largest([10, 20, 30, 50, 40])
+# print(largests)
 
 # 64. Find the top 3 smallest numbers.
+def top_3_smallest(num):
+    small = num[0]
+    lower = num[0]
+    very_lower = num[0]
+    for i in num:
+        if i < small:
+            very_lower = lower
+            lower = small
+            small = i
+        elif i < lower:
+            very_lower = lower
+            lower = i
+        elif i < very_lower:
+            very_lower = i
+    return small, lower, very_lower
+# largests = top_3_smallest([10, 20, 30, 50, 3, 40, 5])
+# print(largests)    
 
 # 65. Separate even and odd numbers into two lists.
-
+num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+first_list = []
+second_list = []
+for i in num:
+    if i % 2 == 0:
+        first_list.append(i)
+    else:
+        second_list.append(i)
+print("Even:", first_list)
+print("Odd:", second_list)
 
 # ============================================================
 # 6. Dictionary — VVI for Data Analysis
