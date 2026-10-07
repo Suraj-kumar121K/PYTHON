@@ -154,7 +154,13 @@ def Pyramid(pyr):
         for j in range(2 * i - 1):
             print("*", end=" ")
         print()
-    for i in range()
+    for i in range(pyr - 1, 0, -1):
+        for j in range(pyr - i):
+            print(" ", end=" ")
+        for j in range(2 * i - 1):
+            print("*", end=" ")
+        print()
+Pyramid(5)
 
 """
         1
