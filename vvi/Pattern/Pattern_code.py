@@ -116,5 +116,40 @@ def pattern_1(num):
         for j in range(1, i + 1):
             print(j, end=" ")
         print()
-num = int(input("Enter the number of rows: "))
-pattern_1(num)
+# num = int(input("Enter the number of rows: "))
+# pattern_1(num)
+
+"""
+1 
+1 0
+1 0 1 
+1 0 1 0 
+1 0 1 0 1 
+1 0 1 0 1 0 
+1 0 1 0 1 0 1
+"""
+def pattern(num):
+    for i in range(1, num + 1):
+        for i in range(1, i + 1):
+            if i % 2 != 0:
+                print("1", end=" ")
+            else:
+                print("0", end=" ")
+        print()
+# num = int(input("Enter the number of rows: "))
+# pattern(num)                   
+
+"""
+5
+4 4
+3 3 3
+2 2 2 2
+1 1 1 1 1
+"""
+def pattern_3(num):
+    for i in range(num, 0, -1):
+        for j in range(num - i + 1):
+            print(i, end=" ")
+        print()
+# num = int(input("Enter the number of rows: "))
+# pattern_3(num) 
