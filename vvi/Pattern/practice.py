@@ -90,8 +90,13 @@ def Space_Pattern_first(space):
   1 2 3 4
 1 2 3 4 5
 """
-# def Space_Pattern_Three(num):
-
+def Space_Pattern_Three(num):
+  for i in range(1, num + 1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(1, i + 1):
+      print(j, end=" ")
+    print()
 # Space_Pattern_Three(5)
 
 # ⭐ Level 3 — Pyramid
@@ -144,6 +149,7 @@ def Space_Pattern_first(space):
         1
 """
 
+
 # Repeated Number Square Pattern
 """
 1 1 1 1 1
@@ -151,6 +157,7 @@ def Space_Pattern_first(space):
 3 3 3 3 3
 4 4 4 4 4
 """
+# for i in range(1, num + 1)
 # def squre_pattern(num):
 
 # num = int(input("Enter the number of rows: "))
@@ -163,8 +170,14 @@ def Space_Pattern_first(space):
 0 0 0 0 0
 1 1 1 1 1
 """
-# def squre_pattern_first(num):
-
+def squre_pattern_first(num):
+  for i in range(1, num + 1):
+    for j in range(1, num + 1):
+      if i % 2 != 0:
+        print("1", end=" ")
+      else:
+        print("0", end=" ")
+    print()
 # num = int(input("Enter the number of rows: "))
 # squre_pattern_first(num)
 
@@ -175,8 +188,11 @@ def Space_Pattern_first(space):
 1 2 3 4 5
 1 2 3 4 5
 """
-# def squre_pattern_second(num):
-
+def squre_pattern_second(num):
+  for i in range(1, num + 1):
+      for j in range(1, num + 1):
+        print(j, end=" ")
+      print()
 # num = int(input("Enter the number of rows: "))
 # squre_pattern_second(num)
 
