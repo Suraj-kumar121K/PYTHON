@@ -83,8 +83,8 @@ def Pyramid_Pattern(num):
     for j in range(2 * i - 1):
       print("*", end=" ")
     print()
-num = int(input("Enter a number of Rows: "))
-Pyramid_Pattern(num)
+# num = int(input("Enter a number of Rows: "))
+# Pyramid_Pattern(num)
 '''
  Row              Space(num - i)            Stars(2 * i - 1)
  i=1                5 - 1 = 4                 2 * 1 - 1 = 1
@@ -106,4 +106,18 @@ Pyramid_Pattern(num)
       * * *
         *
 """
-
+def Diamond_Pattern(num):
+  for i in range(1, num + 1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(2 * i - 1):
+      print("*", end=" ")
+    print()
+  for i in range(num - 1, 0, -1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(2 * i - 1):
+      print("*", end=" ")
+    print()
+num = int(input("Enter a number of Rows: "))
+Diamond_Pattern(num)
