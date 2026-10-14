@@ -44,6 +44,14 @@ def Hollow_Rectangle(num):
 *     *
 * * * * *
 """
+def Hollo_Right_triangle(num):
+  for i in range(1, num + 1):
+    for j in range(i):
+      if i == 0 or j == 0 or :
+        print("*", end=" ")
+    print()
+num = int(input("Enter a number of Rows: "))
+Hollo_Right_triangle(num)
 
 # 4. Hollow Inverted Right Triangle
 """
