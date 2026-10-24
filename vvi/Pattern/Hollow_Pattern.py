@@ -62,6 +62,8 @@ def Hollo_Right_triangle(num):
 *
 """
 
+
+
 # 5. Hollow Pyramid
 """
     *
@@ -70,6 +72,18 @@ def Hollo_Right_triangle(num):
  *     *
 * * * * *
 """
+def Hollow_Pyramid(num):
+  for i in range(1, num + 1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(1, i + 1):
+      if i == 0 or j==i or i == num:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+num = int(input("Enter a number of Rows: "))
+Hollow_Pyramid(num)
 
 # 6. Hollow Inverted Pyramid
 """
