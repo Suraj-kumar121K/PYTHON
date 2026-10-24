@@ -55,14 +55,20 @@ def Hollo_Right_triangle(num):
 
 # 4. Hollow Inverted Right Triangle
 """
-* * * * *
-*     *
-*   *
-* *
-*
+* * * * *          i = 1 | space = 0 | print 5 star
+*     *            i = 2 | space = 2 | print 1 star
+*   *              i = 3 | space = 1 | print 1 star
+* *                i = 4 | space = 0 | print 1 star
+*                  i = 5 | space = 0 | print 1 star
 """
-
-
+def Hollow_Inverted_Tringle(num):
+  for i in range(num , 0, -1):
+    for j in range(i):
+      if i == 0 or j == 0 or i == num or j == num + 1: 
+        print("*", end=" ")
+    print()
+# num = int(input("Enter a number of Rows: "))
+# Hollow_Inverted_Tringle(num)
 
 # 5. Hollow Pyramid
 """
@@ -82,8 +88,8 @@ def Hollow_Pyramid(num):
       else:
         print(" ", end=" ")
     print()
-num = int(input("Enter a number of Rows: "))
-Hollow_Pyramid(num)
+# num = int(input("Enter a number of Rows: "))
+# Hollow_Pyramid(num)
 
 # 6. Hollow Inverted Pyramid
 """
@@ -93,6 +99,18 @@ Hollow_Pyramid(num)
    * *
     *
 """
+def Hollow_Pyramid(num):
+  for i in range(num, 0, -1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(1, i + 1):
+      if i == 0 or j==i or i == num:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+num = int(input("Enter a number of Rows: "))
+Hollow_Pyramid(num)
 
 # 8. Hollow Hourglass
 """
@@ -179,3 +197,27 @@ Hollow_Pyramid(num)
       *   *
         *
 """
+
+"""
+* * * * * * * * *
+* * * * * * * * *
+* *           * *
+* *           * *
+* *           * *
+* *           * *
+* *           * *
+* * * * * * * * *
+* * * * * * * * *
+"""
+def Hollow_squery_2(num):
+  for i in range(1, num + 1):
+    for j in range(1, num + 1):
+      if i == 1 or i == 2 or i == num - 1 or i == num:
+        print("*", end=" ")
+      elif j == 1 or j == 2 or j == num - 1 or j == num:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+# num = int(input("Enter a number of Rows: "))
+# Hollow_squery_2(num)
