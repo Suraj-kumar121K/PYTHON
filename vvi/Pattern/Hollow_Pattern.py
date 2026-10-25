@@ -67,8 +67,8 @@ def Hollow_Inverted_Tringle(num):
       if i == 0 or j == 0 or i == num or j == num + 1: 
         print("*", end=" ")
     print()
-# num = int(input("Enter a number of Rows: "))
-# Hollow_Inverted_Tringle(num)
+num = int(input("Enter a number of Rows: "))
+Hollow_Inverted_Tringle(num)
 
 # 5. Hollow Pyramid
 """
@@ -109,8 +109,8 @@ def Hollow_Pyramid(num):
       else:
         print(" ", end=" ")
     print()
-num = int(input("Enter a number of Rows: "))
-Hollow_Pyramid(num)
+# num = int(input("Enter a number of Rows: "))
+# Hollow_Pyramid(num)
 
 # 8. Hollow Hourglass
 """
