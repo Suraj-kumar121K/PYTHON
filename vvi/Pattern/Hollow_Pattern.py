@@ -67,8 +67,8 @@ def Hollow_Inverted_Tringle(num):
       if i == 0 or j == 0 or i == num or j == num + 1: 
         print("*", end=" ")
     print()
-num = int(input("Enter a number of Rows: "))
-Hollow_Inverted_Tringle(num)
+# num = int(input("Enter a number of Rows: "))
+# Hollow_Inverted_Tringle(num)
 
 # 5. Hollow Pyramid
 """
@@ -197,6 +197,27 @@ def Hollow_Pyramid(num):
       *   *
         *
 """
+def Hollow_Diamond_Pattern(num):
+  for i in range(1, num + 1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(1, 2 * i):
+      if j == 1 or j == 2 * i - 1:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+  for i in range(num - 1, 0, -1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(1, 2 * i):
+      if j == 1 or j == 2 * i - 1:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+num = int(input("Enter a number of Rows: "))
+Hollow_Diamond_Pattern(num)
 
 """
 * * * * * * * * *
@@ -221,3 +242,34 @@ def Hollow_squery_2(num):
     print()
 # num = int(input("Enter a number of Rows: "))
 # Hollow_squery_2(num)
+
+"""
+*           *
+  *       *
+    *   *
+      *
+    *   *
+  *       *
+*           *
+"""
+def cross_pattern(num):
+    for i in range(num, 0, -1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(1, 2 * i):
+            if j == 1 or j == 2 * i - 1:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+    for i in range(2, num + 1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(1, 2 * i):
+            if j == 1 or j == 2 * i - 1:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# cross_pattern(num)

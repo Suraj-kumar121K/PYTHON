@@ -130,8 +130,8 @@ def Number_Pyramid(num):
     for j in range(2 * i - 1):
       print(j + 1, end=" ")
     print()
-num = int(input("Enter the Num of Rows: "))
-Number_Pyramid(num)
+# num = int(input("Enter the Num of Rows: "))
+# Number_Pyramid(num)
 """
         1 
       1 2 3 
@@ -156,5 +156,22 @@ def Number_Pyramid_1(num):
     for j in range(2 * i - 1):
       print(j + 1, end=" ")
     print()   
-num = int(input("Enter the Num of Rows: "))
-Number_Pyramid_1(num)
+# num = int(input("Enter the Num of Rows: "))
+# Number_Pyramid_1(num)
+
+
+"""
+(1,1)  (1,2)  (1,3)  (1,4)  (1,5)
+(2,1)  (2,2)  (2,3)  (2,4)  (2,5)
+(3,1)  (3,2)  (3,3)  (3,4)  (3,5)
+(4,1)  (4,2)  (4,3)  (4,4)  (4,5)
+(5,1)  (5,2)  (5,3)  (5,4)  (5,5)
+"""
+
+def Row_Column(num):
+    for i in range(1, num + 1):
+        for j in range(1, num + 1):
+            print(f"({i},{j})", end="  ")
+        print()
+num = int(input("Enter the number of Rows: "))
+Row_Column(num)
