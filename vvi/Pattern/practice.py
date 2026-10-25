@@ -156,7 +156,6 @@ def pattern_22(num):
 # num = int(input("Enter a number of Rows: "))
 # pattern_22(num)
 
-
 def pattern_23(num):
     count = num * (num + 1) // 2  
     for i in range(1, num + 1):  
@@ -167,3 +166,16 @@ def pattern_23(num):
         print()                    
 # num = int(input("Enter a number of Rows: "))
 # pattern_23(num)
+
+
+def pattern_24(num):
+    count = 1  
+    for i in range(1, num + 1):  
+        count += i - 1  
+        for j in range(i, 0, -1):  
+            print(count, end="   ")
+            count -= 1  
+        count += i + 1  
+        print()
+num = int(input("Enter a number of Rows: "))
+pattern_24(num)
