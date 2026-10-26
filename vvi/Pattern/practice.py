@@ -177,5 +177,68 @@ def pattern_24(num):
             count -= 1  
         count += i + 1  
         print()
-num = int(input("Enter a number of Rows: "))
-pattern_24(num)
+# num = int(input("Enter a number of Rows: "))
+# pattern_24(num)
+
+def pattern_26(num): 
+    count = 0
+    for i in range(1, num + 1):  
+        for j in range(i):
+            print(chr(65 + count), end=" ")
+            count += 1
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_26(num)
+
+def pattern_28(num):
+    for i in range(1, num + 1):  
+        for j in range(i):
+            print(chr(64 + i), end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_28(num)
+
+def pattern_29(num):
+    for i in range(1, num + 1):  
+        for j in range(i):
+            print(chr(65 + j), end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_29(num)
+
+def pattern_30(num):
+    for i in range(num, 0, -1):
+        for j in range(num - i + 1):
+            print(chr(64 + i), end="  ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_30(num)
+
+def pattern_31(num):
+    for i in range(1, num + 1):
+        for j in range(i, 0, -1):
+            print(chr(64 + j), end="  ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_31(num)
+
+def pattern_32(num):
+    for i in range(1, num + 1):
+        for j in range(num - i):
+            print(, end="  ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_32(num)
+
+def pattern_33(num):
+    for i in range(1, num + 1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(1, i + 1):
+            if i % 2 != 0:
+                print("1", end=" ")
+            else:
+                print("0", end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_33(num)
