@@ -1,0 +1,3 @@
+def calculate_foir(salary, foir):
+    value = salary * foir / 100
+    print(value)
