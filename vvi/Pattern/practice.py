@@ -225,7 +225,9 @@ def pattern_31(num):
 def pattern_32(num):
     for i in range(1, num + 1):
         for j in range(num - i):
-            print(, end="  ")
+            print(" ", end=" ")
+        for j in range(1, i + 1):
+            print(i, end=" ")
         print()
 # num = int(input("Enter a number of Rows: "))
 # pattern_32(num)
@@ -242,3 +244,69 @@ def pattern_33(num):
         print()
 # num = int(input("Enter a number of Rows: "))
 # pattern_33(num)
+
+def pattern_34(num):
+    for i in range(1, num + 1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(1, i + 1):
+                print(j, end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_34(num)
+
+def pattern_35(num):
+    for i in range(1, num + 1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(1, i + 1):
+            if j % 2 != 0:
+                print("1", end=" ")
+            else:
+                print("0", end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_35(num)
+
+def pattern_67(num):
+    for i in range(1, num + 1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(2 * i - 1):
+            print("*", end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_67(num)
+
+def pattern_68(num):
+    for i in range(1, num + 1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(2 * i - 1):
+            print(i, end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_68(num)
+
+def pattern_69(num):
+    for i in range(1, num + 1):
+        for j in range(num - i):
+            print(" ", end=" ")
+        for j in range(2 * i - 1):
+            if i % 2 != 0:
+                print("1", end=" ")
+            else:
+                print("0", end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_69(num)
+
+def pattern_70(num):
+    for i in range(num, 0, -1):
+        for j in range(i - 1):
+            print(" ", end=" ")
+        for j in range(2 * (num - i) + 1):
+            print(i, end=" ")
+        print()
+# num = int(input("Enter a number of Rows: "))
+# pattern_70(num)
