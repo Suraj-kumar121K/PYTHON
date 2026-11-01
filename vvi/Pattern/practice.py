@@ -48,6 +48,20 @@ def pattern_5(num):
 # num = int(input("Enter a number of Rows: "))
 # pattern_5(num)
 
+def pattern_6(nums):
+    for i in range(1, nums + 1):
+        for j in range(1, nums + 1):
+            if i == 1 or i == 2 or i == nums - 1 or i == nums:
+                print("*", end=" ")
+            elif j == 1 or j == 2 or j == nums - 1 or j == nums:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()     
+# nums = int(input("Enter a number of Rows: "))
+# pattern_6(nums)
+
+
 def pattern_7(num):
     for i in range(1, num + 1):
         for j in range(1, num + 1):
@@ -55,6 +69,58 @@ def pattern_7(num):
         print()
 # num = int(input("Enter a number of Rows: "))
 # pattern_7(num)
+
+def Pattern_8(num):
+    for i in range(1, num + 1):
+        for j in range(1, num + 1):
+            if i == j or i + j == num + 1:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+# num = int(input("Enter number of rows: "))
+# Pattern_8(num)
+
+def Pattern_9(num):
+    mid = num // 2 + 1
+    for i in range(1, num + 1):
+        for j in range(1, num + 1):
+            if i == mid or j == mid:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+# num = int(input("Enter number of rows: "))
+# Pattern_9(num)
+
+def Pattern_10(num):
+    mid = num // 2 + 1
+    for i in range(1, num + 1):
+        for j in range(1, num + 1):
+            if i == 1 or i == num or i == mid or i == j:
+                print("*", end=" ")
+            elif j == 1 or j == num or j == mid or i + j == num + 1:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+# num = int(input("Enter number of rows: "))
+# Pattern_10(num)
+
+def Pattern_11(num):
+    for i in range(1, num + 1):
+        for j in range(1, num + 1):
+            if (i == 1 and j != 2 or
+                i == 2 and (j == 1 or j == 3) or
+                i == 3 or
+                i == 4 and (j == 3 or j == 5) or
+                i == 5 and (j == 1 or j == 2 or j == 3 or j == 5)):
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+# num = int(input("Enter number of rows: "))
+# Pattern_11(num)
 
 def pattern_12(num):
     for i in range(1, num + 1):
