@@ -334,6 +334,16 @@ def pattern_35(num):
 # num = int(input("Enter a number of Rows: "))
 # pattern_35(num)
 
+def pattern_50(nums):
+    for i in range(1, nums + 1):
+        for j in range(nums - i):
+            print("    ", end="")
+        for j in range(1, i + 1):
+            print("*", end="       ")
+        print()
+# nums = int(input("Enter number of Rows: "))
+# pattern_50(nums)
+
 def pattern_67(num):
     for i in range(1, num + 1):
         for j in range(num - i):
