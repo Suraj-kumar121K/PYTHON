@@ -342,6 +342,9 @@ print(df)"""
 # 85. Check if "123" is numeric
 
 # 86. Check if "PYTHON" is uppercase
+"""a = "python"
+df = a.upper()
+print(df)"""
 
 # 87. Check if "python" is lowercase
 
