@@ -284,117 +284,6 @@ list = 'aeiouAEIOU'
 for var in str:
     if var.isalpha() and var not in list:
         print(var)"""
-        
-# 12. Count the number of characters in a string.
-
-
-# 13. Print all numbers from 1 to 50 that are divisible by both 2 and 5.
-
-# 14. Print factorial of a number n.
-
-
-# 15. Print the sum of first n natural numbers.
-
-
-# 🔹 Intermediate Level (16–30)
-# 16. Print the multiplication table of a given number.
-# 17. Print all prime numbers between 1 and 50.
-# 18. Print all numbers from 1 to n and their squares.
-# 19. Print all numbers from 1 to n and their cubes.
-# 20. Print numbers from 1 to 100 that are divisible by 7.
-# 21. Print Fibonacci series up to n terms.
-# 22. Reverse a string using a for loop.
-# 23. Count the number of vowels in a string.
-# 24. Count the number of digits in a string.
-# 25. Print the sum of all digits of a number.
-# 26. Print all characters of a string in uppercase.
-# 27. Print all characters of a string in lowercase.
-# 28. Print ASCII values of all characters in a string.
-# 29. Print the sum of even numbers from 1 to n.
-# 30. Print the sum of odd numbers from 1 to n.
-
-# 🔹 Advanced Level (31–40)
-# 31. Print a right-angled triangle pattern of * of height n.
-# 32. Print a pyramid pattern of numbers up to n.
-# 33. Print a diamond pattern using *.
-# 34. Print all palindromic numbers from 1 to 100.
-# 35. Print all numbers divisible by 3 but not by 5 between 1 and 50.
-# 36. Print all characters of a string except spaces.
-# 37. Print all words of a sentence separately.
-# 38. Print numbers from 1 to 50 skipping multiples of 4.
-# 39. Print a pattern of numbers like this:
-#     1
-#     12
-#     123
-#     1234
-# 40. Print the multiplication table for numbers 1 to 10.
-# 🔹 Part 1: break Practice (1–20)
-# 1. Print numbers from 1 to 10 but stop at 5.
-# 2. Print numbers 1 to 20 but stop when a number divisible by 7 is found.
-# 3. Print numbers from 1 to 50, stop when you find the first number divisible by both 3 and 5.
-# 4. Ask user for numbers and stop when they enter 0.
-# 5. Print characters of a string but stop at first vowel.
-# 6. Print numbers 1 to 100, stop at the first prime number greater than 50.
-# 7. Print numbers 1 to n, stop if a number is perfect square.
-# 8. Print numbers 1–20, stop when sum of printed numbers exceeds 50.
-# 9. Find first negative number in a list and print it.
-# 10. Ask user for input repeatedly, stop when they type "exit".
-# 11. Print numbers 1–100, stop when you find a number ending with 7.
-# 12. Find first word in a sentence with length greater than 5.
-# 13. Print first 5 even numbers using a loop with break.
-# 14. Stop printing numbers from 1 to 50 after printing the first 3 multiples of 4.
-# 15. Stop reading characters from a string when 'z' is encountered.
-# 16. Stop printing numbers from 1 to n if the sum of digits equals 10.
-# 17. Stop reading numbers from a list when a prime number is found.
-# 18. Stop asking user for numbers after 3 invalid inputs.
-# 19. Print numbers from 1 to 100, stop at the first palindrome number greater than 50.
-# 20. Stop a loop when the product of numbers exceeds 1000.
-
-# 🔹 Part 2: continue Practice (21–40)
-# 21. Print numbers 1–20 skipping even numbers.
-# 22. Print numbers 1–20 skipping odd numbers.
-# 23. Print numbers 1–50 skipping multiples of 3.
-# 24. Print numbers 1–50 skipping numbers divisible by both 2 and 5.
-# 25. Print all characters in a string except vowels.
-# 26. Print numbers 1–100 skipping multiples of 7.
-# 27. Print numbers 1–50 skipping numbers whose digits sum to 5.
-# 28. Print numbers 1–20, skip the first 3 numbers divisible by 2.
-# 29. Print numbers 1–30 skipping prime numbers.
-# 30. Print numbers 1–50 skipping perfect squares.
-# 31. Print all words of a sentence except the word "the".
-# 32. Print numbers 1–100 skipping multiples of 4.
-# 33. Print numbers 1–50 skipping numbers ending with 5.
-# 34. Print ASCII values of characters in a string skipping spaces.
-# 35. Print numbers 1–50 skipping numbers divisible by 3 but not 5.
-# 36. Print numbers 1–50 skipping numbers containing digit 7.
-# 37. Print numbers 1–20 skipping first 2 even numbers.
-# 38. Print numbers 1–100 skipping numbers divisible by 2 or 3.
-# 39. Print numbers 1–50 skipping numbers whose square is greater than 400.
-# 40. Print characters in a string skipping every second character.
-
-# 🔹 Part 3: pass Practice (41–50)
-# 41. Use pass in a loop iterating 1–10 without doing anything.
-# 42. Create a loop over a string and pass for vowels, print consonants.
-# 43. Loop through numbers 1–20, pass for odd numbers, print even numbers.
-# 44. Loop over a list, pass for negative numbers, print positive numbers.
-# 45. Use pass in a nested loop structure (like triangle pattern).
-# 46. Loop over words in a sentence, pass for word "skip", print others.
-# 47. Use pass in a while loop counting from 1–10.
-# 48. Use pass in a loop when number divisible by 3, print others.
-# 49. Loop from 1–10, pass for prime numbers, print non-prime numbers.
-# 50. Loop through numbers 1–20, pass for multiples of 5, print the rest.
-
-# 🔹 Part 4: Mixed break, continue, pass (51–60)
-# 51. Print numbers 1–50, stop if divisible by 7 (break), skip even numbers (continue).
-# 52. Print characters in a string, skip vowels (continue), stop at 'z' (break).
-# 53. Loop 1–20, skip numbers divisible by 3 (continue), pass for odd numbers (pass).
-# 54. Print numbers 1–100, stop at first number whose digits sum to 10 (break).
-# 55. Print numbers 1–50 skipping numbers divisible by 5 (continue) and stop at 37 (break).
-# 56. Loop through a sentence, skip "a" (continue), pass for punctuation (pass).
-# 57. Print numbers 1–20, skip multiples of 4 (continue), stop at 17 (break).
-# 58. Loop 1–50, pass for numbers divisible by 3, skip numbers divisible by 7, print rest.
-# 59. Print first 10 characters of a string, skip spaces (continue), stop at punctuation (break).
-# 60. Loop numbers 1–100, skip numbers divisible by 2 (continue), pass numbers divisible by 5 (pass), print others.
 
 #=================================
 # practice logic
@@ -575,7 +464,7 @@ if u == user and p == passw:
 else:
     print("Invalid Credentials")"""
     
-    class Bank:
+class Bank:
     def __init__(self):
         self.__username = "admin"
         self.__password = "1234"
