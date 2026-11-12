@@ -143,16 +143,27 @@ def Hollow_Pyramid(num):
 
 # 11. Hollow Butterfly
 """
-*         *
-**       **
-* *     * *
-*  *   *  *
-*   * *   *
-*  *   *  *
-* *     * *
-**       **
-*         *
+*                 * 
+* *             * * 
+*   *         *   * 
+*     *     *     * 
+*       * *       * 
+*     *     *     * 
+*   *         *   * 
+* *             * * 
+*                 * 
 """
+# def Hollow_Butterfly(nums):
+  
+#   for i in range(1, nums + 1):
+#     for j in range(1, nums + 1):
+#       if j == 1 or j == i or j == nums:
+#         print("*", end=" ")
+#       else:
+#         print(" ", end=" ")
+#     print()
+# nums = int(input("Enter the number: "))
+# Hollow_Butterfly(nums)
 
 # 12. Sandglass Star Pattern
 """
@@ -167,6 +178,7 @@ def Hollow_Pyramid(num):
 * * * * *
 """
 
+
 # 13. Hollow Left Triangle
 """
 *
@@ -175,6 +187,16 @@ def Hollow_Pyramid(num):
 *     *
 * * * * *
 """
+def Hollow_Left_Triangle(num):
+  for i in range(1, num + 1):
+    for j in range(i):
+      if j == 0 or j == i - 1 or i == num:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+# num = int(input("Enter the number: "))
+# Hollow_Left_Triangle(num)
 
 # 14. Hollow Right Triangle
 """
@@ -184,6 +206,18 @@ def Hollow_Pyramid(num):
   *     *
 * * * * *
 """
+def Hollow_Right_Triangle(num):
+  for i in range(1, num + 1):
+    for j in range(num - i):
+      print(" ", end=" ")
+    for j in range(1, i + 1):
+      if j == 1 or j == i or i == num:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+# num = int(input("Enter the number: "))
+# Hollow_Right_Triangle(num)
 
 # 15. Hollow Diamond Pattern
 """
@@ -216,8 +250,8 @@ def Hollow_Diamond_Pattern(num):
       else:
         print(" ", end=" ")
     print()
-num = int(input("Enter a number of Rows: "))
-Hollow_Diamond_Pattern(num)
+# num = int(input("Enter a number of Rows: "))
+# Hollow_Diamond_Pattern(num)
 
 """
 * * * * * * * * *
