@@ -153,15 +153,14 @@ def Hollow_Pyramid(num):
 * *             * * 
 *                 * 
 """
-# def Hollow_Butterfly(nums):
-  
-#   for i in range(1, nums + 1):
-#     for j in range(1, nums + 1):
-#       if j == 1 or j == i or j == nums:
-#         print("*", end=" ")
-#       else:
-#         print(" ", end=" ")
-#     print()
+def Hollow_Butterfly(nums):
+  for i in range(1, nums + 1):
+    for j in range(1, nums + 1):
+      if j == 1 or j == i or j == nums:
+        print("*", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
 # nums = int(input("Enter the number: "))
 # Hollow_Butterfly(nums)
 
@@ -177,7 +176,21 @@ def Hollow_Pyramid(num):
  * * * *
 * * * * *
 """
-
+def Sandglass_Star_Pattern(nums):
+  for i in range(nums, 0, -1):
+    for j in range(nums - i):
+      print(" ", end=" ")
+    for j in range(i):
+      print("*", end=" ")
+    print()
+  for i in range(2, nums + 1):
+    for j in range(nums - i):
+      print(" ", end=" ")
+    for j in range(i):
+      print("*", end=" ")
+    print()
+nums = int(input("Enter a number of Rows: "))
+Sandglass_Star_Pattern(nums)
 
 # 13. Hollow Left Triangle
 """
