@@ -29,8 +29,5 @@ def count_frequency(text):
 # text = "programming"
 # result = count_frequency(text)
 # print(result)
-
-# 3. Sort Dictionary by Values (Descending Order)
-def sort_products(products):
     
     
