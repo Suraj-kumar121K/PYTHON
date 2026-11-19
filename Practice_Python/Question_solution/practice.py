@@ -10,9 +10,11 @@
 # 9. Find the first non-repeating character.
 # 10. Check whether two strings are anagrams.
 
-# 1. List – 10 Questions
+# List – 10 Questions
 # 1. Create a list of 5 numbers and print it.
+    
 # 2. Find the length of a list without using len().
+
 # 3. Find the largest element in a list.
 # 4. Find the smallest element in a list.
 # 5. Calculate the sum of all elements without using sum().
