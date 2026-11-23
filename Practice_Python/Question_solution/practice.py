@@ -14,6 +14,11 @@
 # 1. Create a list of 5 numbers and print it.
     
 # 2. Find the length of a list without using len().
+num = [1, 2, 3, 4, 5]
+len = 0
+for i in num:
+    len = i
+print(len)
 
 # 3. Find the largest element in a list.
 # 4. Find the smallest element in a list.
